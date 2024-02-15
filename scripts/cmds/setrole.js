@@ -4,7 +4,7 @@ module.exports = {
 		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
-		role: 1,
+		role: 2,
 		shortDescription: {
 			vi: "Chỉnh sửa role của lệnh",
 			en: "Edit role of command"
@@ -13,7 +13,7 @@ module.exports = {
 			vi: "Chỉnh sửa role của lệnh (những lệnh có role < 2)",
 			en: "Edit role of command (commands with role < 2)"
 		},
-		category: "info",
+		category: "𝗖𝗢𝗡𝗙𝗜𝗚",
 		guide: {
 			vi: "   {pn} <commandName> <new role>: set role mới cho lệnh"
 				+ "\n   Với:"

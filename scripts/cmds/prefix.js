@@ -10,7 +10,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "Thay đổi prefix của bot",
 		longDescription: "Thay đổi dấu lệnh của bot trong box chat của bạn hoặc cả hệ thống bot (chỉ admin bot)",
-		category: "config",
+		category: "𝗖𝗢𝗡𝗙𝗜𝗚",
 		guide: {
 			vi: "   {pn} <new prefix>: thay đổi prefix mới trong box chat của bạn"
 				+ "\n   Ví dụ:"

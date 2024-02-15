@@ -4,7 +4,7 @@ module.exports = {
 		version: "1.1",
 		author: "NTKhang",
 		countDown: 60,
-		role: 0,
+		role: 1,
 		shortDescription: {
 			vi: "làm mới thông tin",
 			en: "refresh information"
@@ -13,7 +13,7 @@ module.exports = {
 			vi: "làm mới thông tin nhóm chat hoặc người dùng",
 			en: "refresh information of group chat or user"
 		},
-		category: "box chat",
+		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
 		guide: {
 			vi: "   {pn} [thread | group]: làm mới thông tin nhóm chat của bạn"
 				+ "\n   {pn} group <threadID>: làm mới thông tin nhóm chat theo ID"

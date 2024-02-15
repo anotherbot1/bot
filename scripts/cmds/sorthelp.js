@@ -13,7 +13,7 @@ module.exports = {
 			vi: "Sắp xếp danh sách help",
 			en: "Sort help list"
 		},
-		category: "image",
+		category: "𝗖𝗢𝗡𝗙𝗜𝗚",
 		guide: {
 			en: "{pn} [name | category]"
 		}

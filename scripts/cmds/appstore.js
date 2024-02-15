@@ -16,7 +16,7 @@ module.exports = {
 			vi: "Tìm app trên appstore",
 			en: "Search app on appstore"
 		},
-		category: "software",
+		category: "𝗦𝗢𝗙𝗧𝗪𝗔𝗥𝗘",
 		guide: "   {pn}: <keyword>"
 			+ "\n   - Example:"
 			+ "\n   {pn} PUBG",

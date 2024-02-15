@@ -16,7 +16,7 @@ function convertFtoC(F) {
 	return Math.floor((F - 32) / 1.8);
 }
 function formatHours(hours) {
-	return moment(hours).tz("Asia/Ho_Chi_Minh").format("HH[h]mm[p]");
+	return moment(hours).tz("Asia/Dhaka").format("HH[h]mm[p]");
 }
 
 module.exports = {
@@ -34,7 +34,7 @@ module.exports = {
 			vi: "xem dự báo thời tiết hiện tại và 5 ngày sau",
 			en: "view the current and next 5 days weather forecast"
 		},
-		category: "other",
+		category: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
 		guide: {
 			vi: "{pn} <địa điểm>",
 			en: "{pn} <location>"
@@ -68,7 +68,7 @@ module.exports = {
 		let areaKey, dataWeather, areaName;
 
 		try {
-			const response = (await axios.get(`https://api.accuweather.com/locations/v1/cities/search.json?q=${encodeURIComponent(area)}&apikey=${apikey}&language=vi-vn`)).data;
+			const response = (await axios.get(`https://api.accuweather.com/locations/v1/cities/search.json?q=${encodeURIComponent(area)}&apikey=${apikey}&language=en-us`)).data;
 			if (response.length == 0)
 				return message.reply(getLang("notFound", area));
 			const data = response[0];
@@ -80,10 +80,10 @@ module.exports = {
 		}
 
 		try {
-			dataWeather = (await axios.get(`http://api.accuweather.com/forecasts/v1/daily/10day/${areaKey}?apikey=${apikey}&details=true&language=vi`)).data;
+			dataWeather = (await axios.get(`http://api.accuweather.com/forecasts/v1/daily/10day/${areaKey}?apikey=${apikey}&details=true&language=en`)).data;
 		}
 		catch (err) {
-			return message.reply(`❌ Đã xảy ra lỗi: ${err.response.data.Message}`);
+			return message.reply(`❌ Error! An error occurred. Please try again later: ${err.response.data.Message}`);
 		}
 
 		const dataWeatherDaily = dataWeather.DailyForecasts;

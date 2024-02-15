@@ -6,7 +6,7 @@ module.exports = {
 		version: "1.6",
 		author: "NTKhang",
 		countDown: 5,
-		role: 0,
+		role: 2,
 		shortDescription: {
 			vi: "cảnh cáo thành viên",
 			en: "warn member"
@@ -15,7 +15,7 @@ module.exports = {
 			vi: "cảnh cáo thành viên trong nhóm, đủ 3 lần ban khỏi box",
 			en: "warn member in group, if they have 3 warns, they will be banned"
 		},
-		category: "box chat",
+		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
 		guide: {
 			vi: "   {pn} @tag <lý do>: dùng cảnh cáo thành viên"
 				+ "\n   {pn} list: xem danh sách những thành viên đã bị cảnh cáo"

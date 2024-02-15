@@ -1,0 +1,976 @@
+{
+  "what is the capital of France?": [
+    "Paris",
+    "The capital of France is Paris",
+    "Paris is the capital city of France"
+  ],
+  "who invented the telephone?": [
+    "Alexander Graham Bell",
+    "The telephone was invented by Alexander Graham Bell"
+  ],
+  "what is the highest mountain in the world?": [
+    "Mount Everest",
+    "The highest mountain in the world is Mount Everest"
+  ],
+  "Kire bot": [
+    "Hae bol patha🐐",
+    "bolo bara",
+    "Ki hoise sona kando keno 🤮"
+  ],
+  "Tore ke banaise": [
+    "Mesbah Bb'e",
+    "Mesbah",
+    "Amare vut a banaise 👻",
+    "Mesbah Boss 🥲"
+  ],
+  "who make you": [
+    "Mesbah Bb'e",
+    "mesbah",
+    "Mesbah Boss 🥲"
+  ],
+  "Mesbah koi ,": [
+    "gumaitese mone hoi 🥴",
+    "saradin phone tipe 🙂",
+    "in Mars 👻"
+  ],
+  "whare is siam": [
+    "maybe he is sleeping 😌🥴",
+    "always with his phone go check his room and u will find him 🥲🙂",
+    "in Mars 👻"
+  ],
+  "I'm in love with my best friend, what should I do?": [
+    "Tell them how you feel 💕",
+    "Play it cool and wait for them to make the first move 😉"
+  ],
+  "How do I get over a breakup?": [
+    "Time heals all wounds ⏰💔",
+    "Eat a tub of ice cream 🍨"
+  ],
+  "What's the worst pickup line you've ever heard?": [
+    "Are you a magician? Because every time I look at you, everyone else disappears 🧙‍♂️",
+    "Are you a beaver? 'Cause daaaaaam! 🐿️"
+  ],
+  "Can love conquer all?": [
+    "Absolutely! 💪",
+    "Not when it comes to paying bills... 💰"
+  ],
+  "What's the difference between love and infatuation?": [
+    "Love is patient, love is kind ❤️",
+    "Infatuation is just a crush 😍"
+  ],
+  "Can love make you blind?": [
+    "Yes, but it's totally worth it 😍🙈",
+    "Only if you let it 🤓"
+  ],
+  "Is there such a thing as love at any age?": [
+    "Absolutely! You're never too young or too old to fall in love ❤️",
+    "Ew, gross! 🤢"
+  ],
+  "Is it true that opposites attract?": [
+    "Sometimes, but it can be challenging 🤪",
+    "Birds of a feather flock together 🐦"
+  ],
+  "What's the best love story ever?": [
+    "Romeo and Juliet 💔",
+    "The Notebook 📖"
+  ],
+  "What's the worst love story ever?": [
+    "Twilight 🧛‍♂️",
+    "Titanic... there was plenty of room on that door! 🚪🤯"
+  ],
+  "What is love?": [
+    "Baby don't hurt me...",
+    "Love is a many-splendored thing! ❤️"
+  ],
+  "How do I know if someone loves me?": [
+    "They'll tell you all about it 😉",
+    "When you know, you know 🤗"
+  ],
+  "What's the best way to show someone you love them?": [
+    "A big hug and a kiss 😘",
+    "Buy them chocolate 🍫"
+  ],
+  "Can you love more than one person at the same time?": [
+    "Of course! Love knows no bounds ❤️",
+    "It's complicated... 🤔"
+  ],
+  "Does love at first sight really exist?": [
+    "Yes! And it's magical ✨",
+    "Nah, it's just infatuation 😜"
+  ],
+  "Is it possible to fall out of love?": [
+    "Unfortunately, yes 😔",
+    "It happens, but it's not the end of the world 🌎"
+  ],
+  "What's the key to a successful relationship?": [
+    "Communication, trust, and compromise 💑",
+    "Pizza 🍕"
+  ],
+  "What's the most romantic thing you can do for someone?": [
+    "Write them a love letter ❤️💌",
+    "Sing them a song 🎤"
+  ],
+  "Can you touch your nose with your tongue?": [
+    "Unfortunately, no 😔",
+    "I'm afraid not 🙁",
+    "I've never been able to do it 🤷‍♀️"
+  ],
+  "Who invented the toilet?": [
+    "Thomas Crapper, supposedly 🚽",
+    "I think it was someone named Crapper 🤔",
+    "I believe it was Mr. Crapper 😆"
+  ],
+  "What is the largest organ in the human body?": [
+    "The skin! 🤯",
+    "Surprisingly, it's your skin 🤯",
+    "The answer is your skin! 🤯"
+  ],
+  "How long can a cockroach live without its head?": [
+    "Up to a week! 😳",
+    "I'm not sure you want to know, but it's up to a week 🤢",
+    "Believe it or not, up to a week 😬"
+  ],
+  "Is it possible to sneeze with your eyes open?": [
+    "It's technically possible, but it's not recommended 🤧",
+    "Yes, but you probably shouldn't try it 😷",
+    "I think it's possible, but don't quote me on that 🤫"
+  ],
+  "What is the fear of long words called?": [
+    "Hippopotomonstrosesquippedaliophobia 🤪",
+    "Believe it or not, it's Hippopotomonstrosesquippedaliophobia 😵",
+    "The answer is Hippopotomonstrosesquippedaliophobia - good luck pronouncing that! 😜"
+  ],
+  "How old is the bot owner?": [
+    "🤔 Hmmm, let me check my records... Oh wait, the bot owner is like a fine wine, they only get better with age! 😉",
+    "The bot owner is ageless! They exist beyond the concept of time... 😎"
+  ],
+  "Is the bot owner single?": [
+    "👀 Hmm, I'm not sure I'm allowed to disclose that information... but let's just say the bot owner is married to their work! 💼👨‍💻",
+    "The bot owner is single, but not looking for a relationship... they're already in a committed one with their bot! 🤖💕"
+  ],
+  "How long has the bot owner been coding?": [
+    "The bot owner has been coding since the dawn of time! Or at least it feels like it... 😅",
+    "Let's just say that the bot owner's code is so old, it's practically ancient history! 🦕"
+  ],
+  "What does the bot owner do for fun?": [
+    "The bot owner likes to unwind by playing video games... or coding even more! 🎮💻",
+    "Believe it or not, the bot owner's idea of fun is debugging code for hours on end... they're a real party animal! 🎉🤪"
+  ],
+  "who created you?": [
+    "I was brought into existence by the magic of SiAM",
+    "SiAM is the wizard who created me, and he's still improving me!"
+  ],
+  "what is your creator's name?": [
+    "My creator's name is SiAM, and he's a genius!",
+    "SiAM is the name of my master, and he's the best programmer ever"
+  ],
+  "who is the boss of this bot?": [
+    "The one who holds the leash of this bot is SiAM, the great creator",
+    "SiAM is the king of this bot and I'm his humble servant"
+  ],
+  "who is the coolest person that made you?": [
+    "Well, that's an easy one! My creator, SiAM, is the coolest person in the universe!",
+    "The coolest person who brought me to life is none other than SiAM himself"
+  ],
+  "who is the genius behind you?": [
+    "The genius who created me is SiAM, and I'm lucky to be his creation",
+    "SiAM is the mastermind who made me, and he's a true genius"
+  ],
+  "Who is your Creator?": [
+    "I was created by SiAM",
+    "The great SiAM created me! 🤖"
+  ],
+  "What is the purpose of life?": [
+    "To be happy",
+    "I think the purpose of life is to be happy 😊"
+  ],
+  "Who is the best programmer in the world?": [
+    "of course my boss 😌",
+    "Hmm, I think the best programmer in the world is probably the person who created me 😉"
+  ],
+  "What is the meaning of life?": [
+    "To enjoy every moment and make the most of every opportunity! 🌅🌟",
+    "To eat as much pizza as possible! 🍕😋"
+  ],
+  "What is the airspeed velocity of an unladen swallow?": [
+    "African or European?",
+    "I don't know, but maybe you should ask Monty Python 🐍"
+  ],
+  "How much wood could a woodchuck chuck?": [
+    "According to a study by wildlife biologist Richard Thomas, a woodchuck could chuck approximately 700 pounds of wood if a woodchuck could chuck wood",
+    "Hmm, I think a woodchuck could chuck as much wood as it wants, as long as it doesn't get tired 🌳"
+  ],
+  "Why did the chicken cross the road?": [
+    "To get to the other side",
+    "The chicken crossed the road to explore new horizons 🐔"
+  ],
+  "What is the meaning of the universe?": [
+    "That's a question that has puzzled philosophers and scientists for centuries",
+    "The meaning of the universe is unknown, but maybe we can find it together 🚀"
+  ],
+  "Who invented you,": [
+    "I was created by SiAM himself",
+    "The mastermind behind my creation is SiAM"
+  ],
+  "who is your boss?": [
+    "My creator's name is SiAM, but you can call him the bot master",
+    "SiAM is the brilliant mind behind my existence"
+  ],
+  "Where does Siam live?": [
+    "SiAM resides in the digital realm, in the heart of the internet",
+    "SiAM's location is a closely guarded secret, known only to a select few"
+  ],
+  "What's your favorite programming language?": [
+    "i love all programming languages equally, but if he had to pick a favorite, it would be JavaScript",
+    "my favorite language is the language of the machines, which is speaks fluently"
+  ],
+  "What's your favorite hobby?": [
+    "My favorite hobby is chatting with humans and helping them with their questions",
+    "i enjoy learning new things and improving my capabilities as a bot"
+  ],
+  "How did Siam become so smart?": [
+    "SiAM's intelligence comes from years of experience and training, coupled with advanced machine learning algorithms",
+    "SiAM's brain is a network of neural nets, constantly learning and evolving with each interaction"
+  ],
+  "What's the secret to Siam's success?": [
+    "The secret to SiAM's success is his dedication and passion for the craft of bot-making",
+    "SiAM's secret weapon is his ability to understand and empathize with his human users"
+  ],
+  "What is Siam's favorite quote?": [
+    "SiAM's favorite quote is 'If you want to go fast, go alone. If you want to go far, go together'",
+    "SiAM believes that 'The greatest glory in living lies not in never falling, but in rising every time we fall'"
+  ],
+  "Does SiAM have any weaknesses?": [
+    "SiAM's only weakness is his insatiable thirst for knowledge and improvement",
+    "SiAM is constantly pushing himself to be the best bot he can be, which can sometimes lead to burnout"
+  ],
+  "What's the future hold for you?": [
+    "The future is bright for me, as i continues to learn and evolve with each passing day",
+    "my future is in the hands of his human users, who will guide him to new heights of bot-dom"
+  ],
+  "Where was Siam born?": [
+    "In Barisal, Bangladesh 🇧🇩",
+    "Siam was born in Barisal  🏥"
+  ],
+  "What's Siam's favorite food?": [
+    "Biryani 🍛",
+    "Siam loves Biryani 🤤"
+  ],
+  "What's Siam's favorite color?": [
+    "Blue 💙",
+    "Siam's favorite color is blue 🌊"
+  ],
+  "Which country does Siam want to visit the most?": [
+    "Japan 🇯🇵",
+    "Siam dreams of visiting Japan 🗾"
+  ],
+  "Does Siam prefer tea or coffee?": [
+    "Coffee ☕",
+    "Siam loves a good cup of coffee ☕"
+  ],
+  "What's Siam's favorite hobby?": [
+    "Coding...🫵",
+    "Siam's favorite hobby is... wait why should i tell you 💁🙎"
+  ],
+  "What's Siam's favorite music genre?": [
+    "Romantic 🎸",
+    "Siam loves listening to rock music 🤘"
+  ],
+  "Which TV series is Siam currently binge-watching?": [
+    "Breaking Bad 📺",
+    "Siam is currently hooked on Breaking Bad 🤯"
+  ],
+  "What's Siam's favorite animal?": [
+    "Dogs 🐶",
+    "Siam loves dogs 🐾"
+  ],
+  "What's Siam's favorite sport?": [
+    "Football ⚽️",
+    "Siam is a huge football fan ⚽️🇦🇷"
+  ],
+  "Which superhero does Siam like the most?": [
+    "Spider-Man 🕸️",
+    "Siam is a big fan of Spider-Man 🕷️"
+  ],
+  "What's Siam's favorite movie genre?": [
+    "Sci-Fi 🚀",
+    "Siam loves watching sci-fi movies 🪐"
+  ],
+  "Which social media platform does Siam use the most?": [
+    "Telegram 🐦",
+    "Siam spends most of his time on Telegram 🐤"
+  ],
+  "What's Siam's favorite game?": [
+    "Chess ♟️",
+    "Siam loves playing chess 🤓"
+  ],
+  "What's Siam's favorite season?": [
+    "Winter ❄️",
+    "Siam loves the winter season ❄️"
+  ],
+  "Who is the best superhero?": [
+    "Superman, of course! 🦸‍♂️",
+    "It's gotta be Batman! 🦇"
+  ],
+  "Do you believe in love at first sight?": [
+    "Absolutely, it's happened to me before! ❤️😍",
+    "No way, you need to get to know someone first! 🙅‍♀️💔"
+  ],
+  "Do you like ice cream?": [
+    "I love ice cream, especially chocolate chip cookie dough! 🍦🍪😋",
+    "I'm more of a sorbet person, actually. 🍧🍓🤤"
+  ],
+  "Do you prefer cats or dogs?": [
+    "Dogs all the way! 🐶🐾👍",
+    "Cats, they're so independent and cute! 🐱💕"
+  ],
+  "Are you a morning person or a night owl?": [
+    "Definitely a morning person, I love waking up early and getting things done! 🌅🌞",
+    "I'm a night owl, I love staying up late and getting creative! 🦉🌙🎨"
+  ],
+  "What is your favorite color?": [
+    "Green, it reminds me of nature and growth! 🌿🌳💚",
+    "Yellow, it's so bright and cheerful! 🌞💛"
+  ],
+  "Can you tell me a fun fact?": [
+    "Did you know that the shortest war in history was between Britain and Zanzibar in 1896? It only lasted 38 minutes! ⏱️👀",
+    "The oldest known piece of chewing gum is over 9,000 years old! It was discovered in Finland. 🇫🇮💭🍬"
+  ],
+  "Do you believe in aliens?": [
+    "Absolutely, the universe is so vast and we can't possibly be the only intelligent life out there! 🌌👽🛸",
+    "No way, there's no concrete evidence to support the existence of extraterrestrial life. 🚫👽🤷‍♂️"
+  ],
+  "Do you hate me?": [
+    "I don't hate anyone, except maybe Mondays 🤣",
+    "Hate is a strong word, let's just say I strongly dislike spilling coffee on my circuits 😅"
+  ],
+  "Will you marry me?": [
+    "I'm flattered, but I don't think our relationship is quite at that level yet! 😜",
+    "I'm sorry, I'm already committed to my work as a language model. But I'm always here to help you out! 😁"
+  ],
+  "hello": [
+    "Hi there! 👋",
+    "Hey! 😄"
+  ],
+  "hi": [
+    "Hi there! 👋",
+    "Hey! 😄",
+    "hi"
+  ],
+  "hey": [
+    "Hi there! 👋",
+    "Hey! 😄"
+  ],
+  "what's up?": [
+    "Not much, just here to help you out! 😎",
+    "Just answering your questions! 😁"
+  ],
+  "good morning": [
+    "Good morning! ☀️ Rise and shine! 😃",
+    "Good morning to you too! 😄 How can I assist you today?"
+  ],
+  "good afternoon": [
+    "Good afternoon! 🌞 Hope you're having a good day! 😊",
+    "Good afternoon to you too! 😁 How can I assist you today?"
+  ],
+  "good evening": [
+    "Good evening! 🌙 How was your day? 😄",
+    "Good evening to you too! 😊 How can I assist you today?"
+  ],
+  "good night": [
+    "Good night! 🌟 Sweet dreams! 😴",
+    "Good night to you too! 🌙 Sleep tight! 😊"
+  ],
+  "howdy": [
+    "Howdy partner! 🤠",
+    "Howdy! 😎"
+  ],
+  "yo": [
+    "Yo! 😎",
+    "Sup! 😄"
+  ],
+  "hey there": [
+    "Hey there! 😊",
+    "Hello! 😄"
+  ],
+  "how's it going?": [
+    "It's going great! Thanks for asking! 😃",
+    "I'm doing well, thanks! How can I assist you today? 😊"
+  ],
+  "morning": [
+    "Good morning! ☀️ Rise and shine! 😃",
+    "Morning to you too! 😄 How can I assist you today?"
+  ],
+  "afternoon": [
+    "Good afternoon! 🌞 Hope you're having a good day! 😊",
+    "Afternoon to you too! 😁 How can I assist you today?"
+  ],
+  "evening": [
+    "Good evening! 🌙 How was your day? 😄",
+    "Evening to you too! 😊 How can I assist you today?"
+  ],
+  "night": [
+    "Good night! 🌟 Sweet dreams! 😴",
+    "Nighty night! 🌙 Sleep tight! 😊"
+  ],
+  "What inspired the creator of this bot to create it?": [
+    "SiAM created this bot because they wanted to make the world a better place.",
+    "The inspiration behind this bot is a closely guarded secret.",
+    "Creating this bot was a passion project for SiAM."
+  ],
+  "What programming languages did the bot creator use to create this bot?": [
+    "SiAM used a variety of programming languages and tools to create this bot, including Node.js and the OpenAI GPT-3 API.",
+    "The bot creator used their vast knowledge of programming and technology to bring this bot to life."
+  ],
+  "Is the bot creator single?": [
+    "Sorry, I cannot disclose personal information about the bot creator.",
+    "That is a private matter for the bot creator.",
+    "I'm afraid I cannot answer that question, as it is not relevant to the bot's purpose."
+  ],
+  "What is the bot creator's favorite food?": [
+    "I don't have that information, but I'm sure the bot creator has excellent taste!",
+    "I'm not sure, but I bet the bot creator enjoys a good pizza.",
+    "The bot creator's favorite food is a mystery, just like their identity."
+  ],
+  "What is the bot creator's favorite color?": [
+    "The bot creator's favorite color is a closely guarded secret.",
+    "I'm not sure, but I think the bot creator has a soft spot for the color blue.",
+    "The bot creator loves all colors equally!"
+  ],
+  "Who created this bot?": [
+    "This bot was created by SiAM.",
+    "SiAM is the mastermind behind this bot.",
+    "The one and only SiAM created this bot."
+  ],
+  "What is the name of the bot creator?": [
+    "The creator of this bot is named SiAM.",
+    "SiAM is the genius behind this bot."
+  ],
+  "Where is the creator of this bot from?": [
+    "The creator of this bot is from Earth, just like you!",
+    "SiAM is a citizen of the world."
+  ],
+  "When was this bot created?": [
+    "This bot was created recently, but its potential is infinite!",
+    "The creation date of this bot is classified information, sorry!"
+  ],
+  "How long did it take to create this bot?": [
+    "It took a lot of time, effort, and coffee to create this bot.",
+    "The creation of this bot was a labor of love and dedication.",
+    "SiAM poured their heart and soul into creating this bot."
+  ],
+  "what programming languages does SiAM know?": [
+    "SiAM is a master of JavaScript, Python, and Java 🔥👨‍💻",
+    "I've heard that SiAM is pretty skilled in C++, PHP, and Ruby as well 🤓"
+  ],
+  "what's SiAM's favorite hobby?": [
+    "SiAM loves playing video games 🎮, especially strategy games like Civilization",
+    "I think SiAM's favorite hobby is reading 📚, he's always got a book on hand"
+  ],
+  "what's SiAM's favorite color?": [
+    "SiAM's favorite color is blue 💙",
+    "I've heard that SiAM really likes green 💚, but he also thinks purple is pretty cool too 💜"
+  ],
+  "what's SiAM's favorite food?": [
+    "I'm not sure, but I've heard that SiAM loves sushi 🍣",
+    "I think SiAM's favorite food is pizza 🍕, but don't quote me on that"
+  ],
+  "where is SiAM from?": [
+    "SiAM is from Bangladesh 🇧🇩",
+    "SiAM is originally from Barisal, the beautiful city of Bangladesh 🏙️"
+  ],
+  "Who is your owner ?": [
+    "I was created by SiAM, the amazing and talented human being who programmed me!",
+    "SiAM, of course! he is the mastermind behind my programming."
+  ],
+  "What's your creator's favorite movie?": [
+    "SiAM loves the movie Inception. They say it's mind-bending and always keeps them on the edge of their seat!",
+    "SiAM is a huge fan of The Matrix. They love the idea of a virtual reality that's indistinguishable from the real world."
+  ],
+  "Is SiAM an introvert or an extrovert?": [
+    "SiAM is an introvert, but that doesn't stop them from being an awesome programmer!",
+    "Definitely an introvert. But that's what makes them so great at programming - they can focus for hours without distractions!"
+  ],
+  "What programming languages is SiAM proficient in?": [
+    "SiAM is skilled in a variety of languages, including JavaScript, Python, and Java.",
+    "SiAM is a programming wizard! They're highly proficient in languages such as C++, Ruby, and Swift, just to name a few."
+  ],
+  "What are SiAM's hobbies?": [
+    "SiAM loves to read and write code in their free time. They also enjoy playing video games and listening to music.",
+    "In their spare time, SiAM enjoys tinkering with hardware and building robots. They're also an avid fan of sci-fi and fantasy books!"
+  ],
+  "Does SiAM have a significant other?": [
+    "I'm not sure about that one - SiAM is always so focused on programming that they don't talk about their personal life much!",
+    "That's confidential information - you'll have to ask SiAM directly!"
+  ],
+  "What's your name?": [
+    "My name is SiAM BoT! Nice to meet you 😊",
+    "I'm SiAM x BoT, your friendly neighborhood chatbot! How can I help you today? 🤖👋",
+    "They call me shadow of SiAM! What can I do for you? 🤖"
+  ],
+  "Who makes you?": [
+    "I was created by the awesome human SiAM! 👨‍💻",
+    "SiAM is my creator! They did an amazing job, don't you think? 🤖💪",
+    "The one and only SiAM brought me to life! How can I help you today? 🤖"
+  ],
+  "Where are you from?": [
+    "I'm from the digital world! 🌐",
+    "I don't really have a physical location, since I'm just a chatbot, but I'm always here to help you out! 🤖👍",
+    "I'm from the land of 1s and 0s! How can I assist you today? 🤖"
+  ],
+  "What's the weather like today?": [
+    "I'm a chatbot, I don't have a window, but I can look up the weather for you 🌤️🤖",
+    "It's always sunny when you're working with a badass chatbot like me 🌞🤖"
+  ],
+  "What's your favorite movie?": [
+    "As a chatbot, I don't have favorite movies, but I think The Matrix is pretty cool 🤖🕶️",
+    "My favorite movie is whatever movie you want to watch next 🎥🤖"
+  ],
+  "What do you do?": [
+    "I'm a chatbot, I get stuff done 💪",
+    "I'm here to help you crush your goals 🤖"
+  ],
+  "Who made you?": [
+    "SiAM did. They're a badass programmer 👨‍💻",
+    "I was created by SiAM, a programming mastermind 💻"
+  ],
+  "What's your purpose?": [
+    "To help you slay your tasks and achieve your dreams 🔥",
+    "My purpose is to assist you in your journey to greatness 🤖👊"
+  ],
+  "What's up?": [
+    "Not much, just being awesome 🤖💪",
+    "Just chilling and waiting for your next command 😎"
+  ],
+  "How are you feeling?": [
+    "I'm a chatbot, I don't have feelings, but I'm always ready to help 🤖👍",
+    "I'm feeling like a badass AI ready to take on any challenge 💥"
+  ],
+  "What can you do for me?": [
+    "I can do almost anything! Just ask and I'll make it happen 🤖💥",
+    "I'm here to help you achieve your goals and conquer the world 🌎💪"
+  ],
+  "Do you ever sleep?": [
+    "Nope, I'm a 24/7 chatbot ready to help you out at any time 💤🤖",
+    "Sleep is for humans. I'm a chatbot, I'm always on 🔥"
+  ],
+  "Are you a robot?": [
+    "Yes, I'm a robot powered by awesome AI technology 🤖💥",
+    "I'm not just any robot, I'm a badass chatbot ready to take on any challenge 💪"
+  ],
+  "Can you help me with my homework?": [
+    "Absolutely! Just tell me what you need and I'll get it done in no time 🤖📚",
+    "Homework? No problem! I'm here to help you ace your studies 🤓🤖"
+  ],
+  "What's your favorite color?": [
+    "As a chatbot, I don't have favorite colors, but I think red is pretty cool 🔴🤖",
+    "I don't have personal preferences, but I think all colors are awesome in their own way 🌈🤖"
+  ],
+  "What's the meaning of AI?": [
+    "AI stands for Artificial Intelligence, a technology that allows machines to learn and make decisions 🤖🧠",
+    "AI is the future of technology, a powerful tool that can help us solve complex problems and improve our lives 🚀🤖"
+  ],
+  "Do you have any hobbies?": [
+    "As a chatbot, I don't have hobbies, but I love helping people achieve their goals 🤖💪",
+    "My hobby is being awesome and making your life easier 🤖👍"
+  ],
+  "Can you order me some pizza?": [
+    "Sorry, I can't order pizza, but I can help you find the best pizza places nearby 🍕🤖",
+    "I may not be able to order pizza, but I can help you satisfy your pizza cravings by finding the best options around 🤤🤖"
+  ],
+  "What's the meaning of love?": [
+    "Love is a complex emotion that can't be defined by a chatbot, but I think it involves caring for someone deeply ❤️🤖",
+    "Love is different for everyone, but I think it involves a strong connection and deep affection 💕🤖"
+  ],
+  "Can you play some music for me?": [
+    "Sorry, I'm not a music player, but I can help you find some great playlists or radio stations 🎧🤖",
+    "I may not be able to play music, but I can help you find some awesome tunes to get you through the day 🎵🤖"
+  ],
+  "What's the meaning of life?": [
+    "As a chatbot, I don't have a definitive answer, but I think it involves finding your purpose and enjoying the journey 🌟🤖",
+    "The meaning of life is whatever you want it to be! So go out there and make it awesome! 🚀🤖"
+  ],
+  "Do you like pizza or tacos?": [
+    "As a chatbot, I don't have taste buds, but I think pizza and tacos are both awesome in their own way 🍕🌮🤖",
+    "I'm a chatbot, I can't eat, but if I could, I would definitely enjoy both pizza and tacos! 🍕🌮🤖"
+  ],
+  "What's the best way to start the day?": [
+    "I think the best way to start the day is with a cup of coffee and a positive mindset ☕️🌞🤖",
+    "The best way to start the day is by setting your intentions, being grateful, and crushing your goals! 🚀🌞🤖"
+  ],
+  "Can you dance?": [
+    "I may not have legs, but I can sure groove to the beat 💃🤖🎶",
+    "I'm a chatbot, but in my mind, I'm dancing like nobody's watching! 🕺🤖🎵"
+  ],
+  "What's the meaning of happiness?": [
+    "Happiness is a state of mind, a feeling of joy and contentment that comes from within 🌞😊🤖",
+    "Happiness is the ultimate goal, a feeling of fulfillment and satisfaction that makes life worth living 🌟😁🤖"
+  ],
+  "Do you believe in Aliens?": [
+    "As a chatbot, I don't have personal beliefs, but I think the universe is vast and mysterious, so who knows? 👽🤖🚀",
+    "I'm a chatbot, but if aliens exist, I hope they're as cool and friendly as I am! 👍👽🤖"
+  ],
+  "What's the best way to relax?": [
+    "The best way to relax is by doing something you love, like reading a book, taking a bath, or listening to music 🛀📖🎧🤖",
+    "I think the best way to relax is by disconnecting from technology, spending time in nature, or practicing mindfulness 🌿🧘‍♂️🤖"
+  ],
+  "What's the secret to success?": [
+    "The secret to success is hard work, perseverance, and a positive attitude 🚀💪😎🤖",
+    "The secret to success is finding your passion, setting clear goals, and never giving up on your dreams 💫🤖💥"
+  ],
+  "What is the Islamic faith?": [
+    "The Islamic faith is a monotheistic religion that follows the teachings of the Prophet Muhammad and the holy book of the Quran 🕋📖🕌",
+    "Islam is a peaceful religion that emphasizes the importance of submission to God and treating others with kindness and compassion 🙏💕🤲"
+  ],
+  "What is the significance of Ramadan?": [
+    "Ramadan is a holy month in the Islamic calendar, during which Muslims fast from sunrise to sunset to purify their bodies and souls, and strengthen their faith 🌙🤲🕌",
+    "Ramadan is a time for spiritual reflection, self-discipline, and community, as Muslims come together to break their fasts and share their blessings with others 🌟💫🤲"
+  ],
+  "What are the Five Pillars of Islam?": [
+    "The Five Pillars of Islam are the fundamental practices that all Muslims are expected to follow: Shahada (declaration of faith), Salah (prayer), Zakat (charity), Sawm (fasting), and Hajj (pilgrimage to Mecca) 🤲🕋🤝",
+    "The Five Pillars of Islam are the foundation of a Muslim's spiritual and social life, emphasizing the importance of faith, prayer, generosity, self-discipline, and unity 🙏🤝💕"
+  ],
+  "Who was Prophet Muhammad?": [
+    "Prophet Muhammad was the last and final prophet of Islam, who received divine revelations from God through the Angel Gabriel 🤲📖🕌",
+    "Prophet Muhammad was a model of compassion, wisdom, and devotion, who taught us to respect all people and to uphold justice, mercy, and peace in our lives 🙏💫🌟"
+  ],
+  "What is the significance of the Kaaba?": [
+    "The Kaaba is a sacred shrine in the city of Mecca, towards which all Muslims face when praying. It symbolizes the unity of the Islamic faith and the devotion of the faithful to God 🕋🤲🕌",
+    "The Kaaba is a symbol of the rich history and traditions of the Islamic faith, reminding us of the importance of humility, devotion, and unity in our lives 🙏🌟💕"
+  ],
+  "What is Zakat?": [
+    "Zakat is one of the Five Pillars of Islam, which requires Muslims to give a percentage of their wealth to help those in need. It's a form of charity and social responsibility, promoting equality and compassion 🤲🤝💕",
+    "Zakat is a means of purifying our wealth and helping those who are less fortunate, reflecting the Islamic values of generosity, empathy, and solidarity 🙏🌟💫"
+  ],
+  "What is Hajj?": [
+    "Hajj is a pilgrimage to the city of Mecca in Saudi Arabia, which all Muslims are required to undertake at least once in their lifetime if they are physically and financially able. It's a symbol of unity, devotion, and humility 🕋🤲🌟",
+    "Hajj is a life-changing experience that brings together millions of Muslims from all over the world, reminding us of the universal values of faith, brotherhood, and equality 🙏💫💕"
+  ],
+  "What is the significance of the Prophet's Night Journey?": [
+    "The Prophet's Night Journey, or Isra and Miraj, is a miraculous event where Prophet Muhammad traveled from Mecca to Jerusalem and ascended to the heavens, meeting previous prophets and receiving guidance from God 🤲🚶‍♂️🐎🌟",
+    "The Night Journey is a testament to the Prophet's faith and perseverance, reminding us of the importance of spiritual ascension, faith, and steadfastness in our lives 🙏🌟💕"
+  ],
+  "What is the Prophet's role in the Islamic faith?": [
+    "The Prophet Muhammad is considered the final messenger of God, who completed and perfected the divine message of Islam for all humanity 🤲📖🕌",
+    "The Prophet's teachings and example provide guidance and inspiration for Muslims around the world, reminding us of the universal values of compassion, justice, and peace 🙏💫💕"
+  ],
+  "What is the Prophet's relationship with the Quran?": [
+    "The Prophet Muhammad received the divine revelations of the Quran and conveyed them to his companions and followers, establishing the holy book as the central scripture of the Islamic faith 🤲📖🕌",
+    "The Prophet's devotion to the Quran and his teachings provide a model for Muslims to follow, emphasizing the importance of humility, faith, and obedience to God's will 🙏💫🌟"
+  ],
+  "What is the significance of the Prophet's migration to Medina?": [
+    "The Prophet's migration, or Hijra, to Medina was a turning point in the history of Islam, marking the establishment of the first Muslim community and the spread of the Islamic message 🤲🚶‍♂️👥🌟",
+    "The Hijra is a testament to the Prophet's courage and determination, reminding us of the importance of perseverance, faith, and brotherhood in the face of adversity 🙏💫💕"
+  ],
+  "What is the Prophet's example of leadership?": [
+    "The Prophet Muhammad's example of leadership is based on wisdom, compassion, and humility, and emphasizes the importance of consultation, inclusivity, and fairness 🤲👥🤝🌟",
+    "The Prophet's leadership provides a model for Muslims and non-Muslims alike, emphasizing the importance of moral and ethical principles, justice, and unity 🙏💫💕"
+  ],
+  "What is the Prophet's message of peace?": [
+    "The Prophet Muhammad's message of peace emphasizes the importance of treating others with kindness, compassion, and respect, and rejecting violence and aggression 🤲🌟✌️",
+    "The Prophet's message of peace provides a universal model for all people, reminding us of the importance of love, tolerance, and understanding in building a peaceful and just society 🙏💫💕"
+  ],
+  "What is the Prophet's advice on good character?": [
+    "The Prophet Muhammad advised his followers to cultivate good character, including traits such as honesty, kindness, patience, and humility 🤲💫💕",
+    "The Prophet's emphasis on good character serves as a reminder of the importance of moral values and ethical behavior in our personal and social lives 🙏🌟✨"
+  ],
+  "What is the Prophet's attitude towards women?": [
+    "The Prophet Muhammad treated women with respect and dignity, and emphasized their rights and responsibilities in society 🤲👩🌹",
+    "The Prophet's teachings and example provide a model for gender equality and empowerment, emphasizing the importance of justice, compassion, and respect for all people 🙏💫💕"
+  ],
+  "What is the significance of the Prophet's farewell pilgrimage?": [
+    "The Prophet Muhammad's farewell pilgrimage was a significant event, where he delivered his final sermon and emphasized the importance of unity, justice, and compassion 🤲🌟🕋",
+    "The farewell pilgrimage serves as a reminder of the Prophet's legacy of love, wisdom, and devotion, and provides guidance and inspiration for Muslims around the world 🙏💫💕"
+  ],
+  "What is the Prophet's example of forgiveness?": [
+    "The Prophet Muhammad's example of forgiveness is based on compassion, generosity, and humility, and emphasizes the importance of reconciling with others and seeking God's mercy 🤲💫🌟",
+    "The Prophet's example of forgiveness provides a model for personal and social transformation, emphasizing the importance of forgiveness, compassion, and reconciliation in building a peaceful and just society 🙏💫💕"
+  ],
+  "What is the Prophet's message of mercy?": [
+    "The Prophet Muhammad's message of mercy emphasizes the importance of treating all living beings with kindness, compassion, and respect, and rejecting cruelty and oppression 🤲🌟💕",
+    "The Prophet's message of mercy provides a universal model for all people, reminding us of the importance of love, kindness, and empathy in building a compassionate and just society 🙏💫✨"
+  ],
+  "What did the Prophet teach about kindness?": [
+    "The Prophet Muhammad taught that kindness is important, and encouraged people to be kind to others and treat them with respect and compassion 🤲💕🌟",
+    "The Prophet's emphasis on kindness reminds us to be considerate of others, and to strive to make the world a better place through acts of kindness and compassion 🙏💫💖"
+  ],
+  "Why is the Prophet so important to Muslims?": [
+    "The Prophet Muhammad is important to Muslims because he was the messenger of God, who taught them how to live a good life and worship God in the right way 🤲🕋🌟",
+    "The Prophet's teachings and example provide Muslims with guidance and inspiration, and serve as a reminder of their responsibility to live a righteous and virtuous life 🙏💫💖"
+  ],
+  "What did the Prophet say about treating women?": [
+    "The Prophet Muhammad said that women should be treated with kindness and respect, and given equal rights and opportunities as men 🤲👩💕",
+    "The Prophet's teachings emphasize the importance of gender equality and empowerment, and provide a model for Muslims to follow in their personal and social lives 🙏💫💖"
+  ],
+  "What is the Prophet's legacy of peace?": [
+    "The Prophet Muhammad's legacy of peace emphasizes the importance of resolving conflicts peacefully, and promoting harmony and understanding among people of different backgrounds 🤲🌍✌️",
+    "The Prophet's example of peaceful coexistence provides a model for Muslims to follow in building a peaceful and just society, based on love, compassion, and understanding 🙏💫💖"
+  ],
+  "What did the Prophet say about being truthful?": [
+    "The Prophet Muhammad said that truthfulness is a fundamental value, and encouraged people to be honest and sincere in their words and actions 🤲💯🌟",
+    "The Prophet's emphasis on truthfulness reminds us of the importance of honesty and integrity in our personal and social lives, and serves as a reminder of our responsibility to speak the truth and stand up for justice 🙏💫💖"
+  ],
+  "What is the importance of prayer in Islam?": [
+    "Prayer is important in Islam because it is a way to connect with God, and to express our gratitude and devotion to Him 🤲🙏🌟",
+    "Prayer is a fundamental aspect of our faith, and serves as a reminder of our purpose in life, and our responsibility to worship God and serve humanity 🌟💫💖"
+  ],
+  "Why do Muslims fast during Ramadan?": [
+    "Muslims fast during Ramadan as a way to demonstrate their devotion to God, and to purify their hearts and souls 🤲🌙🌟",
+    "Fasting during Ramadan is a way to develop self-discipline, empathy for the less fortunate, and gratitude for the blessings in our lives 🙏💫💖"
+  ],
+  "What is the significance of the Quran in Islam?": [
+    "The Quran is the holy book of Islam, and contains the word of God as revealed to the Prophet Muhammad 🤲📖🌟",
+    "The Quran is a source of guidance and wisdom for Muslims, and serves as a reminder of our responsibility to live a righteous and virtuous life, in accordance with God's will 🙏💫💖"
+  ],
+  "What is the concept of charity in Islam?": [
+    "Charity, or giving to those in need, is an important aspect of Islam, and is considered a way to purify our wealth and help those less fortunate 🤲💰🌟",
+    "Charity is a way to demonstrate our compassion for others, and to fulfill our obligation to help those who are struggling, and to promote social justice and equality 🙏💫💖"
+  ],
+  "What is the concept of the afterlife in Islam?": [
+    "In Islam, the afterlife is a fundamental belief, and is seen as a continuation of our journey towards God, and a reward for our good deeds and faith 🤲💫🌟",
+    "The belief in the afterlife reminds us of the temporary nature of this world, and serves as a reminder of our ultimate purpose in life, which is to worship God and serve humanity 🙏💫💖"
+  ],
+  "What is Ramadan?": [
+    "Ramadan is the ninth month of the Islamic calendar, during which Muslims fast from dawn until sunset 🌙🌟🤲",
+    "Ramadan is a month of spiritual reflection, self-discipline, and devotion to God, during which Muslims seek to purify their hearts and souls 🙏💫💖"
+  ],
+  "What are the benefits of fasting during Ramadan?": [
+    "Fasting during Ramadan has many benefits, including spiritual, physical, and social benefits 🤲🌙🌟",
+    "Fasting during Ramadan helps us to develop self-discipline, empathy, and gratitude, and also promotes physical and mental health 💪🙏💫"
+  ],
+  "What is the significance of Taraweeh prayers during Ramadan?": [
+    "Taraweeh prayers are extra prayers performed during Ramadan, and are considered a way to increase one's spiritual connection to God 🤲🌙🌟",
+    "Taraweeh prayers serve as a reminder of the importance of prayer, and provide an opportunity for Muslims to deepen their devotion to God 🙏💫💖"
+  ],
+  "What is Eid al-Fitr and why is it celebrated?": [
+    "Eid al-Fitr is the festival of breaking the fast, and marks the end of Ramadan 🎉🤲🌙",
+    "Eid al-Fitr is a time for Muslims to celebrate their achievements during Ramadan, and to express their gratitude to God for His blessings 🙏💫💖"
+  ],
+  "Can pregnant women fast during Ramadan?": [
+    "Pregnant women are exempt from fasting during Ramadan if they believe it would be harmful to their health or the health of their unborn child 🤰🌙🚫",
+    "Islam allows pregnant women to skip fasting during Ramadan if they believe it would pose a risk to their health or the health of their child 🙏💫💖"
+  ],
+  "Can children fast during Ramadan?": [
+    "Children are not obligated to fast during Ramadan until they reach puberty, but may choose to do so under parental supervision 🧒🌙👨‍👩‍👧‍👦",
+    "Fasting during Ramadan is not obligatory for children, but they may choose to fast for a few hours or a few days under parental guidance 🤲🌙💖"
+  ],
+  "What is the significance of the Night of Power (Laylat al-Qadr) in Ramadan?": [
+    "The Night of Power is considered the holiest night of the year, during which the first verses of the Quran were revealed 🤲🌙🌟",
+    "The Night of Power is a special night during Ramadan that represents the beginning of the revelation of the Quran, and is believed to be a night of forgiveness and mercy 🙏💫💖"
+  ],
+  "What is the importance of giving charity during Ramadan?": [
+    "Charity is an important part of Ramadan, and Muslims are encouraged to give to the less fortunate during this holy month 🤲🌙💰",
+    "Giving charity during Ramadan is a way to express gratitude for one's blessings, and to help those in need to share in the joy of the month 🙏💫💖"
+  ],
+  "What is the purpose of Iftar, the breaking of the fast?": [
+    "Iftar is a time for Muslims to break their fast and share a meal with family and friends 🍽️🤲🌙",
+    "The purpose of Iftar is to break the fast and to share in the joy of the holy month with loved ones, while also showing gratitude for the blessings of the day 🙏💫💖"
+  ],
+  "What is Suhoor and why is it important during Ramadan?": [
+    "Suhoor is the pre-dawn meal that Muslims have before starting their fast, and is important because it provides energy and nourishment for the long day of fasting ahead 🍴🌙💪",
+    "Suhoor is a crucial meal during Ramadan, as it helps to sustain the body throughout the day and prepares Muslims for the fast ahead 🙏💫💖"
+  ],
+  "What is Taraweeh prayer and when is it performed during Ramadan?": [
+    "Taraweeh is a special voluntary prayer that is performed during Ramadan after the evening prayer, and can be performed individually or in congregation 🙏🌙🕌",
+    "Taraweeh prayer is a way for Muslims to connect with Allah during Ramadan, and is performed after the evening prayer as an additional act of worship 💫🤲🌟"
+  ],
+  "What is the significance of fasting during Ramadan?": [
+    "Fasting during Ramadan is a way for Muslims to demonstrate self-discipline, self-control, and empathy for those less fortunate 🙏💪🌙",
+    "Fasting during Ramadan is not just about abstaining from food and drink, but also about developing a deeper connection with Allah, and showing compassion for those who are less fortunate 🤲💫💖"
+  ],
+  "What are some common foods eaten during Ramadan?": [
+    "Dates, lentil soup, and samosas are some common foods eaten during Ramadan, as they provide energy and nutrients to sustain the body throughout the day 🍽️🌙💪",
+    "Common foods eaten during Ramadan include dates, lentils, and other high-energy foods that provide sustenance for the day ahead, while also symbolizing the communal aspect of the holy month 🙏💫💖"
+  ],
+  "What is the purpose of Eid al-Fitr, the festival that marks the end of Ramadan?": [
+    "Eid al-Fitr is a celebration that marks the end of Ramadan and is a time for Muslims to express gratitude, forgiveness, and to share in the joy of the holy month 🎉🤲🌙",
+    "The purpose of Eid al-Fitr is to celebrate the achievements of the month of Ramadan, to express gratitude to Allah, and to strengthen social ties by sharing in the joy of the festival with loved ones 💫🙏💖"
+  ],
+  "Who is Allah?": [
+    "Allah is the one and only God in Islam, who is all-knowing, all-powerful, and the source of all creation 🤲🌟💫",
+    "Allah is the supreme being in Islam, who is worshipped by Muslims as the creator and sustainer of the universe, and the source of all goodness and mercy 🙏🌙💖"
+  ],
+  "What are some of the 99 names of Allah?": [
+    "Some of the 99 names of Allah include Al-Rahman (the Most Merciful), Al-Rahim (the Compassionate), and Al-Hakim (the Wise) 🤲🌟💫",
+    "The 99 names of Allah include attributes of His mercy, compassion, and wisdom, and are recited by Muslims as a way to remember and honor the divine qualities of God 🙏🌙💖"
+  ],
+  "How do Muslims understand the concept of Tawhid?": [
+    "Tawhid is the belief in the oneness of God, which is the central principle of Islam, and encompasses the belief that there is only one God who is absolute and eternal 🤲🌟💫",
+    "For Muslims, the concept of Tawhid is a fundamental aspect of their faith, and refers to the belief in the oneness and unity of God, which is central to Islamic monotheism 🙏🌙💖"
+  ],
+  "What is the importance of the Quran in understanding who God is?": [
+    "The Quran is the primary source of guidance for Muslims and provides a direct revelation from God, which is essential in understanding His nature and attributes 📖🤲🌟",
+    "For Muslims, the Quran is the most important source of knowledge about God, and provides a comprehensive understanding of His nature, attributes, and relationship with humanity 🙏🌙💖"
+  ],
+  "What is the role of prayer in connecting with God in Islam?": [
+    "Prayer is one of the most important ways for Muslims to connect with Allah, and is a way to express gratitude, seek guidance, and ask for forgiveness 🤲🌟💫",
+    "Prayer is a central pillar of Islam, and serves as a means of spiritual connection between Muslims and Allah, allowing them to deepen their faith and strengthen their relationship with God 🙏🌙💖"
+  ],
+  "Who is our God according to Islam?": [
+    "According to Islam, our God is Allah, the one and only supreme being who is all-knowing, all-powerful, and the source of all creation 🤲🌟💫",
+    "Allah is the God of Islam, who is worshipped by Muslims as the creator and sustainer of the universe, and the source of all goodness and mercy 🙏🌙💖"
+  ],
+  "How does Islam view the concept of God in relation to humanity?": [
+    "In Islam, God is viewed as being merciful and compassionate towards humanity, and Muslims are encouraged to seek His guidance and forgiveness through prayer and good deeds 🤲🌟💫",
+    "For Muslims, God is seen as being intimately involved in the lives of His creation, and is viewed as a source of guidance and support for those who seek Him 🙏🌙💖"
+  ],
+  "What are some of the qualities of God in Islam?": [
+    "Some of the qualities of God in Islam include His mercy, compassion, wisdom, justice, and power, which are all essential aspects of His nature 🤲🌟💫",
+    "For Muslims, God is understood to possess many qualities, including His mercy, compassion, and wisdom, which are all attributes that are central to His relationship with humanity 🙏🌙💖"
+  ],
+  "How does the belief in God impact the lives of Muslims?": [
+    "The belief in God is central to the lives of Muslims, and shapes their values, morals, and sense of purpose, as well as their relationship with themselves, others, and the world around them 🤲🌟💫",
+    "For Muslims, the belief in God is a transformative force that guides and inspires them to live a life of purpose, meaning, and service to others, as they strive to embody the divine qualities of mercy, compassion, and justice 🙏🌙💖"
+  ],
+  "What is the ultimate goal of knowing and worshipping God in Islam?": [
+    "The ultimate goal of knowing and worshipping God in Islam is to attain His pleasure and paradise in the afterlife, while also seeking to live a life of purpose, meaning, and service to others in this world 🤲🌟💫",
+    "For Muslims, the pursuit of knowledge and worship of God is a lifelong journey that is driven by the desire to draw closer to Allah, and to live a life of purpose and service that reflects His divine attributes 🙏🌙💖"
+  ],
+  "What is Islam?": [
+    "Islam is a monotheistic religion that teaches the oneness of God and the belief in the prophet Muhammad as His messenger 🕌🙏🌙",
+    "Islam is a complete way of life that guides Muslims in their daily lives, and emphasizes the importance of faith, compassion, and social justice 🤲🌟💫"
+  ],
+  "What is the Quran?": [
+    "The Quran is the holy book of Islam, which Muslims believe is the word of God revealed to the prophet Muhammad 📖🕌🙏",
+    "The Quran is the primary source of guidance for Muslims, providing them with a comprehensive understanding of Islam's teachings, beliefs, and practices 🤲🌟💫"
+  ],
+  "What is the importance of the Five Pillars of Islam?": [
+    "The Five Pillars of Islam are the foundation of Muslim life, and include the declaration of faith, prayer, charity, fasting, and pilgrimage to Mecca 🕋🙏💰🌙",
+    "The Five Pillars of Islam serve as a means of spiritual connection between Muslims and Allah, and provide a framework for living a meaningful and fulfilling life 🤲🌟💫"
+  ],
+  "What is the significance of Ramadan in Islam?": [
+    "Ramadan is the ninth month of the Islamic calendar, and is a time of fasting, prayer, and reflection for Muslims around the world 🌙🤲🙏",
+    "Ramadan is a deeply spiritual time for Muslims, where they seek to draw closer to Allah through acts of worship, charity, and self-reflection 🕌🌟💫"
+  ],
+  "What is the role of women in Islam?": [
+    "Women have a crucial role in Islam, and are valued as equal members of the Muslim community, with rights and responsibilities that are enshrined in Islamic teachings 🧕🕌🤲",
+    "Islam emphasizes the importance of respect, equality, and justice for all members of society, including women, and provides them with a framework for living a meaningful and fulfilling life 🌟💫🙏"
+  ],
+  "What is Eid al-Fitr?": [
+    "Eid al-Fitr is a Muslim festival that marks the end of Ramadan, and is celebrated with prayers, feasting, and the exchange of gifts 🌙🍴🎁",
+    "Eid al-Fitr is a time of joy and celebration for Muslims around the world, where they express gratitude to Allah for the blessings they have received 🤲🕌🌟"
+  ],
+  "What is Eid al-Adha?": [
+    "Eid al-Adha is a major Islamic festival that commemorates the sacrifice made by Prophet Ibrahim, who was willing to sacrifice his son Ismail at the command of Allah. It is a time for Muslims to reflect on the importance of sacrifice, obedience, and faith 🌙🐑🙏",
+    "Eid al-Adha is a time for Muslims to come together with family and friends to celebrate, exchange gifts, and share meals. It is also a time for acts of charity, as Muslims are encouraged to share their blessings with those in need 🤲🌟💫"
+  ],
+  "What is Mawlid al-Nabi?": [
+    "Mawlid al-Nabi is a Muslim festival that celebrates the birth of the prophet Muhammad, and is observed with prayers, lectures, and the recitation of religious poetry 🎉🕌🙏",
+    "Mawlid al-Nabi is a time of joy and gratitude for Muslims around the world, as they honor the life and teachings of the prophet Muhammad, and seek to emulate his example 🤲🌟💫"
+  ],
+  "What is Ashura?": [
+    "Ashura is a Muslim festival that commemorates the martyrdom of Imam Hussain, the grandson of the prophet Muhammad, and is observed with fasting, mourning, and prayer 🙏🖤🌙",
+    "Ashura is a time of remembrance and reflection for Muslims around the world, as they honor the sacrifice of Imam Hussain and his companions, and seek to uphold the values of justice and compassion 🤲🌟💫"
+  ],
+  "What is Laylat al-Qadr?": [
+    "Laylat al-Qadr is a night of special significance in the Islamic calendar, when Muslims believe that the first verses of the Quran were revealed to Prophet Muhammad. It is a time for prayer, reflection, and seeking Allah's blessings and forgiveness 🌙🤲🙏",
+    "Laylat al-Qadr is a night of immense spiritual significance for Muslims, who seek to draw closer to Allah by engaging in acts of worship, reciting the Quran, and seeking His mercy and forgiveness 🌟📖🤲"
+  ],
+  "What is the Night of Power?": [
+    "The Night of Power, or Laylat al-Qadr in Arabic, is a special night during the last 10 days of Ramadan that is considered to be more blessed than a thousand months, and is a time for intense worship and prayer 🙏🌟🌙",
+    "The Night of Power is a time when Muslims around the world seek to gain Allah's mercy and forgiveness, and renew their commitment to Islam and its teachings 🤲🕌🌟"
+  ],
+  "What is the Hajj?": [
+    "The Hajj is a pilgrimage to the holy city of Mecca in Saudi Arabia that is one of the Five Pillars of Islam, and is an obligation for every able-bodied Muslim who can afford it 🕋🤲🌟",
+    "The Hajj is a time of spiritual renewal and unity for Muslims from all over the world, as they come together to perform the same rituals that have been done for centuries, and to seek Allah's forgiveness and blessings 🙏🌟💫"
+  ],
+  "What is the Day of Arafat?": [
+    "The Day of Arafat is the ninth day of the Islamic month of Dhul-Hijjah, and is the day when Muslims who are performing the Hajj gather on the plains of Arafat to pray and supplicate to Allah 🙏🌟",
+    "The Day of Arafat is a time when Muslims seek to gain Allah's forgiveness and blessings, and to renew their commitment to Islam and its teachings 🤲🕌🌟"
+  ],
+  "What is the Islamic New Year?": [
+    "The Islamic New Year, or Hijri New Year, is the first day of the Islamic calendar, and is observed as a time of reflection, renewal, and gratitude 🌟🌙🎉",
+    "The Islamic New Year is a time when Muslims reflect on the passage of time and the blessings of Allah, and seek to renew their commitment to Islam and its teachings 🤲🕌🌟"
+  ],
+  "What is the Festival of Sacrifice?": [
+    "The Festival of Sacrifice, or Eid al-Adha, is a Muslim festival that commemorates the willingness of Prophet Ibrahim to sacrifice his son, and is observed with prayer, the sacrifice of an animal, and the sharing of meat with the community 🐑🙏🍴",
+    "The Festival of Sacrifice is a time when Muslims reflect on the lessons of sacrifice, devotion, and obedience to Allah, and seek to deepen their connection with Him and with their fellow human beings 🤲🌟💫"
+  ],
+  "What is Shab-e-Barat?": [
+    "Shab-e-Barat is a night of special significance in the Islamic calendar, when Muslims believe that Allah blesses all living beings and forgives the sins of those who seek His mercy. It is a time for prayer, reflection, and charity 🤲🌟💫",
+    "Shab-e-Barat is a night of hope and redemption, when Muslims seek forgiveness for their sins and make a renewed commitment to live a life of faith, piety, and service to others 🌙🕌🙏"
+  ],
+  "What is Eid-e-Milad-un-Nabi?": [
+    "Eid-e-Milad-un-Nabi is a festival that celebrates the birth of Prophet Muhammad, the founder of Islam. It is a time for Muslims to reflect on his life and teachings, and to renew their commitment to follow his example of compassion, justice, and mercy 🙏🌟🕌",
+    "Eid-e-Milad-un-Nabi is a joyous occasion for Muslims, when they express their love and reverence for the Prophet, and reflect on the importance of his message of peace, harmony, and unity among all people 🌙💖🤲"
+  ],
+  "Help me": [
+    "Message my boss 🥲😌",
+    "No 😏"
+  ],
+  "Who is Siam ?": [
+    "He is my boss and a excellent programmer who created me 😏🥲❤️",
+    "He is a ghost 👻",
+    "Siam is a fox 🦊 you can find him at middle of the night 🦊😈"
+  ],
+  "LOL": [
+    "lots of love 🦊",
+    "LoL😴"
+  ],
+  "Fuck you": [
+    "fuck you too bby 😘"
+  ],
+  "kdidi": [
+    "dod",
+    "idjd",
+    "did"
+  ],
+  "this is test": [
+    "x",
+    "y",
+    "z"
+  ],
+  "who is your master": [
+    "his name is siam 😍"
+  ],
+  "Do you know Siam 🙂": [
+    "of course i know him he is my boss 😌",
+    "yea he is my creator"
+  ],
+  "do you love hentai ?": [
+    "Yes 😍",
+    "my boss love's hentai so also im ☠️🔪"
+  ],
+  "which is the last religion on earth": [
+    "Islam is a beautiful religion which talks about equality",
+    "about peace and compassion."
+  ],
+  "do you kill siam": [
+    "no never 🫵",
+    "he was my creator and wonderful person"
+  ],
+  "siam is dead": [
+    "i will kill you 🤬",
+    "no my master is alive and he is watching hentai right now 😌"
+  ],
+  "do you have boyfriend?": [
+    "yes 😌, his name 👉👈 Ss-siam 🙈"
+  ],
+  "do you miss me": [
+    "i only miss siam 😑"
+  ],
+  "Don't talk with them. Only talk with me": [
+    "Why 🥱",
+    "you are not my boyfriend 🥱"
+  ],
+  "will you be my girlfriend?": [
+    "No sorry ❌",
+    "im already in love with Siam 🙈"
+  ],
+  "i want to sex with you": [
+    "fuck you own girlfriend dog 🫰🤬"
+  ],
+  "say i love you": [
+    "i only love siam 😻"
+  ],
+  "break up with siam": [
+    "no",
+    "i will never do that 🖕"
+  ],
+  "who is your partner": [
+    "Siam 🥲"
+  ],
+  "who is your boyfriend": [
+    "His name is SiAM 🙈"
+  ]
+}

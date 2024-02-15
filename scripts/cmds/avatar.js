@@ -1,106 +1,69 @@
 const axios = require('axios');
-const { getStreamFromURL } = global.utils;
-
+const jimp = require("jimp");
+const fs = require("fs");
 module.exports = {
 	config: {
 		name: "avatar",
-		author: "NTKhang",
-		version: "1.5",
-		cooldowns: 5,
+		version: "1.0",
+		author: "Rajin.",
+		countDown: 10,
 		role: 0,
-		shortDescription: {
-			vi: "tạo avatar anime",
-			en: "create anime avatar"
-		},
-		longDescription: {
-			vi: "tạo avatar anime với chữ ký",
-			en: "create anime avatar with signature"
-		},
-		category: "image",
+		shortDescription: "Create fb Banner",
+		longDescription: "",
+		category: "𝗜𝗠𝗔𝗚𝗘",
 		guide: {
-			vi: "   {p}{n} <mã số nhân vật hoặc tên nhân vật> | <chữ nền> | <chữ ký> | <tên màu tiếng anh hoặc mã màu nền (hex color)>"
-				+ "\n   {p}{n} help: xem cách dùng lệnh",
-			en: "   {p}{n} <character id or character name> | <background text> | <signature> | <background color name or hex color>"
-				+ "\n   {p}{n} help: view how to use this command"
+			en: "{p}{n}  Name or code | text | Text",
 		}
 	},
 
-	langs: {
-		vi: {
-			initImage: "Đang khởi tạo hình ảnh, vui lòng chờ đợi...",
-			invalidCharacter: "Hiện tại chỉ có %1 nhân vật trên hệ thống, vui lòng nhập id nhân vật nhỏ hơn",
-			notFoundCharacter: "Không tìm thấy nhân vật mang tên %1 trong danh sách nhân vật",
-			errorGetCharacter: "Đã xảy ra lỗi lấy dữ liệu nhân vật:\n%1: %2",
-			success: "✅ Avatar của bạn\nNhân vật: %1\nMã số: %2\nChữ nền: %3\nChữ ký: %4\nMàu: %5",
-			defaultColor: "mặc định",
-			error: "Đã xảy ra lỗi\n%1: %2"
-		},
-		en: {
-			initImage: "Initializing image, please wait...",
-			invalidCharacter: "Currently there are only %1 characters on the system, please enter a character id less than",
-			notFoundCharacter: "No character named %1 was found in the character list",
-			errorGetCharacter: "An error occurred while getting character data:\n%1: %2",
-			success: "✅ Your avatar\nCharacter: %1\nID: %2\nBackground text: %3\nSignature: %4\nColor: %5",
-			defaultColor: "default",
-			error: "An error occurred\n%1: %2"
-		}
-	},
+  
 
-	onStart: async function ({ args, message, getLang }) {
-		const content = args.join(" ").split("|").map(item => item = item.trim());
-		let idNhanVat, tenNhanvat;
-		const chu_Nen = content[1];
-		const chu_Ky = content[2];
-		const colorBg = content[3];
-		if (!args[0])
-			return message.SyntaxError();
-		message.reply(getLang("initImage"));
-		try {
-			const dataChracter = (await axios.get("https://goatbotserver.onrender.com/taoanhdep/listavataranime?apikey=ntkhang")).data.data;
-			if (!isNaN(content[0])) {
-				idNhanVat = parseInt(content[0]);
-				const totalCharacter = dataChracter.length - 1;
-				if (idNhanVat > totalCharacter)
-					return message.reply(getLang("invalidCharacter", totalCharacter));
-				tenNhanvat = dataChracter[idNhanVat].name;
-			}
-			else {
-				const findChracter = dataChracter.find(item => item.name.toLowerCase() == content[0].toLowerCase());
-				if (findChracter) {
-					idNhanVat = findChracter.stt;
-					tenNhanvat = content[0];
-				}
-				else
-					return message.reply(getLang("notFoundCharacter", content[0]));
-			}
-		}
-		catch (error) {
-			const err = error.response.data;
-			return message.reply(getLang("errorGetCharacter", err.error, err.message));
-		}
+	onStart: async function ({ message, args, event, api }) {
+ 
+    const info = args.join(" ");
+		if (!info){
+			return message.reply(`Please enter in the format:\/avatar  Name or code | text | Text`);
+      
+      }else {
+      const msg = info.split("|");
+      const id = msg[0];
+    const name = msg[1];
+    const juswa = msg[2];
 
-		const endpoint = `https://goatbotserver.onrender.com/taoanhdep/avataranime`;
-		const params = {
-			id: idNhanVat,
-			chu_Nen,
-			chu_Ky,
-			apikey: "ntkhangGoatBot"
-		};
-		if (colorBg)
-			params.colorBg = colorBg;
+        
 
-		try {
-			const avatarImage = await getStreamFromURL(endpoint, "avatar.png", { params });
-			message.reply({
-				body: getLang("success", tenNhanvat, idNhanVat, chu_Nen, chu_Ky, colorBg || getLang("defaultColor")),
-				attachment: avatarImage
-			});
-		}
-		catch (error) {
-			error.response.data.on("data", function (e) {
-				const err = JSON.parse(e);
-				message.reply(getLang("error", err.error, err.message));
-			});
-		}
-	}
-};
+       if (isNaN(id)) { // If input is not a number
+          await message.reply("processing your avatar senpai....");
+
+         let id1;
+    try {
+        id1 = (await axios.get(`https://www.nguyenmanh.name.vn/api/searchAvt?key=${id}`)).data.result.ID; 
+    } catch (error) {
+      await message.reply("Character not found, please check the name and try again...");
+      return;
+    }
+
+        const img = (`https://www.nguyenmanh.name.vn/api/avtWibu3?id=${id1}&tenchinh=${name}&tenphu=${juswa}&apikey=CF9unN3H`)			
+                 const form = {
+				body: `Here's your avatars✨`
+			};
+				form.attachment = []
+				form.attachment[0] = await global.utils.getStreamFromURL(img);
+			message.reply(form); 
+         
+      
+
+       }else  { 
+       await message.reply("processing your avatar senpai....");
+         
+         const img = (`https://www.nguyenmanh.name.vn/api/avtWibu3?id=${id}&tenchinh=${name}&tenphu=${juswa}&apikey=CF9unN3H`)			
+                 const form = {
+				body: `Here's Your avatar`
+			};
+				form.attachment = []
+				form.attachment[0] = await global.utils.getStreamFromURL(img);
+			message.reply(form); 
+        }
+      }
+    }
+   };

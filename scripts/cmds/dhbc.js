@@ -16,12 +16,13 @@ module.exports = {
 			vi: "chơi game đuổi hình bắt chữ",
 			en: "play game catch the word"
 		},
-		category: "game",
+		category: "𝗚𝗔𝗠𝗘",
 		guide: {
 			en: "{pn}"
 		},
 		envConfig: {
-			reward: 1000
+			reward: 1000,
+      exp: 10
 		}
 	},
 

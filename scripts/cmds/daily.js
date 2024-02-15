@@ -15,7 +15,7 @@ module.exports = {
 			vi: "Nhận quà hàng ngày",
 			en: "Receive daily gift"
 		},
-		category: "game",
+		category: "𝗚𝗔𝗠𝗘",
 		guide: {
 			vi: "   {pn}: Nhận quà hàng ngày"
 				+ "\n   {pn} info: Xem thông tin quà hàng ngày",
@@ -74,7 +74,7 @@ module.exports = {
 			return message.reply(msg);
 		}
 
-		const dateTime = moment.tz("Asia/Ho_Chi_Minh").format("DD/MM/YYYY");
+		const dateTime = moment.tz("Asia/Dhaka").format("DD/MM/YYYY");
 		const date = new Date();
 		const currentDay = date.getDay(); // 0: sunday, 1: monday, 2: tuesday, 3: wednesday, 4: thursday, 5: friday, 6: saturday
 		const { senderID } = event;

@@ -15,7 +15,7 @@ module.exports = {
 			vi: "Quản lý các nhóm chat trong hệ thống bot",
 			en: "Manage group chat in bot system"
 		},
-		category: "owner",
+		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
 		guide: {
 			vi: "   {pn} [find | -f | search | -s] <tên cần tìm>: tìm kiếm nhóm chat trong dữ liệu bot bằng tên"
 				+ "\n   {pn} [find | -f | search | -s] [-j | joined] <tên cần tìm>: tìm kiếm nhóm chat trong dữ liệu mà bot còn tham gia bằng tên"
@@ -70,10 +70,12 @@ module.exports = {
 
 		switch (type) {
 			// find thread
+      case "f":
+      case "-f":
+      case "s":
+      case "-s":
 			case "find":
-			case "search":
-			case "-f":
-			case "-s": {
+			case "search": {
 				if (role < 2)
 					return message.reply(getLang("noPermission"));
 				let allThread = await threadsData.getAll();

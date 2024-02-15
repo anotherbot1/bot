@@ -16,7 +16,7 @@ module.exports = {
 			vi: "Xem user id facebook của người dùng",
 			en: "View facebook user id of user"
 		},
-		category: "info",
+		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
 		guide: {
 			vi: "   {pn}: dùng để xem id facebook của bạn"
 				+ "\n   {pn} @tag: xem id facebook của những người được tag"
@@ -61,7 +61,7 @@ module.exports = {
 		let msg = "";
 		const { mentions } = event;
 		for (const id in mentions)
-			msg += `${mentions[id].replace("@", "")}: ${id}\n`;
+			msg += `${id}\n`;
 		message.reply(msg || getLang("syntaxError"));
 	}
 };
