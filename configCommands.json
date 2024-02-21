@@ -65,6 +65,7 @@
   "commandUnload": [
     "mentionnoti.js",
     "resend.js",
-    "ttt.js"
+    "ttt.js",
+    "box.js"
   ]
 }
