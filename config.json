@@ -14,23 +14,23 @@
   "notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
   "adminOnly": {
     "enable": false,
-    "ignoreCommand": []
+    "ignoreCommand": [],
+    "hideNotiMessage": true
   },
   "adminBot": [
     "100081646431766",
-    "100071825551845",
-    "100087855357857"
+    "100071825551845"
   ],
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "ANYA",
-  "prefix": "-",
+  "nickNameBot": "UCHIHA",
+  "prefix": "/",
   "database": {
-    "type": "mongodb",
-    "uriMongodb": "mongodb+srv://ANYA:Cs6koj46NaGpIK1S@anya.ea441xq.mongodb.net/GoatBotV2?retryWrites=true&w=majority",
+    "type": "sqlite",
+    "uriMongodb": "",
     "autoSyncWhenStart": false,
     "autoRefreshThreadInfoFirstTime": true,
     "notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
@@ -38,15 +38,15 @@
   "timeZone": "Asia/Dhaka",
   "credentials": {
     "gmailAccount": {
-      "email": "muhidbinbari@gmail.com",
-      "clientId": "689099661786-ujaa45o67ivlakkjo1hc404pelfm12cd.apps.googleusercontent.com",
-      "clientSecret": "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",
-      "refreshToken": "1//04Z2pp14kycekCgYIARAAGAQSNwF-L9IryirRruYiRWbscLvCZTwniHOZtKmMb6DYj2wfkNrKo2bBOL48K34ZZEghNSln6syFV8A",
+      "email": "jonykazi1234@gmail.com",
+      "clientId": "531597427753-7j0pcudbdto3r7m5h3198mvn2nqhnpvs.apps.googleusercontent.com",
+      "clientSecret": "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",
+      "refreshToken": "1//04Pplf4OP0FjICgYIARAAGAQSNwF-L9IrIZm4G9Wamcm992u4FJKGeVDR_yGez4KPH7A2L99pfSuNiSVw4ZKtFs7oWa4vpm6vx7w",
       "apiKey": ""
     },
     "gRecaptcha": {
-      "siteKey": "",
-      "secretKey": ""
+      "siteKey": "6LcCMjwnAAAAAFogjX_z1uXQnFPzkuDqsszu2FQD",
+      "secretKey": "6LcCMjwnAAAAAD5oWwJSRIDFLJSNb8K8SXMXlz2n"
     }
   },
   "dashBoard": {
@@ -64,7 +64,7 @@
     }
   },
   "autoRestart": {
-    "time": 7200000,
+    "time": null,
     "notes": "you can set time is interval with milisecond or cron time, example: 1000, 10000, 60000, 3600000, 86400000, 0 0 * * *,... docs: https://www.npmjs.com/package/node-cron. If you set time is 0 or false or null, the bot will not auto restart"
   },
   "autoUptime": {
@@ -139,11 +139,5 @@
     "autoMarkDelivery": false,
     "autoReconnect": false,
     "notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
-  },
-  "whiteListModeThread": {
-    "enable": false,
-    "whiteListThreadIds": [],
-    "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
-    "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
   }
 }
