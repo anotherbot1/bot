@@ -1,27 +1,25 @@
 const axios = require('axios');
-module.exports.config = {
-  name: "hornypickuplines",
-  version: "1.0.0",
-  hasPermission: 0,
-  credits: "", 
-  description: "Random horny pickuplines",
-  commandCategory: "fun",
-  usages: "hornypickuplines",
-  cooldowns: {
-    default: 0,
-    per: "command"
-  },
-  dependencies: {
-    "request": "",
-    "fs-extra": "",
-    "axios": ""
+
+module.exports = {
+  config: {
+    name: "hornypicuplines",
+    version: "1.0",
+    author: "zeroday",
+    countDown: 10,
+    role: 0,
+    shortDescription: "Sends a random horny pickupline",
+    longDescription: "",
+    category: "𝗟𝗢𝗩𝗘",
+    guide: {
+      en: "{pn}",
+    }
   }
 };
 
 // Function to get a random number within a range
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+};
 
 // Array of random messages
 const messages = [
@@ -51,7 +49,7 @@ const sendRandomMessage = async () => {
   } catch (error) {
     console.error('Error sending message:', error.message);
   }
-}
+};
 
 // Send a random message
 sendRandomMessage();
