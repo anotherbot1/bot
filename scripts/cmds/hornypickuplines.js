@@ -4,7 +4,7 @@ module.exports.config = {
   hasPermission: 0,
   credits: "", 
   description: "Random horny pickuplines",
-  commandCategory: "fun",
+  commandCategory: "love",
   usages: "hornypickuplines",
   cooldowns: {
     default: 0,
