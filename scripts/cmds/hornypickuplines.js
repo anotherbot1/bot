@@ -1,10 +1,11 @@
+const axios = require('axios');
 module.exports.config = {
   name: "hornypickuplines",
   version: "1.0.0",
   hasPermission: 0,
   credits: "", 
   description: "Random horny pickuplines",
-  commandCategory: "love",
+  commandCategory: "fun",
   usages: "hornypickuplines",
   cooldowns: {
     default: 0,
@@ -17,32 +18,40 @@ module.exports.config = {
   }
 };
 
-module.exports.run = async ({ api, event, args, Users, getText }) => {
-  const axios = require("axios");
-  const request = require("request");
-  const fs = require("fs-extra");
+// Function to get a random number within a range
+const getRandomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-  var msg = [
-    "Are you a parking ticket? Because you’re fine",
-    "Aside from being hot, what do you do for a living?",
-    "Did you just come out of the oven? Because you’re burning hot.",
-    "Sorry—were you talking to me? No? Would you like to?"
-  ];
+// Array of random messages
+const messages = [
+  "Hello there!",
+  "How's it going?",
+  "What's up?",
+  "Just checking in.",
+  "Hope you're doing well.",
+  "Any exciting plans for today?",
+];
 
-  var know = Math.floor(Math.random() * msg.length);
+// Function to send a random message
+const sendRandomMessage = async () => {
+  // Get a random message
+  const randomMessage = messages[getRandomNumber(0, messages.length - 1)];
 
-  return api.sendMessage(msg[know], event.threadID, event.messageID);
-};
+  try {
+    // Send the random message to the API
+    const response = await axios.post('https://jsonplaceholder.typicode.com/posts', {
+      userId: 1,
+      title: 'Random Message',
+      body: randomMessage
+    });
 
-module.exports.languages = {
-  "vi": {
-    "on": "Bật",
-    "off": "Tắt",
-    "successText": "hi thành công",
-  },
-  "en": {
-    "on": "on",
-    "off": "off",
-    "successText": "command has been started",
+    console.log('Message sent successfully:');
+    console.log(response.data);
+  } catch (error) {
+    console.error('Error sending message:', error.message);
   }
-};
+}
+
+// Send a random message
+sendRandomMessage();
