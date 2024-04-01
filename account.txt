@@ -1,5 +1,3 @@
-
-Sano Manjiro
 [
     {
         "domain": ".facebook.com",
@@ -102,11 +100,11 @@ Sano Manjiro
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1711965530880%2C%22v%22%3A1%7D"
+        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1711965778322%2C%22v%22%3A1%7D"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1712570330,
+        "expirationDate": 1712570577,
         "hostOnly": false,
         "httpOnly": false,
         "name": "dpr",
@@ -145,7 +143,7 @@ Sano Manjiro
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1712570330,
+        "expirationDate": 1712570577,
         "hostOnly": false,
         "httpOnly": false,
         "name": "wd",
