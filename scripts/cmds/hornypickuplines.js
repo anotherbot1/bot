@@ -18,7 +18,7 @@ const lines = ["You’re so hot, my zipper is falling for you.",
   "I know a great way to burn off the calories in that drink.",
   "Please don’t let this go to your head, but do you want some?",
   "Are you an elevator? Because I’ll go up and down on you.",
-  "You look great right now. Do you know what else would look great on you? Me!"
+  "You look great right now. Do you know what else would look great on you? Me!",
   "With school, I just want an A. With you, I just want to F.",
   "Did you have Lucky Charms for breakfast? Because you look magically delicious!",
 "Roses are red. Violets are fine. You be the six. I’ll be the nine.",
