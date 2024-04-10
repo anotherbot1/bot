@@ -3,9 +3,10 @@ const jimp = require("jimp");
 const axios = require("axios");
 const request = require("request");
 const moment = require("moment-timezone");
+
 module.exports = {
   config: {
-     name: "info",
+    name: "info",
     version: "1.0",
     author: "Itachi",
     countDown: 5,
@@ -18,26 +19,27 @@ module.exports = {
     },
   },
  
-onStart : async function({ api,event,threadID })  {
-const time = process.uptime(),
-		hours = Math.floor(time / (60 * 60)),
-		minutes = Math.floor((time % (60 * 60)) / 60),
-		seconds = Math.floor(time % 60);
+  onStart: async function({ api, event, threadID })  {
+    const time = process.uptime(),
+          hours = Math.floor(time / (60 * 60)),
+          minutes = Math.floor((time % (60 * 60)) / 60),
+          seconds = Math.floor(time % 60);
 
-var juswa = moment.tz("Asia/Dhaka").format("ã€ŽD/MM/YYYYã€ ã€hh:mm:ssã€‘");
-var link =["https://i.ibb.co/f8sXJ2S/Default-The-mysterious-appearance-of-a-creature-hidden-in-the-5-5af4211a-f0cc-4882-b674-8771b0045a7b.jpg"];
-  
-var callback = () => api.sendMessage({body:`ADMIN AND BOT INFORMATION 
+    var juswa = moment.tz("Asia/Dhaka").format("ã€ŽD/MM/YYYYã€ ã€hh:mm:ssã€‘");
 
-BOT NAME : ELITE BOT
-FACEBOOK : facebook.com/Lamed.69
-BOT PREFIX : ${global.GoatBot.config.prefix}
-BOT OWNER : ITACHI UCHIHA
+    var callback = () => api.sendMessage({
+      body: `ADMIN AND BOT INFORMATION 
+
+BOT NAME : Z E R O D A Y BOT
+FACEBOOK : https://www.facebook.com/zeroday.was.hacker
+BOT PREFIX : ${this.config.prefix}
+BOT OWNER : ZERODAY
 TIME : ${juswa} 
 BOT IS RUNNING ${hours}:${minutes}:${seconds}.
 
-THANKS FOR USING ELITE BOT`,
-                                      attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
-   }
-  };
+THANKS FOR USING Z E R O D A Y BOT`
+    });
+
+    callback();
+  }
+};
