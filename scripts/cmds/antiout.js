@@ -23,7 +23,7 @@ module.exports = {
       return message.reply("Please use 'on' or 'off' as an argument");
     }
     await threadsData.set(event.threadID, args[0] === "on", "settings.antiout");
-    return message.reply(Antiout has been ${args[0] === "on" ? "enabled" : "disabled"}.);
+    return message.reply(`Antiout has been ${args[0] === "on" ? "enabled" : "disabled"}.`);
   },
   onEvent: async function({ api, event, threadsData }) {
     const antiout = await threadsData.get(event.threadID, "settings.antiout");
@@ -38,9 +38,9 @@ module.exports = {
         // The user is not in the chat, add them back
         const addUser = await api.addUserToGroup(userId, event.threadID);
         if (addUser) {
-          console.log(My Lord,  ${userId} was added back to the chat 💗);
+          console.log(`My Lord, ${userId} was added back to the chat 💗`);
         } else {
-          console.log(Failed to add user ${userId} back to the chat.);
+          console.log(`Failed to add user ${userId} back to the chat.`);
         }
       }
     }
