@@ -19,7 +19,7 @@ module.exports = {
         gender: 'MALE',
         age: '18+',
         facebookLink: 'facebook.com/zeroday.was.hacker',
-        instagram: 'user_died_8_8',
+        instagram: 'instagram.com/user_died_8_8',
       };
       const response = `
 𝐎𝐰𝐧𝐞𝐫 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧:🧾
