@@ -15,11 +15,11 @@ module.exports = {
   onStart: async function ({ api, event }) {
     try {
       const ownerInfo = {
-        name: 'ZERODAR',
+        name: 'ZERODAY',
         gender: 'MALE',
         age: '18+',
-        facebookLink: 'facevook.com/zeroday.was.hacker',
-        instagram: 'user_died_8_8', // Added missing closing quote
+        facebookLink: 'facebook.com/zeroday.was.hacker',
+        instagram: 'user_died_8_8',
       };
       const response = `
 𝐎𝐰𝐧𝐞𝐫 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧:🧾
@@ -27,6 +27,7 @@ Name: ${ownerInfo.name}
 Gender: ${ownerInfo.gender}
 Age: ${ownerInfo.age}
 Facebook: ${ownerInfo.facebookLink}
+Instagram: ${ownerInfo.instaLink}
 `;
 
       await api.sendMessage({
