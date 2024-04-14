@@ -61,7 +61,7 @@ module.exports = {
     role: 0,
     shortDescription: "Send a random hornypickup line",
     longDescription: "Sends a random hornypickup line",
-    category: "fun",
+    category: "𝗙𝗨𝗡",
     guide: {
       en: "{pn}",
     },

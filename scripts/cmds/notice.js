@@ -10,7 +10,7 @@ module.exports = {
     role: 2,
     shortDescription: "Send notice from admin to all box",
     longDescription: "Send notice from admin to all box",
-    category: "owner",
+    category: "𝗢𝗪𝗡𝗘𝗥",
     guide: "{pn} <message>",
     envConfig: {
       delayPerGroup: 250
