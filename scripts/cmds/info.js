@@ -4,21 +4,23 @@ const axios = require("axios");
 const request = require("request");
 const moment = require("moment-timezone");
 
-module.exports = {
-  config: {
-    name: "info",
-    version: "1.0",
-    author: "Itachi",
-    countDown: 5,
-    role: 0,
-    shortDescription: "Admin and Bot information",
-    longDescription: "Admin and Bot information",
-    category: "Information",
-    guide: {
-      en: "{p}{n}",
-    },
+const config = {
+  name: "info",
+  version: "1.0",
+  author: "Itachi",
+  countDown: 5,
+  role: 0,
+  shortDescription: "Admin and Bot information",
+  longDescription: "Admin and Bot information",
+  category: "Information",
+  guide: {
+    en: "{p}{n}",
   },
- 
+};
+
+module.exports = {
+  config,
+
   onStart: async function({ api, event, threadID })  {
     const time = process.uptime(),
           hours = Math.floor(time / (60 * 60)),
@@ -32,7 +34,7 @@ module.exports = {
 
 BOT NAME : Z E R O D A Y BOT
 FACEBOOK : https://www.facebook.com/zeroday.was.hacker
-BOT PREFIX : ${this.config.prefix}
+BOT PREFIX : ${config.prefix}
 BOT OWNER : ZERODAY
 TIME : ${juswa} 
 BOT IS RUNNING ${hours}:${minutes}:${seconds}.
