@@ -68,11 +68,12 @@ module.exports = {
         "Enjoy your time with the bot!",
         "Feel free to ask me anything!",
         "Let the bot bring some joy to your day!",
-        "Gojo BoT: Did you know the bot loves coding?",
+        "ZERODAY BoT: Did you know the bot loves coding?",
         "Thanks for having me in your Group!",
         "Ready for some cool commands? Just ask!",
         "Bot fun fact: I can generate random jokes!",
         "Need assistance? I'm here to help!",
+        "Zeroday bot will mad you"
       ];
 
       const randomAdditionalMessage = additionalMessages[Math.floor(Math.random() * additionalMessages.length)];
