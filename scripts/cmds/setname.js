@@ -12,19 +12,15 @@ async function checkShortCut(nickname, uid, usersData) {
 module.exports = {
 	config: {
 		name: "setname",
-		version: "1.3",
+		version: "1.5",
 		author: "NTKhang",
 		countDown: 5,
 		role: 0,
-		shortDescription: {
-			vi: "Đổi biệt danh ",
-			en: "Change nickname"
-		},
-		longDescription: {
+		description: {
 			vi: "Đổi biệt danh của tất cả thành viên trong nhóm chat hoặc những thành viên được tag theo một định dạng",
 			en: "Change nickname of all members in chat or members tagged by a format"
 		},
-		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
+		category: "box chat",
 		guide: {
 			vi: {
 				body: "   {pn} <nick name>: thay đổi biệt danh của bản thân"
@@ -75,7 +71,12 @@ module.exports = {
 		}
 		else if (mentions.length) {
 			uids = mentions;
-			const allName = new RegExp(Object.values(event.mentions).join("|"), "g");
+			const allName = new RegExp(
+				Object.values(event.mentions)
+					.map(name => name.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&")) // fix error when name has special characters
+					.join("|")
+				, "g"
+			);
 			nickname = nickname.replace(allName, "").trim();
 		}
 		else {

@@ -3,19 +3,15 @@ const fs = require("fs-extra");
 module.exports = {
 	config: {
 		name: "backupdata",
-		version: "1.2",
+		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
 		role: 2,
-		shortDescription: {
-			vi: "Sao lưu dữ liệu",
-			en: "Backup data"
-		},
-		longDescription: {
+		description: {
 			vi: "Sao lưu dữ liệu của bot (threads, users, dashboard, globalData)",
 			en: "Backup data of bot (threads, users, dashboard, globalData)"
 		},
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "owner",
 		guide: {
 			en: "   {pn}"
 		}

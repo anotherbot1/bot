@@ -4,19 +4,15 @@ const { getStreamFromURL } = global.utils;
 module.exports = {
 	config: {
 		name: "appstore",
-		version: "1.1",
+		version: "1.2",
 		author: "NTKhang",
 		countDown: 5,
 		role: 0,
-		shortDescription: {
+		description: {
 			vi: "Tìm app trên appstore",
 			en: "Search app on appstore"
 		},
-		longDescription: {
-			vi: "Tìm app trên appstore",
-			en: "Search app on appstore"
-		},
-		category: "𝗦𝗢𝗙𝗧𝗪𝗔𝗥𝗘",
+		category: "software",
 		guide: "   {pn}: <keyword>"
 			+ "\n   - Example:"
 			+ "\n   {pn} PUBG",

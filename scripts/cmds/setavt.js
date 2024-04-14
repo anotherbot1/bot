@@ -4,19 +4,15 @@ module.exports = {
 	config: {
 		name: "setavt",
 		aliases: ["changeavt", "setavatar"],
-		version: "1.2",
+		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
 		role: 2,
-		shortDescription: {
+		description: {
 			vi: "Đổi avatar bot",
 			en: "Change bot avatar"
 		},
-		longDescription: {
-			vi: "Đổi avatar bot",
-			en: "Change bot avatar"
-		},
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "owner",
 		guide: {
 			vi: "   {pn} [<image url> | <phản hồi tin nhắn có ảnh>] [<caption> | để trống] [<expirationAfter (seconds)> | để trống]"
 				+ "\nPhản hồi 1 tin nhắn có chứa ảnh với nội dung: {pn}"

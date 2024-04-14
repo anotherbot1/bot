@@ -3,19 +3,15 @@ const { getTime } = global.utils;
 module.exports = {
 	config: {
 		name: "user",
-		version: "1.3",
+		version: "1.4",
 		author: "NTKhang",
 		countDown: 5,
 		role: 2,
-		shortDescription: {
-			vi: "Quản lý người dùng",
-			en: "Manage users"
-		},
-		longDescription: {
+		description: {
 			vi: "Quản lý người dùng trong hệ thống bot",
 			en: "Manage users in bot system"
 		},
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "owner",
 		guide: {
 			vi: "   {pn} [find | -f | search | -s] <tên cần tìm>: tìm kiếm người dùng trong dữ liệu bot bằng tên"
 				+ "\n"

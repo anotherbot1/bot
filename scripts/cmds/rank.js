@@ -21,19 +21,15 @@ global.client.makeRankCard = makeRankCard;
 module.exports = {
 	config: {
 		name: "rank",
-		version: "1.6",
+		version: "1.7",
 		author: "NTKhang",
 		countDown: 5,
 		role: 0,
-		shortDescription: {
-			vi: "Xem level của người dùng",
-			en: "View level of user"
-		},
-		longDescription: {
+		description: {
 			vi: "Xem level của bạn hoặc người được tag. Có thể tag nhiều người",
 			en: "View your level or the level of the tagged person. You can tag many people"
 		},
-		category: "𝗥𝗔𝗡𝗞",
+		category: "rank",
 		guide: {
 			vi: "   {pn} [để trống | @tags]",
 			en: "   {pn} [empty | @tags]"

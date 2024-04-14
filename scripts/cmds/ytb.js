@@ -1,5 +1,5 @@
 const axios = require("axios");
-const ytdl = require("ytdl-core");
+const ytdl = require("@distube/ytdl-core");
 const fs = require("fs-extra");
 const { getStreamFromURL, downloadFile, formatNumber } = global.utils;
 async function getStreamAndSize(url, path = "") {
@@ -23,16 +23,15 @@ async function getStreamAndSize(url, path = "") {
 module.exports = {
 	config: {
 		name: "ytb",
-		version: "1.14",
+		version: "1.16",
 		author: "NTKhang",
 		countDown: 5,
 		role: 0,
-		shortDescription: "YouTube",
-		longDescription: {
+		description: {
 			vi: "Tải video, audio hoặc xem thông tin video trên YouTube",
 			en: "Download video, audio or view video information on YouTube"
 		},
-		category: "𝗠𝗘𝗗𝗜𝗔",
+		category: "media",
 		guide: {
 			vi: "   {pn} [video|-v] [<tên video>|<link video>]: dùng để tải video từ youtube."
 				+ "\n   {pn} [audio|-a] [<tên video>|<link video>]: dùng để tải audio từ youtube"
@@ -83,21 +82,17 @@ module.exports = {
 	onStart: async function ({ args, message, event, commandName, getLang }) {
 		let type;
 		switch (args[0]) {
-      case "v":
 			case "-v":
 			case "video":
 				type = "video";
 				break;
-      case "a":
-      case "s":
 			case "-a":
 			case "-s":
 			case "audio":
 			case "sing":
 				type = "audio";
 				break;
-			case "i":
-      case "-i":
+			case "-i":
 			case "info":
 				type = "info";
 				break;
@@ -175,7 +170,7 @@ async function handle({ type, infoVideo, message, getLang }) {
 		const msgSend = message.reply(getLang("downloading", getLang("video"), title));
 		const { formats } = await ytdl.getInfo(videoId);
 		const getFormat = formats
-			.filter(f => f.hasVideo && f.hasAudio)
+			.filter(f => f.hasVideo && f.hasAudio && f.quality == 'tiny' && f.audioBitrate == 128)
 			.sort((a, b) => b.contentLength - a.contentLength)
 			.find(f => f.contentLength || 0 < MAX_SIZE);
 		if (!getFormat)

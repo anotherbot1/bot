@@ -3,19 +3,15 @@ const { getTime } = global.utils;
 module.exports = {
 	config: {
 		name: "thread",
-		version: "1.4",
+		version: "1.5",
 		author: "NTKhang",
 		countDown: 5,
 		role: 0,
-		shortDescription: {
-			vi: "Quản lý các nhóm chat",
-			en: "Manage group chat"
-		},
-		longDescription: {
+		description: {
 			vi: "Quản lý các nhóm chat trong hệ thống bot",
 			en: "Manage group chat in bot system"
 		},
-		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
+		category: "owner",
 		guide: {
 			vi: "   {pn} [find | -f | search | -s] <tên cần tìm>: tìm kiếm nhóm chat trong dữ liệu bot bằng tên"
 				+ "\n   {pn} [find | -f | search | -s] [-j | joined] <tên cần tìm>: tìm kiếm nhóm chat trong dữ liệu mà bot còn tham gia bằng tên"
@@ -70,12 +66,10 @@ module.exports = {
 
 		switch (type) {
 			// find thread
-      case "f":
-      case "-f":
-      case "s":
-      case "-s":
 			case "find":
-			case "search": {
+			case "search":
+			case "-f":
+			case "-s": {
 				if (role < 2)
 					return message.reply(getLang("noPermission"));
 				let allThread = await threadsData.getAll();

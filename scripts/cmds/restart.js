@@ -3,19 +3,15 @@ const fs = require("fs-extra");
 module.exports = {
 	config: {
 		name: "restart",
-		version: "1.0",
+		version: "1.1",
 		author: "NTKhang",
 		countDown: 5,
 		role: 2,
-		shortDescription: {
+		description: {
 			vi: "Khởi động lại bot",
 			en: "Restart bot"
 		},
-		longDescription: {
-			vi: "Khởi động lại bot",
-			en: "Restart bot"
-		},
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "Owner",
 		guide: {
 			vi: "   {pn}: Khởi động lại bot",
 			en: "   {pn}: Restart bot"

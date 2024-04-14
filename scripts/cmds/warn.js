@@ -3,19 +3,15 @@ const { getTime } = global.utils;
 module.exports = {
 	config: {
 		name: "warn",
-		version: "1.6",
+		version: "1.8",
 		author: "NTKhang",
 		countDown: 5,
-		role: 2,
-		shortDescription: {
-			vi: "cảnh cáo thành viên",
-			en: "warn member"
-		},
-		longDescription: {
+		role: 0,
+		description: {
 			vi: "cảnh cáo thành viên trong nhóm, đủ 3 lần ban khỏi box",
 			en: "warn member in group, if they have 3 warns, they will be banned"
 		},
-		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
+		category: "box chat",
 		guide: {
 			vi: "   {pn} @tag <lý do>: dùng cảnh cáo thành viên"
 				+ "\n   {pn} list: xem danh sách những thành viên đã bị cảnh cáo"
@@ -86,7 +82,7 @@ module.exports = {
 			invalidUid4: "⚠️ You need to tag or reply to the message of the person you want to warn",
 			warnSuccess: "⚠️ Warned member %1 times %2\n- Uid: %3\n- Reason: %4\n- Date Time: %5\nThis member has been warned 3 times and banned from the box, to unban use the command \"%6warn unban <uid>\" (with uid is the uid of the person you want to unban)",
 			noPermission5: "⚠️ Bot needs administrator permissions to kick banned members",
-			warnSuccess2: "⚠️ Warned member %1 times %2\n- Uid: %3\n- Reason: %4\n- Date Time: %5\nIf this person violates %6 more times, they will be banned from the box",
+			warnSuccess2: "⚠️ Warned member %1 %2 times\n- Uid: %3\n- Reason: %4\n- Date Time: %5\nIf this person violates %6 more times, they will be banned from the box",
 			hasBanned: "⚠️ The following members have been warned 3 times before and banned from the box:\n%1",
 			failedKick: "⚠️ An error occurred when kicking the following members:\n%1",
 			userNotInGroup: "⚠️ The user \"%1\" is currently not in your group"

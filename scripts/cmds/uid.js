@@ -4,19 +4,15 @@ const regExCheckURL = /^(http|https):\/\/[^ "]+$/;
 module.exports = {
 	config: {
 		name: "uid",
-		version: "1.2",
+		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
 		role: 0,
-		shortDescription: {
-			vi: "Xem uid",
-			en: "View uid"
-		},
-		longDescription: {
+		description: {
 			vi: "Xem user id facebook của người dùng",
 			en: "View facebook user id of user"
 		},
-		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
+		category: "info",
 		guide: {
 			vi: "   {pn}: dùng để xem id facebook của bạn"
 				+ "\n   {pn} @tag: xem id facebook của những người được tag"
@@ -61,7 +57,7 @@ module.exports = {
 		let msg = "";
 		const { mentions } = event;
 		for (const id in mentions)
-			msg += `${id}\n`;
+			msg += `${mentions[id].replace("@", "")}: ${id}\n`;
 		message.reply(msg || getLang("syntaxError"));
 	}
 };

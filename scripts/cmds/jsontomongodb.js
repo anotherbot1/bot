@@ -4,19 +4,15 @@ module.exports = {
 	config: {
 		name: "jsontomongodb",
 		aliases: ["jsontomongo"],
-		version: "1.4",
+		version: "1.5",
 		author: "NTKhang",
 		countDown: 5,
 		role: 2,
-		shortDescription: {
+		description: {
 			vi: "Đồng bộ dữ liệu từ json sang mongodb",
 			en: "Synchronize data from json to mongodb"
 		},
-		longDescription: {
-			vi: "Đồng bộ dữ liệu từ json sang mongodb",
-			en: "Synchronize data from json to mongodb"
-		},
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "owner",
 		guide: {
 			vi: "   {pn} <thread | user | dashboard | global | all>: Sẽ đồng bộ dữ liệu từ data json được lưu trong thư mục database/data sang mongodb\n\n   Lưu ý: Nếu dữ liệu đã tồn tại trong mongodb thì sẽ được cập nhật lại",
 			en: "   {pn} <thread | user | dashboard | global | all>: Will synchronize data from json data stored in the database/data folder to mongodb\n\n   Note: If the data already exists in mongodb, it will be updated"

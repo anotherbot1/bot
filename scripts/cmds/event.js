@@ -12,19 +12,15 @@ function getDomain(url) {
 module.exports = {
 	config: {
 		name: "event",
-		version: "1.8",
+		version: "1.9",
 		author: "NTKhang",
 		countDown: 5,
 		role: 2,
-		shortDescription: {
-			vi: "Quản lý command event",
-			en: "Manage event command"
-		},
-		longDescription: {
+		description: {
 			vi: "Quản lý các tệp lệnh event của bạn",
 			en: "Manage your event command files"
 		},
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "owner",
 		guide: {
 			vi: "{pn} load <tên file lệnh>"
 				+ "\n{pn} loadAll"

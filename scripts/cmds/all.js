@@ -1,27 +1,23 @@
 module.exports = {
 	config: {
 		name: "all",
-		version: "1.1",
+		version: "1.2",
 		author: "NTKhang",
 		countDown: 5,
 		role: 1,
-		shortDescription: {
-			vi: "Tag tất cả thành viên",
-			en: "Tag all members"
-		},
-		longDescription: {
+		description: {
 			vi: "Tag tất cả thành viên trong nhóm chat của bạn",
 			en: "Tag all members in your group chat"
 		},
-		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
+		category: "box chat",
 		guide: {
-			vi: "{pn} [nội dung | để trống]",
-			en: "{pn} [content | empty]"
+			vi: "   {pn} [nội dung | để trống]",
+			en: "   {pn} [content | empty]"
 		}
 	},
 
-	onStart: async function ({ message, event, args, api }) {
-		const { participantIDs } = await api.getThreadInfo(event.threadID);
+	onStart: async function ({ message, event, args }) {
+		const { participantIDs } = event;
 		const lengthAllUser = participantIDs.length;
 		const mentions = [];
 		let body = args.join(" ") || "@all";

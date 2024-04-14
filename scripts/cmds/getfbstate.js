@@ -4,19 +4,15 @@ module.exports = {
 	config: {
 		name: "getfbstate",
 		aliases: ["getstate", "getcookie"],
-		version: "1.1",
+		version: "1.2",
 		author: "NTKhang",
 		countDown: 5,
 		role: 2,
-		shortDescription: {
+		description: {
 			vi: "Lấy fbstate hiện tại",
 			en: "Get current fbstate"
 		},
-		longDescription: {
-			vi: "Lấy fbstate hiện tại",
-			en: "Get current fbstate"
-		},
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "owner",
 		guide: {
 			en: "   {pn}: get fbstate (appState)\n"
 				+ "   {pn} [cookies|cookie|c]: get fbstate with cookies format\n"

@@ -4,19 +4,15 @@ const { sequelize } = global.db;
 module.exports = {
 	config: {
 		name: "jsontosqlite",
-		version: "1.3",
+		version: "1.4",
 		author: "NTKhang",
 		countDown: 5,
 		role: 2,
-		shortDescription: {
+		description: {
 			vi: "Đồng bộ dữ liệu từ json sang sqlite",
 			en: "Synchronize data from json to sqlite"
 		},
-		longDescription: {
-			vi: "Đồng bộ dữ liệu từ json sang sqlite",
-			en: "Synchronize data from json to sqlite"
-		},
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "owner",
 		guide: {
 			vi: "   {pn} <thread | user | dashboard | global | all>: Sẽ đồng bộ dữ liệu từ data json được lưu trong thư mục database/data sang sqlite\n\n   Lưu ý: Nếu dữ liệu đã tồn tại trong sqlite thì sẽ được cập nhật lại",
 			en: "   {pn} <thread | user | dashboard | global | all>: Will synchronize data from json data stored in the database/data folder to sqlite\n\n   Note: If the data already exists in sqlite, it will be updated"
