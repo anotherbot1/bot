@@ -1,7 +1,7 @@
 let messageCounts = {};
 
 const spamThreshold = 5;
-const spamInterval = 120000;
+const spamInterval = 180000;
 
 function clearCount(threadID, senderID) {
   clearTimeout(messageCounts[threadID][senderID].timer);
