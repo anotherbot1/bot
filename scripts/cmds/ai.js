@@ -1,69 +1,87 @@
-const axios = require('axios');
+const axios = require("axios");
+const tinyurl = require("tinyurl");
 
 module.exports = {
   config: {
     name: "ai",
-    version: "2.0",
-    author: "OtinXSandip",
-    description: "ai",
+    version: "1.0",
+    author: "Samir OE",
+    countDown: 5,
+    role: 0,
     category: "𝗔𝗜",
-    guide: {
-      en: "{p}{n} <Query>",
-    },
   },
-  onStart: async function ({ message, usersData, event, api, args }) {
+  onStart: async function ({ message, event, args, commandName }) {
     try {
-      const id = event.senderID;
-      const userData = await usersData.get(id);
-      const name = userData.name;
+      let shortLink;
 
-      const ment = [{ id: id, tag: name }];
-      const prompt = args.join(" ");
-      const encodedPrompt = encodeURIComponent(prompt);
-      api.setMessageReaction("⏰", event.messageID, () => { }, true);
-      const res = await axios.get(`https://sandipapi.onrender.com/gpt?prompt= ${encodedPrompt}`);
-      const result = res.data.answer;
+      if (event.type === "message_reply") {
+        if (["photo", "sticker"].includes(event.messageReply.attachments?.[0]?.type)) {
+          shortLink = await tinyurl.shorten(event.messageReply.attachments[0].url);
+        }
+      } else {
+        const text = args.join(' ');
+        const response0 = await axios.get(https://apis-samir.onrender.com/Gemini?text=${encodeURIComponent(text)});
 
-      api.setMessageReaction("✅", event.messageID, () => { }, true);
+        if (response0.data && response0.data.candidates && response0.data.candidates.length > 0) {
+          const textContent = response0.data.candidates[0].content.parts[0].text;
+          const ans = ${textContent};
+          message.reply({
+            body: ans,
+          }, (err, info) => {
+            global.GoatBot.onReply.set(info.messageID, {
+              commandName,
+              messageID: info.messageID,
+              author: event.senderID,
+            });
+          });
+          return; 
+        }
+      }
+
+      if (!shortLink) {
+        console.error("Error: Invalid message or attachment type");
+        return;
+      }
+
+      const like = https://apis-samir.onrender.com/telegraph?url=${encodeURIComponent(shortLink)}&senderId=Y=777565;
+      const response4 = await axios.get(like);
+      const link = response4.data.result.link;
+
+      const text = args.join(' ');
+      const vision = https://apis-samir.onrender.com/gemini-pro?text=${encodeURIComponent(text)}&url=${encodeURIComponent(link)};
+
+      const response1 = await axios.get(vision);
       message.reply({
-        body: `${name} ${result}`,
-        mentions: ment,
-      }, (err, info) => {
-        global.GoatBot.onReply.set(info.messageID, {
-          commandName: this.config.name,
-          messageID: info.messageID,
-          author: event.senderID
-        });
+        body: response1.data,
       });
     } catch (error) {
       console.error("Error:", error.message);
     }
   },
-  onReply: async function ({ message, event, Reply, args, api, usersData }) {
+
+  onReply: async function ({ message, event, Reply, args }) {
     try {
-      const id = event.senderID;
-      const userData = await usersData.get(id);
-      const name = userData.name;
+      let { author, commandName } = Reply;
+      if (event.senderID !== author) return;
 
-      const ment = [{ id: id, tag: name }];
-      const prompt = args.join(" ");
-      const encodedPrompt = encodeURIComponent(prompt);      api.setMessageReaction("⏰", event.messageID, () => { }, true);
-      const res = await axios.get(`https://sandipapi.onrender.com/gpt?prompt=${encodedPrompt}`);
-      const result = res.data.answer;
+      const gif = args.join(' ');
+      const response23 = await axios.get(https://apis-samir.onrender.com/Gemini?text=${encodeURIComponent(gif)});
 
-      api.setMessageReaction("✅", event.messageID, () => { }, true);
-      message.reply({
-        body: `${name} \n${result}`,
-        mentions: ment,
-      }, (err, info) => {
-        global.GoatBot.onReply.set(info.messageID, {
-          commandName: this.config.name,
-          messageID: info.messageID,
-          author: event.senderID
+      if (response23.data && response23.data.candidates && response23.data.candidates.length > 0) {
+        const textContent = response23.data.candidates[0].content.parts[0].text;
+        const wh = ${textContent};
+        message.reply({
+          body: wh,
+        }, (err, info) => {
+          global.GoatBot.onReply.set(info.messageID, {
+            commandName,
+            messageID: info.messageID,
+            author: event.senderID,
+          });
         });
-      });
+      }
     } catch (error) {
       console.error("Error:", error.message);
     }
-  }
+  },
 };
