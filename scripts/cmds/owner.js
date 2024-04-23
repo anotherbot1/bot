@@ -8,7 +8,7 @@ module.exports = {
     author: "Tokodori", // Corrected author's name
     shortDescription: " ",
     longDescription: "𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐎𝐰𝐧𝐞𝐫'𝐬 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧'",
-    category: "𝗢𝗪𝗡𝗘𝗥",
+    category: "𝗜𝗡𝗙𝗢",
     guide: "{pn}"
   },
 

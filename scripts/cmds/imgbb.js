@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
       en: "Upload image to imgbb by replying to photo"
     },
-    category: "𝗧𝗢𝗢𝗟'𝗦",
+    category: "𝗧𝗢𝗢𝗟",
     guide: {
       en: ""
     }

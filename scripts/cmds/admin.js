@@ -12,7 +12,7 @@ module.exports = {
 			vi: "Thêm, xóa, sửa quyền admin",
 			en: "Add, remove, edit admin role"
 		},
-		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
+		category: "𝗢𝗪𝗡𝗘𝗥",
 		guide: {
 			vi: '   {pn} [add | -a] <uid | @tag>: Thêm quyền admin cho người dùng'
 				+ '\n	  {pn} [remove | -r] <uid | @tag>: Xóa quyền admin của người dùng'

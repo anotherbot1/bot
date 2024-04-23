@@ -44,7 +44,7 @@ module.exports = {
     author: "Vex_Kshitiz",
     role: 0,
     longDescription: "horny ai",// ai description
-    category: "ai",
+    category: "𝗔𝗜",
     guide: {
       en: "{p}horny [prompt]"// add guide based on your ai name
     }

@@ -14,7 +14,7 @@ module.exports = {
     role: 0,
     shortDescription: 'Auto video downloader for Instagram, Facebook, and TikTok',
     longDescription: '',
-    category: 'media',
+    category: '𝗠𝗘𝗗𝗜𝗔',
     guide: {
       en: '{p}{n}',
     }

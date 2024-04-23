@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "listunloadcmd",
     aliases: ["lstuncmd", "luc", "listunlcmd"],
-    category: "𝗖𝗢𝗡𝗙𝗜𝗚",
+    category: "𝗢𝗪𝗡𝗘𝗥",
     author: "Walex",
     role: 0,
     shortDescription: {

@@ -7,7 +7,7 @@ module.exports = {
       role: 0,
       shortDescription: "ignore this command",
       longDescription: "ignore this command",
-      category: "no prefix",
+      category: "𝗜𝗡𝗙𝗢",
   },
 onStart: async function(){}, 
 onChat: async function({

@@ -4,7 +4,7 @@ module.exports = {
 	config: {
 		name: "chat",
 		version: "1.2",
-		author: "Your Name",
+		author: "Muhid",
 		countDown: 5,
 		role: 0,
 		shortDescription: "simsimi",
@@ -12,7 +12,7 @@ module.exports = {
 			vi: "Chat với simsimi",
 			en: "Chat with simsimi",
 		},
-		category: "funny",
+		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
 		guide: {
 			vi: "{pn} [on | off]: bật/tắt simsimi\rd>: chat nhanh với simsimi\i",
 			en: "{pn} <word>: chat with Sammy with a simple: hi",

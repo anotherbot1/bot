@@ -11,7 +11,7 @@ module.exports = {
     longDescription: {
       en: 'Text to Image'
     },
-    category: '𝗔𝗜-𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗',
+    category: '𝗔𝗜',
    guide: {
         en: '1 | 3Guofeng3_v34' +
 '\n2 | absolutereality_V16' +

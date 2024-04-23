@@ -78,7 +78,7 @@ module.exports = {
     aliases: ["tictactoe"],
     version: "1.0",
     author: "Kshitiz",
-    category: "game",
+    category: "𝗚𝗔𝗠𝗘",
   },
   onStart: async function ({ event, api }) {
     const playerID = event.senderID;
@@ -99,7 +99,7 @@ module.exports = {
 
   
     if (!games[playerID]) {
-      api.sendMessage("", event.threadID);
+      
       return;
     }
 

@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
   en: "This command allows you to search for images on pinterest based on a given query and fetch a specified number of images."
 },
-    category: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
+    category: "𝗠𝗘𝗗𝗜𝗔",
     guide: {
       en: "{pn} <search query> <number of images>\nExample: {pn} Tomozaki -5"
     }

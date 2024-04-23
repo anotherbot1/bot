@@ -9,7 +9,7 @@ module.exports = {
     longDescription: {
       en: "Make images from yours prompts."
     },
-    category: "𝗔𝗜-𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗",
+    category: "𝗔𝗜",
     role: 0,
     guide: {
       en: "{pn} prompt",

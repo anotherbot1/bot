@@ -12,7 +12,7 @@ module.exports = {
     longDescription: { 
       en: "Join the support group chat"
     },
-    category: "𝗦𝗨𝗣𝗣𝗢𝗥𝗧",
+    category: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
     guide: {
       en: "{pn}"
      }

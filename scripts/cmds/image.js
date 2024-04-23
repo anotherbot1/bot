@@ -7,7 +7,7 @@ module.exports = {
     version: "4.0",
     shortDescription: "Search for images using Unsplash API",
     longDescription: "Search for high-quality images using Unsplash API and return a specified number of results.",
-    category: "𝗜𝗠𝗔𝗚𝗘",
+    category: "𝗠𝗘𝗗𝗜𝗔",
     guide: {
       vi: "",
       en: ""

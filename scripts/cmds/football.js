@@ -89,7 +89,7 @@ module.exports = {
         role: 0,
         shortDescription: "lado",
         longDescription: "get latest football match highlights",
-        category: "media",
+        category: "𝗠𝗘𝗗𝗜𝗔",
         guide: "{p} football"
     },
     onStart: function ({ api, event }) {

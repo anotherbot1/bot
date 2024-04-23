@@ -14,7 +14,7 @@ aliases: ['gen'],
     longDescription: {
       en: "Text to image"
     },
-    category: "𝗔𝗜-𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗",
+    category: "𝗔𝗜",
     guide: {
       en: '{pn} your prompt | Type' +
         ' here are supported models:' +

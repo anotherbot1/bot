@@ -14,7 +14,7 @@ module.exports = {
 			vi: "",
 			en: "\n Enter a prompt then it give an Image. \n Prompts: waifu, neko, megumin, bully cuddle, cry, hug,awoo,kiss, lick, pat, smug, bonk, yeet, blush, smile, wave, highfive, handhold, nom, bite, glomp, slap, kill, kick, happy, wink, poke, dance, cringe  "
 		},
-		category: "𝟭𝟴+",
+		category: "𝗠𝗘𝗗𝗜𝗔",
 		guide: {
 			vi:"",
 			en: ""

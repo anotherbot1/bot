@@ -7,7 +7,7 @@ module.exports = {
     version: '1.1',
     author: 'razihelX',
     role: 0,
-    category: 'utility',
+    category: '𝗠𝗘𝗗𝗜𝗔',
     shortDescription: {
       en: 'Searches Google Images for a given query.'
     },

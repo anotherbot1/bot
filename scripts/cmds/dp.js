@@ -8,7 +8,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "pfp image",
 		longDescription: "pfp image",
-		category: "𝗜𝗠𝗔𝗚𝗘",
+		category: "𝗜𝗡𝗙𝗢",
 		guide: {
 			en: "   {pn} @tag"
 		}

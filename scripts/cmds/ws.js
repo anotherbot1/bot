@@ -16,7 +16,7 @@ module.exports = {
     longDescription: {
       en: "Search for wallpapers based on a keyword."
     },
-    category: "𝗜𝗠𝗔𝗚𝗘",
+    category: "𝗠𝗘𝗗𝗜𝗔",
     guide: {
       en: "{p}ws <keyword> [amount]\nExample: {p}ws nature 3"
     }

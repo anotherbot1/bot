@@ -4,7 +4,6 @@ const Data = {};
 module.exports = {
   config: {
     name: "gemini",
-    aliases: ["ai"],
     version: 2.0,
     author: "OtinXSandip",
     longDescription: "Google ai ",

@@ -6,7 +6,7 @@ module.exports = {
     version: "1.0",
     author: "Cruizex",
     role: 0,
-    category: "Utility",
+    category: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
     shortDescription: {
       en: "Set a reminder with live updates.",
     },

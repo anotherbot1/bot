@@ -5,7 +5,7 @@ module.exports = {
     author: "farid",
     countDown: 5,
     role: 2,
-    category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
+    category: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
     guide: {
       vi: "",
       en: ""

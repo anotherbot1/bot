@@ -22,7 +22,7 @@ module.exports = {
     role: 0,
     shortDescription: { en: "Usage" },
     longDescription: { en: "Usage" },
-    category: "admin",
+    category: "𝗢𝗪𝗡𝗘𝗥",
     guide: { en: "{pn}" },
   },
 

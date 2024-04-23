@@ -10,12 +10,12 @@ module.exports = {
     role: 0,
     shortDescription: "say something",
     longDescription: "say something from your text in any language.",
-    category: "𝗧𝗧𝗦",
+    category: "𝗠𝗘𝗗𝗜𝗔",
     guide: "{pn} {{<say>}}"
   },
 
   onStart: async function ({ api, message, args, event}) {
-    let lng = "en"
+    let lng = "bn"
     let say;
     if(ln.includes(args[0])){
       lng = args[0]
@@ -26,7 +26,7 @@ module.exports = {
         let url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${lng}&client=tw-ob&q=${say}`
 
 
-        message.reply({body:`Her is tts:`,
+        message.reply({
         attachment: await global.utils.getStreamFromURL(url)
                       })
 

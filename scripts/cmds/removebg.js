@@ -11,7 +11,7 @@ module.exports = {
         author: "SiAM",
         countDown: 30,
         role: 0,
-        category: "𝗧𝗢𝗢𝗟'𝗦",
+        category: "𝗧𝗢𝗢𝗟",
         shortDescription: "Remove Background from Image",
         longDescription: "Remove Background from any image\nReply an Image or Add a image URL to use the command",
         guide: {

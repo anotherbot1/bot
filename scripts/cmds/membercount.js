@@ -13,7 +13,7 @@ module.exports = {
       vi: "Xem số lượng thành viên trong nhóm",
       en: "View the number of members in the group"
     },
-    category: "𝗕𝗢𝗫",
+    category: "𝗜𝗡𝗙𝗢",
     guide: {
       vi: "   {pn}: dùng để xem số lượng thành viên trong nhóm",
       en: "   {pn}: used to view the number of members in the group"

@@ -16,7 +16,7 @@ module.exports = {
       vi: "",
       en: " "
     },
-    category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
+    category: "𝗢𝗪𝗡𝗘𝗥",
     guide: {
       vi: "",
       en: ""

@@ -10,7 +10,7 @@ module.exports = {
     role: 0,
     shortDescription: "play song from spotify",
     longDescription: "play song from spotify",
-    category: "music",
+    category: "𝗠𝗘𝗗𝗜𝗔",
     guide: "{pn} sing songname"
   },
 

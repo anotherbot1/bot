@@ -12,7 +12,7 @@ const config = {
   role: 0,
   shortDescription: "Admin and Bot information",
   longDescription: "Admin and Bot information",
-  category: "Information",
+  category: "𝗜𝗡𝗙𝗢",
   guide: {
     en: "{p}{n}",
   },

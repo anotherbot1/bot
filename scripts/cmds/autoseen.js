@@ -13,7 +13,7 @@ module.exports = {
 		longDescription: {
 			en: "Turn on/off automatically seen when new messages are available"
 		},
-	category: "𝗢𝗪𝗡𝗘𝗥",
+	category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
 	guide: {
 	 en: "on/off",
 },

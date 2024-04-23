@@ -10,7 +10,7 @@ const valentine = {
   longDescription: {
     en: "Image to zombie"
   },
-  category: "AI",
+  category: "𝗔𝗜",
   guide: {
     en: "{pn} reply to image"
   }
@@ -24,7 +24,7 @@ const samirxrichi = async ({ api, event }) => {
   }
 
   try {
-    const apiUrl = `https://api-samir.onrender.com/zombie?imgurl=${encodeURIComponent(imageLink)}`;
+    const apiUrl = `https://apis-samir.onrender.com/zombie?imgurl=${encodeURIComponent(imageLink)}`;
     const imageStream = await global.utils.getStreamFromURL(apiUrl);
     if (!imageStream) {
       return api.sendMessage('Failed to animate the image.', event.threadID, event.messageID);

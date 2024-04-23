@@ -9,7 +9,7 @@ module.exports = {
     role: 0,
     shortDescription: "Get download url from video, audio sent from group",
     longDescription: "Get download url from video, audio sent from group",
-    category: "𝗧𝗢𝗢𝗟'𝗦",
+    category: "𝗧𝗢𝗢𝗟",
     guide: "{pn} reply or add link of image"
   },
 

@@ -7,7 +7,7 @@ module.exports = {
     author: 'kshitiz',
     countDown: 5,
     role: 0,
-    category: '???',
+    category: '𝗙𝗨𝗡',
     shortDescription: {
       en: 'Tells a random rizz to impress someone.'
     },

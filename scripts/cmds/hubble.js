@@ -20,7 +20,7 @@ module.exports = {
 			vi: "Xem ảnh từ Hubble",
 			en: "View Hubble images"
 		},
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "𝗜𝗡𝗙𝗢",
 		guide: {
 			en: "{pn} <date (mm-dd)>"
 		}
