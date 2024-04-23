@@ -14,7 +14,7 @@ module.exports = {
         role: 0,
         shortDescription: "",
         longDescription: "fake fb chat",
-        category: "fun",
+        category: "𝗙𝗨𝗡",
         guide: "{p} mention | {text1} | {text2} or {P}fakechat mention | text"
     },
 

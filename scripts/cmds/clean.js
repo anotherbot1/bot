@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
       en: "help to clean cache and tmp folder"
     },
-    category: "𝗨𝗦𝗘𝗟𝗘𝗦𝗦",
+    category: "𝗧𝗢𝗢𝗟",
     guide: {
       en: "{p}{n}"
     }

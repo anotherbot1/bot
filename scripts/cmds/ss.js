@@ -10,7 +10,7 @@ aliases: ["ss"],
     countDown: 5,
     role: 0,
     longDescription:  "Screenshot webpage or Google search",
-    category: "𝗧𝗢𝗢𝗟'𝗦",
+    category: "𝗧𝗢𝗢𝗟",
     guide: {
       en: "{pn} url"
         + "{pn} -g text"
