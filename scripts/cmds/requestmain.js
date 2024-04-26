@@ -67,7 +67,7 @@ for (const adminID of config.adminBot) {
 }
     
 
-		const notifyMsg = `✅Your approval request for using Bot's main cmds has been sent to admin ZERODAY with this\nmessage: ${userMessage}.\n\n I will notify you if your thread is approved. Please wait until then.\n\n join the Marin support Box if you facing any problem\nType : /supportgc \nto join.`;
+		const notifyMsg = `✅Your approval request for using Bot's main cmds has been sent to admin ZERODAY with this\nmessage: ${userMessage}.\n\n I will notify you if your thread is approved. Please wait until then.\n\n join the ZEROFAY support Box if you facing any problem\nType : /supportgc \nto join.`;
 		api.sendMessage(notifyMsg, threadID);
 	}
 };
