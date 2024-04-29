@@ -1,20 +1,20 @@
 module.exports = {
-  config: {
-      name: "bot",
-      version: "1.0",
-      author: "XEMON",
-      countDown: 5,
-      role: 0,
-      shortDescription: "ignore this command",
-      longDescription: "ignore this command",
-      category: "𝗜𝗡𝗙𝗢",
-  },
+    config: {
+        name: "bot",
+        version: "1.0",
+        author: "Zeroday",
+        countDown: 5,
+        role: 0,
+        shortDescription: "No Prefix",
+        longDescription: "No Prefix",
+        category: "reply",
+    },
 onStart: async function(){}, 
 onChat: async function({
-  event,
-  message,
-  getLang
+    event,
+    message,
+    getLang
 }) {
-  if (event.body && event.body.toLowerCase() ==["bot","anya","robot"]) return message.reply("ANYA is active darling");
+    if (event.body && event.body.toLowerCase() == "ganda") return message.reply("I have prefix...!! Use it,otherwise i'll kick you!!");
 }
 };
