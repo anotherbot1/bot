@@ -13,7 +13,7 @@ module.exports = {
       vi: "",
       en: ""
     },
-    category: "owner"
+    category: "𝗢𝗪𝗡𝗘𝗥"
   },
 
 langs: {
