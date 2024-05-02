@@ -23,7 +23,7 @@ module.exports = {
       const prompt = args.join(" ");
       if (!prompt) return message.reply("Please provide a prompt.");
 
-      const apiUrl = https://prodia.vercel.app/prodia?prompt=${encodeURIComponent(prompt)}&model=dreamshaper_7.safetensors+%5B5cf5ae06%5D; 
+      const apiUrl = `https://prodia.vercel.app/prodia?prompt=${encodeURIComponent(prompt)}&model=dreamshaper_7.safetensors+%5B5cf5ae06%5D`; 
       const response = await axios.get(apiUrl);
       const imageData = response.data;
       const imageUrl = imageData.hqhq; 
