@@ -43,7 +43,7 @@ module.exports = {
         return message.reply({ attachment: imageStream });
       } else {
        
-        return message.reply(hqhq);
+        message.reply(hqhq);
       }
     } catch (error) {
       console.error(error);
