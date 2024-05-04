@@ -3,7 +3,7 @@ const axios = require("axios");
  module.exports = {
   config: {
     name: "generate",
-aliases: ['gen'],
+aliases: ['generate'],
     version: "1.1",
     author: "OtinXSandip",
     countDown: 10,
