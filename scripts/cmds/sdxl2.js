@@ -12,7 +12,7 @@ const models = [
 
 module.exports = {
   config: {
-    name: "sdxl",
+    name: "sdx2",
     version: "1.0",
     author: "JARiF@Cock",
     countDown: 5,
