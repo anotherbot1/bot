@@ -1,87 +1,66 @@
-const axios = require("axios");
-const tinyurl = require("tinyurl");
+const axios = require('axios');
+
+const GPT_API_URL = 'https://sandipapi.onrender.com/gpt';
+const PREFIXES = ['ai'];
+const horizontalLine = "━━━━━━━━━━━━━━━";
 
 module.exports = {
   config: {
     name: "ai",
     version: "1.0",
-    author: "Samir OE",
-    countDown: 5,
-    role: 0,
-    category: "𝗔𝗜",
+    author: "OtinXSandip",
+    longDescription: "AI",
+    category: "ai",
+    guide: {
+      en: "{p} questions",
+    },
   },
-  onStart: async function ({ message, event, args, commandName }) {
+  onStart: async function () {
+    // Initialization logic if needed
+  },
+  onChat: async function ({ api, event, args, message }) {
     try {
-      let shortLink;
+      const prefix = PREFIXES.find((p) => event.body && event.body.toLowerCase().startsWith(p));
 
-      if (event.type === "message_reply") {
-        if (["photo", "sticker"].includes(event.messageReply.attachments?.[0]?.type)) {
-          shortLink = await tinyurl.shorten(event.messageReply.attachments[0].url);
-        }
-      } else {
-        const text = args.join(' ');
-        const response0 = await axios.get(https://apis-samir.onrender.com/Gemini?text=${encodeURIComponent(text)});
-
-        if (response0.data && response0.data.candidates && response0.data.candidates.length > 0) {
-          const textContent = response0.data.candidates[0].content.parts[0].text;
-          const ans = ${textContent};
-          message.reply({
-            body: ans,
-          }, (err, info) => {
-            global.GoatBot.onReply.set(info.messageID, {
-              commandName,
-              messageID: info.messageID,
-              author: event.senderID,
-            });
-          });
-          return; 
-        }
+      if (!prefix) {
+        return; // Invalid prefix, ignore the command
       }
 
-      if (!shortLink) {
-        console.error("Error: Invalid message or attachment type");
+      const prompt = event.body.substring(prefix.length).trim();
+
+      if (!prompt) {
+        const defaultMessage = getCenteredHeader(" 𝗞𝗬𝗟𝗘'𝗦 𝗕𝗢𝗧") + "\n" + horizontalLine + "\nHello there! How can I help you with AI-related queries!\n" + horizontalLine;
+        await message.reply(defaultMessage);
         return;
       }
 
-      const like = https://apis-samir.onrender.com/telegraph?url=${encodeURIComponent(shortLink)}&senderId=Y=777565;
-      const response4 = await axios.get(like);
-      const link = response4.data.result.link;
+      const answer = await getGPTResponse(prompt);
 
-      const text = args.join(' ');
-      const vision = https://apis-samir.onrender.com/gemini-pro?text=${encodeURIComponent(text)}&url=${encodeURIComponent(link)};
+      // Adding header and horizontal lines to the answer
+      const answerWithHeader = getCenteredHeader("ZERODAY 𝗕𝗢𝗧") + "\n" + horizontalLine + "\n" + answer + "\n" + horizontalLine;
 
-      const response1 = await axios.get(vision);
-      message.reply({
-        body: response1.data,
-      });
+      await message.reply(answerWithHeader);
     } catch (error) {
       console.error("Error:", error.message);
+      // Additional error handling if needed
     }
-  },
-
-  onReply: async function ({ message, event, Reply, args }) {
-    try {
-      let { author, commandName } = Reply;
-      if (event.senderID !== author) return;
-
-      const gif = args.join(' ');
-      const response23 = await axios.get(https://apis-samir.onrender.com/Gemini?text=${encodeURIComponent(gif)});
-
-      if (response23.data && response23.data.candidates && response23.data.candidates.length > 0) {
-        const textContent = response23.data.candidates[0].content.parts[0].text;
-        const wh = ${textContent};
-        message.reply({
-          body: wh,
-        }, (err, info) => {
-          global.GoatBot.onReply.set(info.messageID, {
-            commandName,
-            messageID: info.messageID,
-            author: event.senderID,
-          });
-        });
-      }
-    } catch (error) {
-      console.error("Error:", error.message);
-    }
-  },
+  }
 };
+
+function getCenteredHeader(header) {
+  const totalWidth = 32; // Adjust the total width as needed
+  const padding = Math.max(0, Math.floor((totalWidth - header.length) / 2));
+  return " ".repeat(padding) + header;
+}
+
+async function getGPTResponse(prompt) {
+  try {
+    // Implement caching logic here
+
+    const response = await axios.get(`${GPT_API_URL}?prompt=${encodeURIComponent(prompt)}`);
+    return response.data.answer;
+  } catch (error) {
+    console.error("Error fetching GPT response:", error.message);
+    throw error; // Re-throw the error to be caught by the caller
+  }
+}
