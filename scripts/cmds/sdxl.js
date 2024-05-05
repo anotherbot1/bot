@@ -31,7 +31,7 @@ module.exports = {
       const selectedModel = models[modelNumber];
       if (!selectedModel) return message.reply("Invalid model number. Please choose 1, 2, or 3.");
 
-      const apiUrl = https://artbreeder.onrender.com/gen?prompt=${encodeURIComponent(prompt)}&model=${selectedModel};
+      const apiUrl = `https://artbreeder.onrender.com/gen?prompt=${encodeURIComponent(prompt)}&model=${selectedModel}`;
       const response = await axios.get(apiUrl); 
       const imageUrl = response.data.images;
 
@@ -40,11 +40,14 @@ module.exports = {
       }
 
       message.reply("Generating image... Please wait. ⏳");
+
+      // Fetch the image
       const imageStream = await global.utils.getStreamFromURL(imageUrl);
       if (imageStream) {
         return message.reply({ attachment: imageStream }); 
       } else {
-       return message.reply(Image URL: ${imageUrl});
+        // If fetching fails, send the image URL directly
+        return message.reply(`Image URL: ${imageUrl}`);
       }
     } catch (error) {
       console.error(error); 
