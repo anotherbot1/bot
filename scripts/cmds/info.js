@@ -41,7 +41,7 @@ module.exports = {
     const uptimeString = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
 
     message.reply({
-      body: `「 Bot & Owner Info 」\n ❏Bot Name: ${botName} \n ❏Bot Prefix: ${botPrefix} \n ❏Name: ${authorName} \n ❏Facebook: ${authorFB} \n ❏Instagram: ${authorInsta} \n ❏Status: ${status} \n ❏Date: ${date} \n ❏Time: ${time} \n ❏Uptime: ${uptimeString} \n`Thanks For Using ZERODAY bot Type /help To See All Available Commands
+      body: `「 Bot & Owner Info 」\n ❏Bot Name: ${botName} \n ❏Bot Prefix: ${botPrefix} \n ❏Name: ${authorName} \n ❏Facebook: ${authorFB} \n ❏Instagram: ${authorInsta} \n ❏Status: ${status} \n ❏Date: ${date} \n ❏Time: ${time} \n ❏Uptime: ${uptimeString} \n Thanks For Using ZERODAY bot Type /help To See All Available Commands`
     });
   },
 
