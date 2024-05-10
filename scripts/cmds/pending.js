@@ -47,7 +47,7 @@ onReply: async function({ api, event, Reply, getLang, commandName, prefix }) {
         const index = body.split(/\s+/);
         for (const singleIndex of index) {
             if (isNaN(singleIndex) || singleIndex <= 0 || singleIndex > Reply.pending.length) return api.sendMessage(getLang("invaildNumber", singleIndex), threadID, messageID);
-            api.sendMessage(`•HEY.! your wishing group is been approved..! By the admin\nTo contract with admin check the link bar......\n\nhttps://cutt.ly/xwNNYIfj\n\n• ${prefix}help to see available commands😺\n\nOwner Sahadat Hossen\n\n•Type -supportgc and join CaT Ara Support Zone`, Reply.pending[singleIndex - 1].threadID);
+            api.sendMessage(`•HEY.! your wishing group is been approved..! By the admin \n To contract with admin check the link bar...... \n\n facebook.com/zeroday.was.hacker \n\n • ${prefix}help to see available commands \n\n Owner ZERODAY \n\n •Type /supportgc and join ZERODAY AI Support Zone`, Reply.pending[singleIndex - 1].threadID);
             count+=1;
         }
         return api.sendMessage(getLang("approveSuccess", count), threadID, messageID);
