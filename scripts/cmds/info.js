@@ -29,6 +29,7 @@ module.exports = {
     const authorName = "ZERODAY";
     const authorFB = "https://www.facebook.com/zeroday.was.hacker";
     const authorInsta = "https://www.instagram.com/user_died_8_8/";
+    const authorTheads = "https://www.threads.net/@user_died_8_8";
     const status = "Who cares!!";
     const now = moment().tz('Asia/Dhaka');
     const date = now.format('MMMM Do YYYY');
@@ -41,7 +42,7 @@ module.exports = {
     const uptimeString = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
 
     message.reply({
-      body: `「 Bot & Owner Info 」\n\n\n ❏Bot Name: ${botName} \n\n ❏Bot Prefix: ${botPrefix} \n\n ❏Name: ${authorName} \n\n ❏Facebook: ${authorFB} \n\n ❏Instagram: ${authorInsta} \n\n ❏Status: ${status} \n\n ❏Date: ${date} \n\n ❏Time: ${time} \n\n ❏Uptime: ${uptimeString} \n\n\n Thanks For Using ZERODAY bot Type /help To See All Available Commands`
+      body: `「 Bot & Owner Info 」\n\n\n ❏Bot Name: ${botName} \n\n ❏Bot Prefix: ${botPrefix} \n\n ❏Name: ${authorName} \n\n ❏Facebook: ${authorFB} \n\n ❏Instagram: ${authorInsta} \n\n ❏Threads: ${authorThreads} \n\n ❏Status: ${status} \n\n ❏Date: ${date} \n\n ❏Time: ${time} \n\n ❏Uptime: ${uptimeString} \n\n\n Thanks For Using ZERODAY bot Type /help To See All Available Commands`
     });
   },
 
