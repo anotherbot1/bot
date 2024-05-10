@@ -27,7 +27,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1723136518.141298,
+        "expirationDate": 1723145897.939635,
         "hostOnly": false,
         "httpOnly": true,
         "name": "fr",
@@ -36,11 +36,11 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "1kYSqSuX2lkvCuF5E.AWVBQdRTGz0qnzmMqHQ0aRgDQmA.BmPlMF..AAA.0.0.BmPlMF.AWXFis14GXA"
+        "value": "17I9nrDoBbmtLQzTB.AWUmwovjW2_gBAZjAf7uxAo56E4.BmPnep..AAA.0.0.BmPnep.AWXELWdzc_8"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1746896518.141195,
+        "expirationDate": 1746905897.939549,
         "hostOnly": false,
         "httpOnly": true,
         "name": "xs",
@@ -49,11 +49,11 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "6%3Ab8PkY7-lQgPWVw%3A2%3A1715088593%3A-1%3A11730%3A%3AAcUpBeJdL3y0CRNrC3WuKkiX0zjQHiuIbAGXVjPnRt4"
+        "value": "6%3Ab8PkY7-lQgPWVw%3A2%3A1715088593%3A-1%3A11730%3A%3AAcX_U7-odmEhn3DEG2W5-6zbhQaB-dpnGdldBubo2AQ"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1746896518.141087,
+        "expirationDate": 1746905897.939455,
         "hostOnly": false,
         "httpOnly": false,
         "name": "c_user",
@@ -74,11 +74,11 @@
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1715360518266%2C%22v%22%3A1%7D"
+        "value": "C%7B%22lm3%22%3A%22g.7525994194103418%22%2C%22t3%22%3A%5B%5D%2C%22utc3%22%3A1715369922107%2C%22v%22%3A1%7D"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1715965316,
+        "expirationDate": 1715974697,
         "hostOnly": false,
         "httpOnly": false,
         "name": "dpr",
@@ -117,7 +117,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1715965316,
+        "expirationDate": 1715974697,
         "hostOnly": false,
         "httpOnly": false,
         "name": "wd",
