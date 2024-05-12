@@ -26,13 +26,10 @@ module.exports = {
       const allUsers = await usersData.getAll();
       const allThreads = await threadsData.getAll();
       const uptime = process.uptime();
-
       const hours = Math.floor(uptime / 3600);
       const minutes = Math.floor((uptime % 3600) / 60);
       const seconds = Math.floor(uptime % 60);
-
-      const uptimeString = ${hours}Hrs ${minutes}min ${seconds}sec;
-
+      const uptimeString = `${hours}Hrs ${minutes}min ${seconds}sec`;
       const currentDate = new Date();
       const options = { year: "numeric", month: "numeric", day: "numeric" };
       const date = currentDate.toLocaleDateString("en-US", options);
@@ -53,7 +50,7 @@ module.exports = {
         pingStatus = "Smooth like butter 🧈";
       }
 
-      const memoryUsage = (os.totalmem() - os.freemem()) / (1024 ** 2);
+      const memoryUsage = (process.memoryUsage().heapUsed / (1024 ** 2)).toFixed(2);
 
       const statsData = {
         uptime: uptimeString,
@@ -61,19 +58,19 @@ module.exports = {
         time,
         users: allUsers.length,
         threads: allThreads.length,
-        ping: ${ping}ms,
+        ping: `${ping}ms`,
         pingStatus,
-        memoryUsage: ${memoryUsage.toFixed(2)} MB,
+        memoryUsage: `${memoryUsage} MB`,
       };
 
       let responseMessage = "";
 
       if (args[0] === "all") {
         responseMessage = Object.entries(statsData)
-          .map(([key, value]) => **${key.toUpperCase()}:** ${value})
+          .map(([key, value]) => `**${key.toUpperCase()}**: ${value}`)
           .join("\n");
       } else if (args[0] && statsData.hasOwnProperty(args[0])) {
-        responseMessage = **${args[0].toUpperCase()}:** ${statsData[args[0]]};
+        responseMessage = `**${args[0].toUpperCase()}**: ${statsData[args[0]]}`;
       } else {
         responseMessage = `
         *Uptime:* ${statsData.uptime}\n**Ping:** ${statsData.ping} (${statsData.pingStatus})\n**Memory Usage:** ${statsData.memoryUsage}`;
