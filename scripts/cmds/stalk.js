@@ -5,18 +5,18 @@ module.exports = {
     config: {
         name: "stalk",
         version: "1.0",
-        author: "Samuel",
+        author: "NULL",
         countDown: 5,
         role: 0,
         shortDescription: "",
         longDescription: {
             en: ""
         },
-        category: "",
+        category: "𝗜𝗡𝗙𝗢",
         guide: {
             en: "{pn}"
         },
-        credits: "Samuel"
+        credits: "NULL"
     },
     onStart: async function({ api, event, Thread, args }) {
         try {
