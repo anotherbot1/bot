@@ -27,7 +27,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1723363147.581068,
+        "expirationDate": 1723395795.699586,
         "hostOnly": false,
         "httpOnly": true,
         "name": "fr",
@@ -36,11 +36,11 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "1s4L7ivVZCr5hO9LX.AWUNEc6OG4k6DIZGNKPFgxk1wwQ.BmQcNg..AAA.0.0.BmQchL.AWVo8CHqGyg"
+        "value": "1ZhsrHs899EwQTcCl.AWWgYd5HbnWRyzQBP37VwEI07pg.BmQkfT..AAA.0.0.BmQkfT.AWV6IOk8fMY"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1747123147.212765,
+        "expirationDate": 1747155795.699511,
         "hostOnly": false,
         "httpOnly": true,
         "name": "xs",
@@ -49,11 +49,11 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "33%3AO9x5L7i8i-N9fg%3A2%3A1715587146%3A-1%3A11730"
+        "value": "33%3AO9x5L7i8i-N9fg%3A2%3A1715587146%3A-1%3A11730%3A%3AAcWZqKFPVc2cqx_1N5_3dpQWmZhsl7tRMEgN0qyi6g"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1747123147.212638,
+        "expirationDate": 1747155795.699342,
         "hostOnly": false,
         "httpOnly": false,
         "name": "c_user",
@@ -74,11 +74,11 @@
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1715587149878%2C%22v%22%3A1%7D"
+        "value": "C%7B%22lm3%22%3A%22g.6191463727571728%22%2C%22t3%22%3A%5B%5D%2C%22utc3%22%3A1715619856629%2C%22v%22%3A1%7D"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1716191948,
+        "expirationDate": 1716224593,
         "hostOnly": false,
         "httpOnly": false,
         "name": "dpr",
@@ -117,7 +117,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1716191948,
+        "expirationDate": 1716224593,
         "hostOnly": false,
         "httpOnly": false,
         "name": "wd",
@@ -126,6 +126,6 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "831x715"
+        "value": "1536x738"
     }
 ]
