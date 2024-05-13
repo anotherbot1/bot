@@ -19,7 +19,7 @@ module.exports = {
         gender: 'MALE',
         age: '18+',
         facebookLink: 'facebook.com/zeroday.was.hacker',
-        instagram: 'instagram.com/user_died_8_8/',
+        instagram: 'https://www.instagram.com/user_died_8_8/',
       };
       const response = `
 𝐎𝐰𝐧𝐞𝐫 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧:🧾
@@ -27,8 +27,8 @@ Name: ${ownerInfo.name}
 Gender: ${ownerInfo.gender}
 Age: ${ownerInfo.age}
 Facebook: ${ownerInfo.facebookLink}
-Instagram: ${ownerInfo.instagramLink}
-`;
+Instagram: ${ownerInfo.instagramLink}`
+        ;
 
       await api.sendMessage({
         body: response
