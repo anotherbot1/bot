@@ -27,7 +27,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1723361609.232757,
+        "expirationDate": 1723362282.310181,
         "hostOnly": false,
         "httpOnly": true,
         "name": "fr",
@@ -36,11 +36,11 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "1RZSN7lYhIVdeCCNj.AWULYi3gbY9JfvLVtqR4aHqi2I4.BmQcEI..AAA.0.0.BmQcJJ.AWXu9hmL_ok"
+        "value": "1s4L7ivVZCr5hO9LX.AWUAwzhZfejUby-Uz5XGJ_2CGX4.BmQcNg..AAA.0.0.BmQcTq.AWXRJGhn5nA"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1747121608.887448,
+        "expirationDate": 1747122281.957941,
         "hostOnly": false,
         "httpOnly": true,
         "name": "xs",
@@ -49,11 +49,11 @@
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "17%3A8YFOZFn3z7BzUg%3A2%3A1715585607%3A-1%3A11730"
+        "value": "17%3AqsvhBM16_7PKXw%3A2%3A1715586280%3A-1%3A11730"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1747121608.887411,
+        "expirationDate": 1747122281.957876,
         "hostOnly": false,
         "httpOnly": false,
         "name": "c_user",
@@ -74,11 +74,11 @@
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1715585611878%2C%22v%22%3A1%7D"
+        "value": "C%7B%22lm3%22%3A%22g.6191463727571728%22%2C%22t3%22%3A%5B%5D%2C%22utc3%22%3A1715586288660%2C%22v%22%3A1%7D"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1716190411,
+        "expirationDate": 1716191084,
         "hostOnly": false,
         "httpOnly": false,
         "name": "dpr",
@@ -104,7 +104,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1750145608.887309,
+        "expirationDate": 1750146281.957615,
         "hostOnly": false,
         "httpOnly": true,
         "name": "sb",
@@ -117,7 +117,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1716190411,
+        "expirationDate": 1716191084,
         "hostOnly": false,
         "httpOnly": false,
         "name": "wd",
