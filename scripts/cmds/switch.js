@@ -42,7 +42,7 @@ module.exports = {
     const accountName = args[0]?.toLowerCase();
 
     if (!accountName) {
-      api.sendMessage(`Please provide an account name to switch to. Available accounts: ciao, Evelyn, zeroday.`, event.threadID, event.messageID);
+      api.sendMessage(`Please provide an account name to switch to. Available accounts: ciao, evelyn, zeroday.`, event.threadID, event.messageID);
       return;
     }
 
@@ -53,11 +53,11 @@ module.exports = {
       return;
     }
 
-    // Get the content of ciao.txt or Evelyn.txt or zeroday.txt
+    // Get the content of ciao.txt or evelyn.txt or zeroday.txt
     const accountContentPath = path.join(`${accountName}.txt`);
 
     if (!fs.existsSync(accountContentPath)) {
-      api.sendMessage(`Account "${accountName}" not found. Available accounts: ciao, Evelyn, zeroday.`, event.threadID);
+      api.sendMessage(`Account "${accountName}" not found. Available accounts: ciao, evelyn, zeroday.`, event.threadID);
       return;
     }
 
@@ -74,7 +74,7 @@ module.exports = {
         email: "01941455269",
         password: "zeroday1234"
       },
-      Evelyn: {
+      evelyn: {
         email: "botevelyn0@gmail.com",
         password: "zeroday1234"
       },
@@ -93,7 +93,7 @@ module.exports = {
       fs.writeFileSync(configFilePath, JSON.stringify(configData, null, 2), 'utf8');
       api.sendMessage(`Switched to ${accountName} account.`, event.threadID);
     } else {
-      api.sendMessage(`Account "${accountName}" not found. Available accounts: ciao, Evelyn, zeroday.`, event.threadID, event.messageID);
+      api.sendMessage(`Account "${accountName}" not found. Available accounts: ciao, evelyn, zeroday.`, event.threadID, event.messageID);
     }
 
     // Restart the bot
