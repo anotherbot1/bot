@@ -20,7 +20,6 @@ module.exports.onStart = async function({ api, args, Users, event}) {
 		var arraytag = [];
 				arraytag.push({id: mention, tag: name});
 		var a = function (a) { api.sendMessage(a, event.threadID); }
-			
 setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 3000);
 setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 4500);
 setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 6000);
