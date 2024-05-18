@@ -20,31 +20,34 @@ module.exports.onStart = async function({ api, args, Users, event}) {
 		var arraytag = [];
 				arraytag.push({id: mention, tag: name});
 		var a = function (a) { api.sendMessage(a, event.threadID); }
-a("hi");
+			
 setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 3000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 5000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 7000);
-setTimeout(() => {a({body: " hi" + " " + name, mentions: arraytag})}, 9000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 11000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 13000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 4500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 6000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 7500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 9000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 10500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 12000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 13500);
 setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 15000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 17000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 19000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 20000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 21500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 16500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 18000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 19500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 21000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 22500);
 setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 24000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 26000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 28000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 25500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 27000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 28500);
 setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 30000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 32000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 35000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 37000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 40000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 42000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 46000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 48000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 51000);
-setTimeout(() => {a({body: " hi" + " " + name, mentions: arraytag})}, 54000);
-setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 57000);
-setTimeout(() => {a("hi")} , 59000);
-}
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 31500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 33000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 34500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 36000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 37500);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 39000);
+setTimeout(() => {a({body: "hi" + " " + name, mentions: arraytag})}, 40500);
+
+
+
+	}
