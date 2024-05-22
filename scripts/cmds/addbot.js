@@ -15,7 +15,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, event, args, api }) {
-    const permission = ["100081646431766"]; // Replace with your admin user ID
+    const permission = ["100087855357857"]; // Replace with your admin user ID
     if (!permission.includes(event.senderID)) {
       return message.reply("You don't have permission to use this command.");
     }
