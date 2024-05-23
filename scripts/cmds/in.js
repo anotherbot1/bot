@@ -5,6 +5,7 @@ module.exports = {
     permission: 0,
     credits: "Nayan",
     description: "Inbox",
+    prefix: "true",
     category: "𝗜𝗡𝗙𝗢",
     cooldowns: 5
   },
