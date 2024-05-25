@@ -20,7 +20,7 @@ module.exports = {
   onStart: async function ({ message, event, args, api }) {
     api.setMessageReaction("🕐", event.messageID, (err) => {}, true);
     try {
-      const baseUrl = "https://kshitiz-t2i-x6te.onrender.com/sdxl";
+      const baseUrl = "https://kshitiz-t2i-7eia.onrender.com/sdxl";
       let prompt = '';
       const model_id = 36; 
 
