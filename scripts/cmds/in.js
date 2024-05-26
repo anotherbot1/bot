@@ -1,27 +1,31 @@
 module.exports = {
   config: {
     name: "in",
-    version: "1.0.0",
-    permission: 0,
-    credits: "Nayan",
-    prefix: 'awto',
-    description: "Inbox",
-    category: "without prefix",
-    cooldowns: 5
+    aliases: ["in"],
+    version: "1.0",
+    author: "ZERODAY", // do not change or modify credit
+    countDown: 5,
+    role: 0,
+    shortDescription: "you can see your profile",
+    longDescription: "you can see your profile by this command",
+    category: "𝗜𝗡𝗙𝗢",
+    guide: {
+      en: "{pn}",
+    },
   },
 
-  start: async function({ nayan, events, Users, NAYAN }) {
+  onStart: async function({ api, event, Users }) {
     let uid;
-    if (events.type === "message_reply") {
-      uid = events.messageReply.senderID;
-    } else if (Object.keys(events.mentions).length > 0) {
-      uid = Object.keys(events.mentions)[0];
+    if (event.type === "message_reply") {
+      uid = event.messageReply.senderID;
+    } else if (Object.keys(event.mentions).length > 0) {
+      uid = Object.keys(event.mentions)[0];
     } else {
-      uid = events.senderID;
+      uid = event.senderID;
     }
 
     let name = await Users.getNameUser(uid);
-    const msg = `𝗡𝗔𝗠𝗘: ${name}\n 𝗜𝗗: ${uid}`;
-    await NAYAN.sendContact(msg, uid, events.threadID, events.messageID);
+    const msg = `𝗡𝗔𝗠𝗘: ${name}\n𝗜𝗗: ${uid}`;
+    await api.sendMessage(msg, event.threadID, event.messageID);
   }
 };
