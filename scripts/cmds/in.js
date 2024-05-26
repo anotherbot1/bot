@@ -4,35 +4,24 @@ module.exports = {
     version: "1.0.0",
     permission: 0,
     credits: "Nayan",
+    prefix: 'awto',
     description: "Inbox",
-    prefix: "true",
-    category: "𝗜𝗡𝗙𝗢",
+    category: "without prefix",
     cooldowns: 5
   },
 
-  onStart: async function ({ message, event, args, getLang }) {
-    try {
-      let uid;
-      if (event.type === "message_reply") {
-        uid = event.messageReply.senderID;
-      } else if (Object.keys(event.mentions).length > 0) {
-        uid = Object.keys(event.mentions)[0];
-      } else {
-        uid = event.senderID;
-      }
-
-      let name = await Users.getNameUser(uid);
-      const msg = {
-        text: `Name: ${name}\nID: ${uid}`
-      };
-
-      if (typeof message.sendContact === 'function') {
-        await message.sendContact(msg, uid, event.threadID, event.messageID);
-      } else {
-        console.error("sendContact is not a function on message object");
-      }
-    } catch (error) {
-      console.error("An error occurred in the start function:", error);
+  start: async function({ nayan, events, Users, NAYAN }) {
+    let uid;
+    if (events.type === "message_reply") {
+      uid = events.messageReply.senderID;
+    } else if (Object.keys(events.mentions).length > 0) {
+      uid = Object.keys(events.mentions)[0];
+    } else {
+      uid = events.senderID;
     }
+
+    let name = await Users.getNameUser(uid);
+    const msg = `𝗡𝗔𝗠𝗘: ${name}\n 𝗜𝗗: ${uid}`;
+    await NAYAN.sendContact(msg, uid, events.threadID, events.messageID);
   }
 };
