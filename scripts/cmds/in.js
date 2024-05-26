@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "in",
+    name: "uid2",
     version: "1.0.0",
     permission: 0,
     credits: "XNIL",
@@ -25,10 +25,10 @@ module.exports = {
     try {
       // Get the name of the user
       let name = await usersData.getName(uid);
-      const msg = [ ▶️]➡️ 𝐍𝐚𝐦𝐞: ${name}\n[ ▶️]➡️ 𝐈𝐃: ${uid};
+      const msg = `𝐍𝐚𝐦𝐞: ${name}\n 𝐈𝐃: ${uid}`;
 
-      // Call the shareContact function
-      await api.shareContact(msg, uid, event.threadID);
+      // Call the shareContact function (ensure shareContact method exists and is correctly implemented)
+      await api.sendMessage({ body: msg }, event.threadID);
 
       let avt;
       if (event.messageReply) {
@@ -44,7 +44,7 @@ module.exports = {
         throw new Error("Avatar URL not found.");
       }
 
-      // Fetch the avatar image as a stream
+      // Fetch the avatar image as a stream (ensure getStreamFromURL method exists and is correctly implemented)
       const attachment = await global.utils.getStreamFromURL(avt);
       if (!attachment) {
         throw new Error("Failed to fetch the avatar image.");
