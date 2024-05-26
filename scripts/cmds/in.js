@@ -28,7 +28,7 @@ module.exports = {
       const msg = `𝐍𝐚𝐦𝐞: ${name}\n 𝐈𝐃: ${uid}`;
 
       // Call the shareContact function (ensure shareContact method exists and is correctly implemented)
-      await api.sendMessage({ body: msg }, event.threadID);
+      await api.send({ body: msg }, event.threadID);
 
       let avt;
       if (event.messageReply) {
