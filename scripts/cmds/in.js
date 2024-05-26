@@ -14,18 +14,23 @@ module.exports = {
     },
   },
 
-  onStart: async function({ api, event, Users }) {
-    let uid;
-    if (event.type === "message_reply") {
-      uid = event.messageReply.senderID;
-    } else if (Object.keys(event.mentions).length > 0) {
-      uid = Object.keys(event.mentions)[0];
-    } else {
-      uid = event.senderID;
-    }
+  onStart: async function({ api, event, usersData }) {
+    try {
+      let uid;
+      if (event.type === "message_reply") {
+        uid = event.messageReply.senderID;
+      } else if (Object.keys(event.mentions).length > 0) {
+        uid = Object.keys(event.mentions)[0];
+      } else {
+        uid = event.senderID;
+      }
 
-    let name = await Users.getNameUser(uid);
-    const msg = `𝗡𝗔𝗠𝗘: ${name}\n𝗜𝗗: ${uid}`;
-    await api.sendMessage(msg, event.threadID, event.messageID);
+      let name = await usersData.getName(uid);
+      const msg = `𝗡𝗔𝗠𝗘: ${name}\n𝗜𝗗: ${uid}`;
+      await api.sendMessage(msg, event.threadID, event.messageID);
+    } catch (error) {
+      console.error("Error in onStart function:", error);
+      await api.sendMessage("An error occurred while fetching the profile information.", event.threadID);
+    }
   }
 };
