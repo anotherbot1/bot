@@ -1,12 +1,12 @@
 module.exports = {
   config: {
-    name: "uid2",
+    name: "in",
     version: "1.0.0",
     permission: 0,
     credits: "XNIL",
     prefix: 'awto',
     description: "Inbox",
-    category: "without prefix",
+    category: "𝗜𝗡𝗙𝗢",
     cooldowns: 5
   },
 
