@@ -35,10 +35,19 @@ module.exports = {
         try {
             loadingMessage = await message.reply("Processing your image...");
 
+            // Log the URL to debug
+            console.log(`Image URL: ${imageUrl}`);
+
             const apiResponse = await axios.get(`https://nova-apis.onrender.com/art/art?imageUrl=${encodeURIComponent(imageUrl)}`);
             
+            // Log the API response to debug
+            console.log('API response:', apiResponse.data);
+
             if (apiResponse.data && apiResponse.data.hqhq) {
                 const resultImageUrl = apiResponse.data.hqhq;
+
+                // Log the result image URL
+                console.log(`Result Image URL: ${resultImageUrl}`);
 
                 const imageStream = await global.utils.getStreamFromURL(resultImageUrl);
 
@@ -52,6 +61,7 @@ module.exports = {
             }
         } catch (error) {
             console.error("Error in art command:", error);
+
             if (loadingMessage) {
                 await message.unsend(loadingMessage.messageID);
             }
