@@ -30,41 +30,27 @@ module.exports = {
         }
 
         const imageUrl = messageReply.attachments[0].url;
-
-        let loadingMessage;
         try {
-            loadingMessage = await message.reply("Processing your image...");
-
-            // Log the URL to debug
-            console.log(`Image URL: ${imageUrl}`);
-
             const apiResponse = await axios.get(`https://nova-apis.onrender.com/art/art?imageUrl=${encodeURIComponent(imageUrl)}`);
             
-            // Log the API response to debug
-            console.log('API response:', apiResponse.data);
-
             if (apiResponse.data && apiResponse.data.hqhq) {
                 const resultImageUrl = apiResponse.data.hqhq;
-
-                // Log the result image URL
-                console.log(`Result Image URL: ${resultImageUrl}`);
-
-                const imageStream = await global.utils.getStreamFromURL(resultImageUrl);
-
-                await message.reply({
-                    attachment: imageStream
-                });
-
-                await message.unsend(loadingMessage.messageID);
+                setTimeout(async () => {
+                    try {
+                        const imageStream = await global.utils.getStreamFromURL(resultImageUrl);
+                        message.reply({
+                            attachment: imageStream
+                        });
+                    } catch (streamError) {
+                        console.error("Error getting image stream:", streamError);
+                        message.reply(this.langs.en.error);
+                    }
+                }, 10000); 
             } else {
                 throw new Error("Invalid response from API");
             }
         } catch (error) {
-            console.error("Error in art command:", error);
-
-            if (loadingMessage) {
-                await message.unsend(loadingMessage.messageID);
-            }
+            console.error("Error in art command:", error); 
             message.reply(this.langs.en.error);
         }
     }
