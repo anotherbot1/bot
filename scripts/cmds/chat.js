@@ -1,80 +1,65 @@
-const axios = require("axios");
+const axios = require('axios');
 
 module.exports = {
-	config: {
-		name: "chat",
-		version: "1.2",
-		author: "Muhid",
-		countDown: 5,
-		role: 0,
-		shortDescription: "simsimi",
-		longDescription: {
-			vi: "Chat với simsimi",
-			en: "Chat with simsimi",
-		},
-		category: "𝗕𝗢𝗫 𝗖𝗛𝗔𝗧",
-		guide: {
-			vi: "{pn} [on | off]: bật/tắt simsimi\rd>: chat nhanh với simsimi\i",
-			en: "{pn} <word>: chat with Sammy with a simple: hi",
-		},
-	},
+  config: {
+    name: "chat",
+    version: "1.0",
+    author: "Muhid",
+    countDown: 5,
+    role: 0,
+    shortDescription: "Chat with Simsimi",
+    longDescription: "Enable Simsimi mode to chat or directly ask a question.",
+    category: "𝗙𝗨𝗡",
+    guide: {
+      en: "{pn} [on | off]: Turn Simsimi mode on/off\n{pn} <message>: Ask Simsimi directly",
+    },
+  },
 
-	langs: {
-		vi: {
-			turnedOn: "Bật simsimi thành công!",
-			turnedOff: "Tắt simsimi thành công!",
-			chatting: "Đang chat với simsimi",
-			error: "simsimi đang bận, bạn hãy thử lại sau",
-		},
-		en: {
-			turnedOn: "Turned on Chat successfully!",
-			turnedOff: "Turned off Chat successfully!",
-			chatting: "Already Chatting with Anya... :)",
-			error: "What?🙂",
-		},
-	},
+  langs: {
+    en: {
+      turnedOn: "✅ chat mode is ON! Start chatting.",
+      turnedOff: "✅ chat mode is OFF.",
+      simError: "❌ chat is having trouble understanding. Try again later.",
+      invalidInput: "❌ Invalid input. Use '-chat on', '-chat off', or ask Simsimi a question.",
+    },
+  },
 
-	onStart: async function ({ args, threadsData, message, event, getLang }) {
-		if (args[0] == "on" || args[0] == "off") {
-			await threadsData.set(event.threadID, args[0] == "on", "settings.simsimi");
-			return message.reply(args[0] == "on" ? getLang("turnedOn") : getLang("turnedOff"));
-		} else if (args[0]) {
-			const yourMessage = args.join(" ");
-			try {
-				const responseMessage = await getMessage(yourMessage);
-				return message.reply(`${responseMessage}`);
-			} catch (err) {
-				console.log(err);
-				return message.reply(getLang(""));
-			}
-		}
-	},
+  onStart: async function ({ message, args, event, threadsData, getLang }) {
+    const { threadID } = event;
 
-	onChat: async function ({ args, message, threadsData, event, isUserCallCommand, getLang }) {
-		if (
-			args.length > 1 &&
-			!isUserCallCommand &&
-			(await threadsData.get(event.threadID, "settings.simsimi"))
-		) {
-			try {
-				const langCode = (await threadsData.get(event.threadID, "settings.lang")) || global.GoatBot.config.language;
-				const responseMessage = await getMessage(args.join(" "), langCode);
-				return message.reply(`${responseMessage}`);
-			} catch (err) {
-				return message.reply(getLang(""));
-			}
-		}
-	},
+    if (args[0] === "on") {
+      await threadsData.set(threadID, true, "settings.simsimi");
+      return message.reply(getLang("turnedOn"));
+    } else if (args[0] === "off") {
+      await threadsData.set(threadID, false, "settings.simsimi");
+      return message.reply(getLang("turnedOff"));
+    }
+
+    if (args.length > 0) { 
+      await this.getSimResponse(message, args.join(" "), getLang);
+    } else {
+      return message.reply(getLang("invalidInput"));
+    }
+  },
+
+  onChat: async function ({ message, event, isUserCallCommand, threadsData, getLang }) {
+    const { threadID, body } = event;
+    if (!isUserCallCommand && await threadsData.get(threadID, "settings.simsimi")) {
+      this.getSimResponse(message, body, getLang);
+    }
+  },
+
+  getSimResponse: async function (message, text, getLang) {
+    try {
+      const response = await axios.get(`https://nova-apis.onrender.com/sim/get?message=${encodeURIComponent(text)}`);
+      if (response.data && response.data.response) {
+        message.reply(response.data.response);
+      } else {
+        message.reply(getLang("simError"));
+      }
+    } catch (error) {
+      console.error("Error fetching Simsimi response:", error);
+      message.reply(getLang("simError")); 
+    }
+  },
 };
-
-async function getMessage(yourMessage, langCode) {
-	const res = await axios.post(
-		"https://simsimi.fun/api/v2/?mode=talk&lang=bn&message=" + encodeURIComponent(yourMessage) + "&filter=true"
-	);
-
-	if (res.status >= 200 && res.status < 300) {
-		return res.data.success;
-	} else {
-		throw new Error(res.data.success);
-	}
-}
