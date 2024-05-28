@@ -16,9 +16,9 @@ module.exports = {
     onStart: async function ({ api, args, event, message }) {
         try {
             let color = "red";
-            let bgColor = ""; 
-            let adminColor = ""; 
-            let memberColor = "pink"; 
+            let bgColor = "";
+            let adminColor = "";
+            let memberColor = "pink";
             for (let i = 0; i < args.length; i += 2) {
                 switch (args[i]) {
                     case "--color":
@@ -57,13 +57,13 @@ module.exports = {
                 api.setMessageReaction("⏳", event.messageID, (err) => {}, true);
             }
 
-            const { data } = await axios.post(`${global.GoatBot.config.api}/groupPhoto`, data2);
+            const { data } = await axios.post("https://noobs-api2.onrender.com/dipto/groupPhoto", data2);
 
             if(data.img){
                 api.setMessageReaction("✅", event.messageID, (err) => {}, true);
                 message.unsend(waitingMsg.messageID);
                 message.reply({
-                    body: "𝙷𝚎𝚛𝚎 𝚒𝚜 𝚢𝚘𝚞𝚛 𝚐𝚛𝚘𝚞𝚙 𝚒𝚖𝚊𝚐𝚎 <😘",
+                    body: "ZERODAY > 𝙷𝚎𝚛𝚎 𝚒𝚜 𝚢𝚘𝚞𝚛 𝚐𝚛𝚘𝚞𝚙 𝚒𝚖𝚊𝚐𝚎 ",
                     attachment: await global.utils.getStreamFromURL(data.img)
                 });
             }
