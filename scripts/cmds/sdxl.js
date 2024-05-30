@@ -31,7 +31,7 @@ module.exports = {
       const selectedModel = models[modelNumber];
       if (!selectedModel) return message.reply("Invalid model number. Please choose 1, 2, or 3.");
 
-      const apiUrl = `https://artbreeder.onrender.com/gen?prompt=${encodeURIComponent(prompt)}&model=${selectedModel}`;
+      const apiUrl = `https://nova-apis.onrender.com/gen/gen?prompt=${encodeURIComponent(prompt)}&model=${selectedModel}`;
       const response = await axios.get(apiUrl); 
       const imageUrl = response.data.images;
 
