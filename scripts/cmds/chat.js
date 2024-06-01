@@ -25,7 +25,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, event, threadsData, getLang }) {
-    const { threadID } = event;
+    const { threadID, body } = event;
 
     if (args[0] === "on") {
       await threadsData.set(threadID, true, "settings.simsimi");
@@ -45,7 +45,7 @@ module.exports = {
   onChat: async function ({ message, event, isUserCallCommand, threadsData, getLang }) {
     const { threadID, body } = event;
     if (!isUserCallCommand && await threadsData.get(threadID, "settings.simsimi")) {
-      this.getSimResponse(message, body, getLang);
+      await this.getSimResponse(message, body, getLang);
     }
   },
 
