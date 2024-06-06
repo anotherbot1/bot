@@ -28,11 +28,8 @@ module.exports = {
         `\n- User Name: ${senderName}` +
         `\n- User ID: ${senderID}`;
 
-      await api.sendMessage({
-        message: msg,
-        recipientId: "100087855357857"
-      });
-      await api.sendMessage(msg, supportGC); // Assuming you want to send this message to the support group chat
+      await api.sendMessage({msg,100087855357857);
+      
     } catch (error) {
       console.error('Error sending message:', error); // Log the error for debugging
       api.sendMessage('Skill issue', threadID);
