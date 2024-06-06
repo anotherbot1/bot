@@ -8,7 +8,7 @@ module.exports = {
     author: "Muhid",
     countDown: 5,
     role: 0,
-    category: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
+    category: "𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐙𝐎𝐍𝐄",
     guide: ""
   },
 
