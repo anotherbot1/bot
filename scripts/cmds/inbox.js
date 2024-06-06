@@ -7,7 +7,7 @@ module.exports = {
     version: "1.0",
     author: "Muhid",
     countDown: 5,
-    role: 2,
+    role: 0,
     category: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
     guide: ""
   },
