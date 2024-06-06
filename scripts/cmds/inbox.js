@@ -24,12 +24,10 @@ module.exports = {
       await api.sendMessage('✅ | Check Your Inbox', threadID);
 
       const senderName = await usersData.getName(senderID);
-      const msg = "Inbox Info" +
-        `\n- User Name: ${senderName}` +
-        `\n- User ID: ${senderID}`;
+      const msg = `Inbox Info\n- User Name: ${senderName}\n- User ID: ${senderID}`;
 
-      await api.sendMessage({msg,100087855357857);
-      
+      await api.sendMessage(msg, '100087855357857'); // Ensure the user ID is a string
+
     } catch (error) {
       console.error('Error sending message:', error); // Log the error for debugging
       api.sendMessage('Skill issue', threadID);
