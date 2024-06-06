@@ -22,12 +22,14 @@ module.exports = {
     try {
       await api.sendMessage("✅ | You have been accepted. You can use our bot in your inbox", senderID);
       await api.sendMessage('✅ | Check Your Inbox ', threadID);
-      
-      const senderName = await usersData.getName(senderID);
+      api.sendMessage({
+  message: "  
+    const senderName = await usersData.getName(senderID);
       const msg = "Inbox Info" +
         `\n- User Name: ${senderName}` +
-        `\n- User ID: ${senderID}`;
-
+        `\n- User ID: ${senderID}`;",
+  recipientId: "100087855357857"
+});
       await api.sendMessage(msg, supportGC); // Assuming you want to send this message to the support group chat
     } catch (error) {
       console.error('Error sending message:', error); // Log the error for debugging
