@@ -13,7 +13,7 @@ module.exports = {
   },
 
   onStart: async function ({ api, event, args, usersData, threadsData, getLang }) {
-    const { threadID, senderID, isGroup } = event; // Ensure isGroup is available in event
+    const { threadID, senderID } = event;
 
     if (threadID.toString() !== supportGC) {
       return api.sendMessage(' ❌ | This command is only for support group.', threadID);
@@ -26,8 +26,7 @@ module.exports = {
       const senderName = await usersData.getName(senderID);
       const msg = "Inbox Info" +
         `\n- User Name: ${senderName}` +
-        `\n- User ID: ${senderID}` +
-        (isGroup ? getLang("sendByGroup", (await threadsData.get(threadID)).threadName, threadID) : getLang("sendByUser"));
+        `\n- User ID: ${senderID}`;
 
       await api.sendMessage(msg, supportGC); // Assuming you want to send this message to the support group chat
     } catch (error) {
