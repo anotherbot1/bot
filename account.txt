@@ -126,11 +126,11 @@
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "C%7B%22lm3%22%3A%22u.100094118835962%22%2C%22t3%22%3A%5B%7B%22o%22%3A0%2C%22i%22%3A%22u.100072527712265%22%7D%5D%2C%22utc3%22%3A1717791051072%2C%22v%22%3A1%7D"
+        "value": "C%7B%22lm3%22%3A%22u.100088885029511%22%2C%22t3%22%3A%5B%7B%22o%22%3A0%2C%22i%22%3A%22u.100072527712265%22%7D%2C%7B%22o%22%3A0%2C%22i%22%3A%22u.100094118835962%22%7D%5D%2C%22utc3%22%3A1717791264962%2C%22v%22%3A1%7D"
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1718395847,
+        "expirationDate": 1718396018,
         "hostOnly": false,
         "httpOnly": false,
         "name": "dpr",
@@ -182,7 +182,7 @@
     },
     {
         "domain": ".facebook.com",
-        "expirationDate": 1718395847,
+        "expirationDate": 1718396018,
         "hostOnly": false,
         "httpOnly": false,
         "name": "wd",
