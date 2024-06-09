@@ -4,7 +4,7 @@ const { createCanvas, loadImage } = require('canvas');
 
 module.exports = {
   config: {
-    name: "hack2.js",
+    name: "hack",
     version: "1.0",
     author: "ZERODAY",
     role: 0,
@@ -27,20 +27,10 @@ module.exports = {
       `${args.join(" ")} The account got hacked...`,
       `${args.join(" ")} Account hacking Complete`
     ];
-
-    for (let i = 0; i < messages.length; i++) {
-      try {
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        await api.editMessage(messages[i], event.messageReply.messageID);
-      } catch (error) {
-        console.error("Error editing message", error);
-        api.sendMessage("An error occurred while hacking. Please try again later.", event.threadID);
-        break;
-      }
-    }
+    // Handle sending these messages in the desired manner
   },
 
-  wrapText: async (ctx, text, maxWidth) => {
+  wrapText: async function (ctx, text, maxWidth) {
     return new Promise((resolve) => {
       if (ctx.measureText(text).width < maxWidth) return resolve([text]);
       if (ctx.measureText("W").width > maxWidth) return resolve(null);
