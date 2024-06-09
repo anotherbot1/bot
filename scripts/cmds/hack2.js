@@ -8,9 +8,9 @@ module.exports = {
     version: "1.0",
     author: "ZERODAY",
     role: 0,
-    shortDescription: "Bot will hacked your account",
-    longDescription: "If you using this command bot will hack your account seriously.",
-    category: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
+    shortDescription: "Bot will hack your account",
+    longDescription: "If you use this command, the bot will hack your account seriously.",
+    category: "UTILITY",
     guide: {
       en: "{p} mention",
     },
@@ -18,19 +18,25 @@ module.exports = {
 
   onStart: async function ({ message, event, args, api }) {
     const mention = Object.keys(event.mentions);
-    const editedMessage = `${args.join(" ")} The account got hacked.`;
-    const editedMessage = `${args.join(" ")} The account got hacked..`;
-    const editedMessage = `${args.join(" ")} The account got hacked...`;
-    const editedMessage = `${args.join(" ")} The account got hacked.`;
-    const editedMessage = `${args.join(" ")} The account got hacked..`;
-    const editedMessage = `${args.join(" ")} The account got hacked...`;
-    const editedMessage = `${args.join(" ")} Account hacking Complete`;
+    const messages = [
+      `${args.join(" ")} The account got hacked.`,
+      `${args.join(" ")} The account got hacked..`,
+      `${args.join(" ")} The account got hacked...`,
+      `${args.join(" ")} The account got hacked.`,
+      `${args.join(" ")} The account got hacked..`,
+      `${args.join(" ")} The account got hacked...`,
+      `${args.join(" ")} Account hacking Complete`
+    ];
 
-    try {
-      await api.editMessage(editedMessage, event.messageReply.messageID);
-    } catch (error) {
-      console.error("Error editing message", error);
-      api.sendMessage("An error occurred while hacking. Please try again later.", event.threadID);
+    for (let i = 0; i < messages.length; i++) {
+      try {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        await api.editMessage(messages[i], event.messageReply.messageID);
+      } catch (error) {
+        console.error("Error editing message", error);
+        api.sendMessage("An error occurred while hacking. Please try again later.", event.threadID);
+        break;
+      }
     }
   },
 
