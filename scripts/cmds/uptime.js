@@ -1,89 +1,100 @@
-const os = require("os");
+let fontEnabled = true;
+
+function formatFont(text) {
+	const fontMapping = {
+		a: "𝖺", b: "𝖻", c: "𝖼", d: "𝖽", e: "𝖾", f: "𝖿", g: "𝗀", h: "𝗁", i: "𝗂", j: "𝗃", k: "𝗄", l: "𝗅", m: "𝗆",
+		n: "𝗇", o: "𝗈", p: "𝗉", q: "𝗊", r: "𝗋", s: "𝗌", t: "𝗍", u: "𝗎", v: "𝗏", w: "𝗐", x: "𝗑", y: "𝗒", z: "𝗓",
+		A: "𝖠", B: "𝖡", C: "𝖢", D: "𝖣", E: "𝖤", F: "𝖥", G: "𝖦", H: "𝖧", I: "𝖨", J: "𝖩", K: "𝖪", L: "𝖫", M: "𝖬",
+		N: "𝖭", O: "𝖮", P: "𝖯", Q: "𝖰", R: "𝖱", S: "𝖲", T: "𝖳", U: "𝖴", V: "𝖵", W: "𝖶", X: "𝖷", Y: "𝖸", Z: "𝖹"
+	};
+
+	let formattedText = "";
+	for (const char of text) {
+		if (fontEnabled && char in fontMapping) {
+			formattedText += fontMapping[char];
+		} else {
+			formattedText += char;
+		}
+	}
+
+	return formattedText;
+}
+
+const os = require('os');
+const fs = require('fs').promises;
+const pidusage = require('pidusage');
+
+async function getStartTimestamp() {
+	try {
+		const startTimeStr = await fs.readFile('time.txt', 'utf8');
+		return parseInt(startTimeStr);
+	} catch (error) {
+		return Date.now();
+	}
+}
+
+async function saveStartTimestamp(timestamp) {
+	try {
+		await fs.writeFile('time.txt', timestamp.toString());
+	} catch (error) {
+		console.error('Error saving start timestamp:', error);
+	}
+}
+
+function byte2mb(bytes) {
+	const units = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+	let l = 0, n = parseInt(bytes, 10) || 0;
+	while (n >= 1024 && ++l) n = n / 1024;
+	return `${n.toFixed(n < 10 && l > 0 ? 1 : 0)} ${units[l]}`;
+}
+
+function getUptime(uptime) {
+	const days = Math.floor(uptime / (3600 * 24));
+	const hours = Math.floor((uptime % (3600 * 24)) / 3600);
+	const mins = Math.floor((uptime % 3600) / 60);
+	const seconds = Math.floor(uptime % 60);
+
+	return `Uptime: ${days} day(s), ${hours} hour(s), ${mins} minute(s), and ${seconds} second(s)`;
+}
+
+async function onStart({ api, event }) {
+	const startTime = await getStartTimestamp();
+	const uptimeSeconds = Math.floor((Date.now() - startTime) / 1000);
+
+	const usage = await pidusage(process.pid);
+	const osInfo = {
+		platform: os.platform(),
+		architecture: os.arch()
+	};
+
+	const timeStart = Date.now();
+	const uptimeMessage = getUptime(uptimeSeconds);
+	const uid = "61557118090040";
+	const returnResult = `BOT has been working for ${uptimeMessage}\n\n❖ Cpu usage: ${usage.cpu.toFixed(1)}%\n❖ RAM usage: ${byte2mb(usage.memory)}\n❖ Cores: ${os.cpus().length}\n❖ Ping: ${Date.now() - timeStart}ms\n❖ Operating System Platform: ${osInfo.platform}\n❖ System CPU Architecture: ${osInfo.architecture}`;
+
+	await saveStartTimestamp(startTime);
+	return api.shareContact(formatFont(returnResult), uid, event.threadID);
+}
 
 module.exports = {
-  config: {
-    name: "uptime",
-    aliases: ["up"],
-    version: "2.1",
-    author: "SiAM",
-    longDescription: "uptime checker",
-    category: "𝗜𝗡𝗙𝗢",
-    guide: {
-      en: "{pn}",
-    },
-  },
-
-  onStart: async function ({ api, message, event }) {
-    try {
-      const uptimeInSeconds = process.uptime();
-
-      const days = Math.floor(uptimeInSeconds / 86400);
-      const hours = Math.floor((uptimeInSeconds % 86400) / 3600);
-      const minutes = Math.floor((uptimeInSeconds % 3600) / 60);
-
-      const uptimeString = `${days} days, ${hours} hours, ${minutes} minutes`;
-
-      const pingStart = Date.now();
-      await api.sendMessage({ body: "testing..." }, event.threadID);
-      const pingEnd = Date.now();
-      const ping = Math.floor((pingEnd - pingStart) / 10); 
-
-      const isStable = ping < 110;  
-
-      const memoryUsage = (os.totalmem() - os.freemem()) / (1024 ** 2); 
-
-      let statusMessage = "Bot is running smoothly 🚀";
-      if (!isStable) {
-        statusMessage = "Bot is currently experiencing higher latency ⚠";
-      }
-
-      let uptimeGreeting = "Greetings!"; 
-      if (days > 5) {
-        uptimeGreeting = "Impressive! The bot has been here for over 5 days!";
-      } else if (days > 2) {
-        uptimeGreeting = "Cheers! The bot is doing well on its journey!";
-      } else if (days > 1 || (days === 1 && hours >= 1)) {
-        uptimeGreeting = "Good to see you! The bot has been active for over a day!";
-      } else if (hours >= 12) {
-        uptimeGreeting = "The bot has been active for a solid 12 hours! Keep the vibes going!";
-      } else if (hours >= 6) {
-        uptimeGreeting = "Half a day in, and the bot is rocking it!";
-      } else if (hours >= 3) {
-        uptimeGreeting = "Three hours strong! The bot is in the groove!";
-      } else if (hours >= 1) {
-        uptimeGreeting = "Good to see you! The bot has been active for over an hour!";
-      } else if (minutes > 30) {
-        uptimeGreeting = "Half an hour has passed, and the bot is going strong!";
-      } else if (minutes > 15) {
-        uptimeGreeting = "15 minutes in, and the bot is ready for action!";
-      } else if (minutes > 5) {
-        uptimeGreeting = "The bot is getting warmed up after 5 minutes of uptime!";
-      } else if (minutes > 1) {
-        uptimeGreeting = "One minute down, and the bot is just getting started!";
-      } else {
-        uptimeGreeting = "Hello there! The bot is just getting started!";
-      }
-
-      const additionalMessages = [
-        "Enjoy your time with the bot!",
-        "Feel free to ask me anything!",
-        "Let the bot bring some joy to your day!",
-        "ZERODAY BoT: Did you know the bot loves coding?",
-        "Thanks for having me in your Group!",
-        "Ready for some cool commands? Just ask!",
-        "Bot fun fact: I can generate random jokes!",
-        "Need assistance? I'm here to help!",
-        "Zeroday bot will mad you"
-      ];
-
-      const randomAdditionalMessage = additionalMessages[Math.floor(Math.random() * additionalMessages.length)];
-
-      const replyMessage = `🤖 Uptime: ${uptimeString}\n🚦 Status: ${statusMessage}\n🕒 Ping: ${ping}ms\n💾 Memory Usage: ${memoryUsage.toFixed(2)} MB\n\n${uptimeGreeting}\n\n🌟 ${randomAdditionalMessage}`;
-
-      message.reply(replyMessage);
-    } catch (error) {
-      console.error(error);
-      message.reply("Error getting uptime and ping.");
-    }
-  },
+	config: {
+		name: 'uptime',
+		version: '2.1.0',
+		author: "Cliff", // Do not change credits
+		countDown: 5,
+		role: 0,
+		shortDescription: 'shows how long uptime',
+		longDescription: {
+			en: ''
+		},
+		category: 'system',
+		guide: {
+			en: '{p}uptime'
+		}
+	},
+	byte2mb,
+	getStartTimestamp,
+	saveStartTimestamp,
+	getUptime,
+	onStart
 };
