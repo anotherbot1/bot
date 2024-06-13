@@ -10,7 +10,7 @@ module.exports = {
  longDescription: {
  en: "Retrieve player information from the Milan API."
  },
- category: "info",
+ category: "𝗜𝗡𝗙𝗢",
  guide: {
  en: "{pn} <player name>"
  }
