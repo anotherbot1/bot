@@ -29,7 +29,7 @@ module.exports = {
     role: 0,
     shortDescription: "Fetch live cricket scores",
     longDescription: "Fetches live cricket scores from ESPN Cricinfo and sends the score in the chat.",
-    category: "Utility",
+    category: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
     guide: "{pn}"
   },
   onStart: async function ({ message, api, event }) {
