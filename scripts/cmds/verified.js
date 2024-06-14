@@ -4,7 +4,7 @@ const fs = require('fs');
 module.exports = {
     config: {
         name: "verified",
-aliases: ["verified"],
+        aliases: ["verified"],
         version: "1.0",
         author: "OtinXSandip",
         countDown: 10,
@@ -32,20 +32,33 @@ aliases: ["verified"],
         } else {
             id = args[0] || senderID;
         }
-        if (event.type == "message_reply") {
+        if (event.type === "message_reply") {
             id = event.messageReply.senderID;
         }
 
-        const response = await axios.get(`https://milanbhandari.imageapi.repl.co/verified?uid=${id}`, { responseType: 'stream' });
-        const tempFilePath = './temp.png';
-        const writer = fs.createWriteStream(tempFilePath);
-        response.data.pipe(writer);
+        try {
+            const response = await axios.get(`https://milanbhandari.imageapi.repl.co/verified?uid=${id}`, { responseType: 'stream' });
+            const tempFilePath = './temp.png';
+            const writer = fs.createWriteStream(tempFilePath);
+            response.data.pipe(writer);
 
-        writer.on('finish', async () => {
-            const attachment = fs.createReadStream(tempFilePath);
-            await api.sendMessage({ body: "i am verified gays😈", attachment: attachment }, threadID, messageID);
+            writer.on('finish', async () => {
+                try {
+                    const attachment = fs.createReadStream(tempFilePath);
+                    await api.sendMessage({ body: "i am verified gays😈", attachment: attachment }, threadID, (err) => {
+                        if (err) console.error(err);
+                        fs.unlinkSync(tempFilePath);
+                    });
+                } catch (err) {
+                    console.error("Error sending message: ", err);
+                }
+            });
 
-            fs.unlinkSync(tempFilePath);
-        });
+            writer.on('error', (err) => {
+                console.error("Error writing file: ", err);
+            });
+        } catch (err) {
+            console.error("Error making request: ", err);
+        }
     }
 };
