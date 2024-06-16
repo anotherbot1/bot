@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "noprefix",
     version: "1.0",
-    author: "ZERODAY",
+    author: "AceGun",
     countDown: 5,
     role: 0,
     shortDescription: "no prefix",
@@ -17,20 +17,10 @@ module.exports = {
       const word = event.body.toLowerCase();
       switch (word) {
         case "bot":
-          if (event.mentions && Object.keys(event.mentions).length > 0) {
-            let mention = Object.keys(event.mentions)[0];
-            let name = event.mentions[mention];
-            let arrayTag = [{ id: mention, tag: name }];
-            message.reply({
-              body: `∘₊✧─────────────────✧₊∘\ntag : ${name} Hey naughty!`,
-              mentions: arrayTag
-            });
-          } else {
-            message.reply({
-              body: "No mention found."
-            });
-          }
-          break;
+          message.reply({
+            body: "∘₊✧─────────────────✧₊∘\n Hey Naughty!!",
+          });
+          break; // Add this break statement to close the case
 
         // You can add more cases here if needed
 
