@@ -26,7 +26,7 @@ module.exports = {
   },
   onChat: async function({ event, message, usersData }) {
     try {
-      if (event.body && (event.body.toLowerCase() == "bot" || event.body.toLowerCase() == "Zeroday")) {
+      if (event.body && (event.body.toLowerCase() == "bot" || event.body.toLowerCase() == "zeroday")) {
         let name = await usersData.getName(event.senderID);
         let id = event.senderID;
         message.reply({
