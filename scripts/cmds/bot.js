@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "bot",
     version: "1.0",
-    author: "Nova",
+    author: "ZERODAY",
     countDown: 5,
     role: 0,
     shortDescription: "no prefix",
