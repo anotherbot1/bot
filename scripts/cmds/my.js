@@ -8,7 +8,7 @@ module.exports = {
     name: "my",
     author: "ST | Sheikh Tamim",
     description: "Art Image Generator",
-    category: "Art Generation",
+    category: "𝗔𝗜",
     guide: {
       en: `Reply to an image with: art <prompt> | <model> | <control>\nthere are 3 model available and 5 control`
     }
