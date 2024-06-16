@@ -2,12 +2,12 @@ module.exports = {
   config: {
     name: "noprefix",
     version: "1.0",
-    author: "AceGun",
+    author: "ZERODAY",
     countDown: 5,
     role: 0,
     shortDescription: "no prefix",
     longDescription: "no prefix",
-    category: "no prefix",
+    category: "𝗢𝗪𝗡𝗘𝗥",
   },
 
   onStart: async function() {},
