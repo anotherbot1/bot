@@ -4,12 +4,12 @@ module.exports = {
   config: {
     name: "noprefix",
     version: "1.0",
-    author: "AceGun",
+    author: "ZERODAY",
     countDown: 5,
     role: 0,
     shortDescription: "no prefix",
     longDescription: "no prefix",
-    category: "no prefix",
+    category: "𝗢𝗪𝗡𝗘𝗥",
   },
 
   onStart: async function() {},
@@ -24,23 +24,38 @@ module.exports = {
           });
           await api.setMessageReaction("😞", event.messageID, event.threadID, api);
           break;
+
+           case "good night":
+          message.reply({
+            body: "∘₊✧─────────────────✧₊∘\n  Goodnight Everyone Sleepwell! 🌃",
+          });
+          await api.setMessageReaction("😞", event.messageID, event.threadID, api);
+          break;
           
         case "goodmorning":
           message.reply({
-            body: "∘₊✧─────────────────✧₊∘\n          Good Morning Everyone!\n                 Have A Nice Day 🌇",
+            body: "∘₊✧─────────────────✧₊∘ \n Good Morning Everyone! \n Have A Nice Day 🌇",
+            attachment: fs.createReadStream("scripts/cmds/noprefix/goodmorning.gif"),
+          });
+          await api.setMessageReaction("😞", event.messageID, event.threadID, api);
+          break;
+
+            case "good morning":
+          message.reply({
+            body: "∘₊✧─────────────────✧₊∘ \n Good Morning Everyone! \n Have A Nice Day 🌇",
             attachment: fs.createReadStream("scripts/cmds/noprefix/goodmorning.gif"),
           });
           await api.setMessageReaction("😞", event.messageID, event.threadID, api);
           break;
           
-        case "welcome 🌸":
+        case "welcome":
           message.reply({
             body: "∘₊✧─────────────────✧₊∘\n    Welcome! Enjoy Your Stay! 🌸",
           });
           await api.setMessageReaction("😞", event.messageID, event.threadID, api);
           break;
           
-        case "prefix2":
+        case "prefix":
           message.reply({
             body: "Hello, My Lord My Prefix Is » / «",
           });
