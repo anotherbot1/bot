@@ -45,7 +45,7 @@ module.exports = {
           return api.sendMessage(msg, event.threadID, event.messageID);
         } else {
           api.unsendMessage(Reply.messageID).catch(console.error);
-          const msg = `${nameUser}, The answer is wrong!!\orrect answer is: ${country}`;
+          const msg = `${nameUser}, The answer is wrong!!\n correct answer is: ${country}`;
           return api.sendMessage(msg, event.threadID);
         }
       }
