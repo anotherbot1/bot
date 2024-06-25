@@ -14,35 +14,33 @@ module.exports = {
     category: "𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐙𝐎𝐍𝐄",
   },
   onStart: async function ({ api, event, args, usersData, threadsData }) {
-    await api.sendMessage({
-      body: `For being a premium user of ZERODAY bot, first submit the registration form link: https://forms.gle/aPYm6E4ypeJ2rGLv5. After submitting all information, kindly reply to this message with "done", "complete", "ok", etc.`,
-    }, event.threadID, async (error, info) => {
-      if (error) return console.error(error);
-      
-      // Listen for replies
-      api.listenMqtt((err, message) => {
-        if (err) return console.error(err);
+    await api.sendMessage("For being a premium user of ZERODAY bot, first submit the registration form \n link: https://forms.gle/aPYm6E4ypeJ2rGLv5. \n After submitting all information, kindly reply to this message with Done, Complete or ok etc.",
+      event.threadID,
+      async (error, info) => {
+        if (error) return console.error(error);
+      }
+    );
+  },
+  onReply: async function ({ api, event, message, args }) {
+    const validReplies = ["done", "Done", "complete", "Complete", "okay", "Okay", "ok", "Ok", "okey", "Okey"];
+    const supportGroupId = "8557322960951176";
 
-        // Check if the message is a reply to the registration message
-        if (message.body.toLowerCase().match(/done|complete|ok|okay|okey/i)) {
-          const supportGroupId = "8557322960951176";
-          
-          if (message.threadID === supportGroupId) {
-            api.sendMessage("⚠️ | You are already in the support group.", message.threadID);
+    if (validReplies.includes(event.body)) {
+      if (event.threadID === supportGroupId) {
+        api.sendMessage("⚠️ | You are already in the support group.", event.threadID);
+      } else {
+        try {
+          await api.addUserToGroup(event.senderID, supportGroupId);
+          api.sendMessage("✅ | You have been added to the support group.", event.threadID);
+        } catch (error) {
+          if (error.message.includes("Action blocked")) {
+            api.sendMessage("❌ | Sorry, you can't be added to the group because of group settings.", event.threadID);
           } else {
-            api.addUserToGroup(message.senderID, supportGroupId).then(() => {
-              api.sendMessage("✅ | You have been added to the support group.", message.threadID);
-            }).catch((error) => {
-              if (error.message.includes("Action blocked")) {
-                api.sendMessage("❌ | Sorry, you can't be added to the group because of group settings.", message.threadID);
-              } else {
-                console.error(error);
-                api.sendMessage("❌ | An error occurred while processing your request.", message.threadID);
-              }
-            });
+            console.error(error);
+            api.sendMessage("❌ | An error occurred while processing your request.", event.threadID);
           }
         }
-      });
-    });
+      }
+    }
   }
 };
