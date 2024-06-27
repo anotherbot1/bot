@@ -24,7 +24,7 @@ module.exports = {
     name: "cricket",
     version: "1.0",
     author: "Samir Œ",
-    aliases: ["livecricket", "cricketscore"],
+    aliases: ["livecricket", "cricketscore","krikat"],
     countDown: 5,
     role: 0,
     shortDescription: "Fetch live cricket scores",
