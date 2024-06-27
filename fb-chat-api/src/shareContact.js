@@ -12,8 +12,7 @@ module.exports = function (defaultFuncs, api, ctx) {
             throw new Error("Not connected to MQTT");
         }
 
-        var resolveFunc = function () { };
-        var rejectFunc = function () { };
+        var resolveFunc, rejectFunc;
         var returnPromise = new Promise(function (resolve, reject) {
             resolveFunc = resolve;
             rejectFunc = reject;
@@ -26,30 +25,34 @@ module.exports = function (defaultFuncs, api, ctx) {
             };
         }
 
-        let count_req = 0;
-        var form = JSON.stringify({
-            "app_id": "2220391788200892",
-            "payload": JSON.stringify({
-                tasks: [{
-                    label: '359',
-                    payload: JSON.stringify({
-                        "contact_id": senderID,
-                        "sync_group": 1,
-                        "text": text || "",
-                        "thread_id": threadID
-                    }),
-                    queue_name: 'essenger_contact_sharing',
-                    task_id: Math.random() * 1001 << 0,
-                    failure_count: null,
-                }],
-                epoch_id: utils.generateOfflineThreadingID(),
-                version_id: '7214102258676893',
-            }),
-            "request_id": ++count_req,
-            "type": 3
-        });
+        try {
+            let count_req = 0;
+            var form = JSON.stringify({
+                "app_id": "2220391788200892",
+                "payload": JSON.stringify({
+                    tasks: [{
+                        label: '359',
+                        payload: JSON.stringify({
+                            "contact_id": senderID,
+                            "sync_group": 1,
+                            "text": text || "",
+                            "thread_id": threadID
+                        }),
+                        queue_name: 'messenger_contact_sharing',
+                        task_id: Math.random() * 1001 << 0,
+                        failure_count: null,
+                    }],
+                    epoch_id: utils.generateOfflineThreadingID(),
+                    version_id: '7214102258676893',
+                }),
+                "request_id": ++count_req,
+                "type": 3
+            });
 
-        mqttClient.publish('/ls_req', form);
+            mqttClient.publish('/ls_req', form, {}, callback);
+        } catch (error) {
+            rejectFunc(error);
+        }
 
         return returnPromise;
     };
