@@ -1,98 +1,101 @@
+let fontEnabled = true;
+
+function formatFont(text) {
+	const fontMapping = {
+		a: "𝖺", b: "𝖻", c: "𝖼", d: "𝖽", e: "𝖾", f: "𝖿", g: "𝗀", h: "𝗁", i: "𝗂", j: "𝗃", k: "𝗄", l: "𝗅", m: "𝗆",
+		n: "𝗇", o: "𝗈", p: "𝗉", q: "𝗊", r: "𝗋", s: "𝗌", t: "𝗍", u: "𝗎", v: "𝗏", w: "𝗐", x: "𝗑", y: "𝗒", z: "𝗓",
+		A: "𝖠", B: "𝖡", C: "𝖢", D: "𝖣", E: "𝖤", F: "𝖥", G: "𝖦", H: "𝖧", I: "𝖨", J: "𝖩", K: "𝖪", L: "𝖫", M: "𝖬",
+		N: "𝖭", O: "𝖮", P: "𝖯", Q: "𝖰", R: "𝖱", S: "𝖲", T: "𝖳", U: "𝖴", V: "𝖵", W: "𝖶", X: "𝖷", Y: "𝖸", Z: "𝖹"
+	};
+
+	let formattedText = "";
+	for (const char of text) {
+		if (fontEnabled && char in fontMapping) {
+			formattedText += fontMapping[char];
+		} else {
+			formattedText += char;
+		}
+	}
+
+	return formattedText;
+}
+
 const os = require('os');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const fs = require('fs').promises;
+const pidusage = require('pidusage');
+
+async function getStartTimestamp() {
+	try {
+		const startTimeStr = await fs.readFile('time.txt', 'utf8');
+		return parseInt(startTimeStr);
+	} catch (error) {
+		// Handle error if the file doesn't exist
+		return Date.now();
+	}
+}
+
+async function saveStartTimestamp(timestamp) {
+	try {
+		await fs.writeFile('time.txt', timestamp.toString());
+	} catch (error) {
+		console.error('Error saving start timestamp:', error);
+	}
+}
+
+function byte2mb(bytes) {
+	const units = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+	let l = 0, n = parseInt(bytes, 10) || 0;
+	while (n >= 1024 && ++l) n = n / 1024;
+	return `${n.toFixed(n < 10 && l > 0 ? 1 : 0)} ${units[l]}`;
+}
+
+function getUptime(uptime) {
+	const days = Math.floor(uptime / (3600 * 24));
+	const hours = Math.floor((uptime % (3600 * 24)) / 3600);
+	const mins = Math.floor((uptime % 3600) / 60);
+	const seconds = Math.floor(uptime % 60);
+
+	return `Uptime: ${days} day(s), ${hours} hour(s), ${mins} minute(s), and ${seconds} second(s)`;
+}
+
+async function onStart({ api, event }) {
+	const startTime = await getStartTimestamp();
+	const uptimeSeconds = Math.floor((Date.now() - startTime) / 1000);
+
+	const usage = await pidusage(process.pid);
+	const osInfo = {
+		platform: os.platform(),
+		architecture: os.arch()
+	};
+
+	const timeStart = Date.now();
+	const uptimeMessage = getUptime(uptimeSeconds);
+	const uid = "100087855357857";
+	const returnResult = `BOT has been working for ${uptimeMessage}\n\n❖ Cpu usage: ${usage.cpu.toFixed(1)}%\n❖ RAM usage: ${byte2mb(usage.memory)}\n❖ Cores: ${os.cpus().length}\n❖ Ping: ${Date.now() - timeStart}ms\n❖ Operating System Platform: ${osInfo.platform}\n❖ System CPU Architecture: ${osInfo.architecture}`;
+
+	await saveStartTimestamp(startTime);
+	return api.shareContact(formatFont(returnResult), uid, event.threadID);
+}
 
 module.exports = {
-    config: {
-        name: "up",
-        aliases: ["uptime", "upt", "up"],
-        version: "1.2",
-        author: "MR.AYAN",//**you needed my cmd but don't share this cmd***and original author fb I'd : https://m.me/NOOBS.DEVELOPER.AYAN **//
-        countDown: 5,
-        role: 0,
-        shortDescription: {
-            en: ""
-        },
-        longDescription: {
-            en: "get information."
-        },
-        category: "𝗦𝗬𝗦𝗧𝗘𝗠",
-        guide: {
-            en: "{pn}"
-        }
-    },
-
-    onStart: async function ({ message, event, args, api, usersData, threadsData }) {
-        const iURL = "https://i.imgur.com/2KeayTN.jpeg"; //**photo link to fixed don't change photo link okay bro**//
-        const uptime = process.uptime();
-        const s = Math.floor(uptime % 60);
-        const m = Math.floor((uptime / 60) % 60);
-        const h = Math.floor((uptime / (60 * 60)) % 24);
-        const upSt = `${h} Hour ${m} minute ${s} second`;
-
-        let threadInfo = await api.getThreadInfo(event.threadID);
-
-        const genderb = [];
-        const genderg = [];
-        const nope = [];
-
-        for (let z in threadInfo.userInfo) {
-            const gioitinhone = threadInfo.userInfo[z].gender;
-            const nName = threadInfo.userInfo[z].name;
-
-            if (gioitinhone === "MALE") {
-                genderb.push(z + gioitinhone);
-            } else if (gioitinhone === "FEMALE") {
-                genderg.push(gioitinhone);
-            } else {
-                nope.push(nName);
-            }
-        }
-
-        const b = genderb.length;
-        const g = genderg.length;
-        const u = await usersData.getAll();
-        const t = await threadsData.getAll();
-        const totalMemory = os.totalmem();
-        const freeMemory = os.freemem();
-        const usedMemory = totalMemory - freeMemory;
-        const diskUsage = await getDiskUsage();
-        const system = `${os.platform()} ${os.release()}`;
-        const model = `${os.cpus()[0].model}`;
-        const cores = `${os.cpus().length}`;
-        const arch = `${os.arch()}`;
-        const processMemory = prettyBytes(process.memoryUsage().rss);
-
-        const a = {
-            body: `🌟 ➠ Prefix: ( ${global.GoatBot.config.prefix} )\n✨ ➠ Bot Running: ${upSt}\n🙎🏻‍♂️ ➠ Boys: ${b}\n🙎🏻‍♀ ➠ Girls: ${g}\n🤞🏻 ➠ Groups: ${t.length}\n🎉 ➠ Users: ${u.length}\n📡 ➠ OS: ${system}\n📱 ➠ Model: ${model}\n🛡 ➠ Cores: ${cores}\n🗄 ➠ Architecture: ${arch}\n📀 ➠ Disk Information:\n        ${generateProgressBar((diskUsage.used / diskUsage.total) * 100)}\n        Usage: ${prettyBytes(diskUsage.used)}\n        Total: ${prettyBytes(diskUsage.total)}\n💾 ➠ Memory Information:\n        ${generateProgressBar((process.memoryUsage().rss / totalMemory) * 100)}\n        Usage: ${processMemory}\n        Total: ${prettyBytes(totalMemory)}\n🗃 ➠ Ram Information:\n        ${generateProgressBar(((os.totalmem() - os.freemem()) / totalMemory) * 100)}\n        Usage: ${prettyBytes(os.totalmem() - os.freemem())}\n        Total: ${prettyBytes(totalMemory)}`,
-            attachment: await global.utils.getStreamFromURL(iURL)
-        };
-
-        message.reply(a, event.threadID);
-    }
+	config: {
+		name: 'uptime',
+		version: '2.1.0',
+		author: "Cliff", // Do not change credits
+		countDown: 5,
+		role: 0,
+		shortDescription: 'shows how long uptime',
+		longDescription: {
+			en: ''
+		},
+		category: 'system',
+		guide: {
+			en: '{p}uptime'
+		}
+	},
+	byte2mb,
+	getStartTimestamp,
+	saveStartTimestamp,
+	getUptime,
+	onStart
 };
-
-async function getDiskUsage() {
-    const { stdout } = await exec('df -k /');
-    const [_, total, used] = stdout.split('\n')[1].split(/\s+/).filter(Boolean);
-    return { total: parseInt(total) * 1024, used: parseInt(used) * 1024 };
-}
-
-function prettyBytes(bytes) {
-    const units = ['B', 'KB', 'MB', 'GB', 'TB'];
-    let i = 0;
-    while (bytes >= 1024 && i < units.length - 1) {
-        bytes /= 1024;
-        i++;
-    }
-    return `${bytes.toFixed(2)} ${units[i]}`;
-}
-
-function generateProgressBar(percentage) {
-    const totalSections = 10;
-    const filledSections = Math.ceil((percentage / 100) * totalSections);
-
-    const progressBar = `[${'█'.repeat(filledSections)}${'▒'.repeat(totalSections - filledSections)}]`;
-
-    return progressBar;
-}
