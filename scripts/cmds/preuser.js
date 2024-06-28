@@ -12,11 +12,13 @@ module.exports = {
   },
   onStart: async function ({ api, event }) {
     try {
-    const uid = ["100087855357857"];
-     api.sendMessage(${event.senderID} want to join your bot father box, uid);
-      const text = "For being a premium user of ZERODAY bot, first submit the registration form \n link: https://forms.gle/aPYm6E4ypeJ2rGLv5. \n After submitting all information, kindly reply to this message with Done, Complete or ok etc.";
-      const messageInfo = await api.sendMessage(text, event.threadID);
+      const uid = ["100087855357857"];
+      const message = `${event.senderID} wants to join your bot father box, uid: ${uid.join(", ")}`;
+      await api.sendMessage(message, event.threadID);
       
+      const text = "For being a premium user of ZERODAY bot, first submit the registration form \n\n link: https://forms.gle/aPYm6E4ypeJ2rGLv5. \n\n After submitting all information, kindly reply to this message with Done, Complete or ok etc.";
+      const messageInfo = await api.sendMessage(text, event.threadID);
+
       global.GoatBot.onReply.set(messageInfo.messageID, {
         commandName: this.config.name,
         author: event.senderID,
@@ -38,10 +40,10 @@ module.exports = {
       const threadID = event.threadID;
 
       if (threadID === supportGroupId) {
-        await api.sendMessage("⚠ | You are already in the support group.", threadID);
+        await api.sendMessage("⚠ | You are already in the PREMIUM group.", threadID);
       } else {
         await api.addUserToGroup(event.senderID, supportGroupId);
-        await api.sendMessage("✅ | You have been added to the support group.", threadID);
+        await api.sendMessage("✅ | You have been added to the PREMIUM group.", threadID);
       }
     } catch (error) {
       console.error("Error processing reply:", error);
