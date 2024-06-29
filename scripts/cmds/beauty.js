@@ -28,7 +28,7 @@ module.exports = {
             vi: "Đo lường sắc đẹp của người dùng một cách ngẫu nhiên",
             en: "Measure the beauty of a user randomly"
         },
-        category: "fun",
+        category: "𝗙𝗨𝗡",
     },
     onStart: async function ({ api, message, event, usersData }) {
         let userID = event.senderID;
