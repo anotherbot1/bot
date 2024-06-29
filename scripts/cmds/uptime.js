@@ -88,7 +88,7 @@ module.exports = {
 		longDescription: {
 			en: ''
 		},
-		category: 'system',
+		category: '𝗜𝗡𝗙𝗢',
 		guide: {
 			en: '{p}uptime'
 		}
