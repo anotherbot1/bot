@@ -13,12 +13,10 @@ module.exports = {
   onStart: async function ({ api, event }) {
     try {
       const uid = ["100087855357857"];
-      const message = `${event.senderID} wants to join your bot father box, uid: ${uid.join(", ")}`;
-      await api.sendMessage(message, event.threadID);
-      
-      const text = "For being a premium user of ZERODAY bot, first submit the registration form \n\n link: https://forms.gle/aPYm6E4ypeJ2rGLv5. \n\n After submitting all information, kindly reply to this message with Done, Complete or ok etc.";
+      await api.sendMessage(`${event.senderID} want to join your bot father box`, uid);
+      const text = "For being a premium user of ZERODAY bot, first submit the registration form \n link: https://forms.gle/aPYm6E4ypeJ2rGLv5. \n After submitting all information, kindly reply to this message with Done, Complete or ok etc.";
       const messageInfo = await api.sendMessage(text, event.threadID);
-
+      
       global.GoatBot.onReply.set(messageInfo.messageID, {
         commandName: this.config.name,
         author: event.senderID,
@@ -31,19 +29,24 @@ module.exports = {
   
   onReply: async function ({ api, event, Reply }) {
     try {
-      const { author } = Reply;
+      const { author, messageID } = Reply;
+      if (event.senderID !== author) {
+        return api.sendMessage("❌ | Only the user who initiated the registration can reply.", event.threadID);
+      }
+
       const validReplies = ["done", "complete", "ok"];
       if (!validReplies.includes(event.body.trim().toLowerCase())) {
         return;
       }
+
       const supportGroupId = "8557322960951176";
       const threadID = event.threadID;
 
       if (threadID === supportGroupId) {
-        await api.sendMessage("⚠ | You are already in the PREMIUM group.", threadID);
+        await api.sendMessage("⚠ | You are already in the support group.", threadID);
       } else {
         await api.addUserToGroup(event.senderID, supportGroupId);
-        await api.sendMessage("✅ | You have been added to the PREMIUM group.", threadID);
+        await api.sendMessage("✅ | You have been added to the support group.", threadID);
       }
     } catch (error) {
       console.error("Error processing reply:", error);
