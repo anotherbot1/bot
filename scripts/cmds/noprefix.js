@@ -55,13 +55,6 @@ module.exports = {
           await api.setMessageReaction("😞", event.messageID, event.threadID, api);
           break;
           
-        case "prefix":
-          message.reply({
-            body: "Hello, My Lord My Prefix Is » / «",
-          });
-          await api.setMessageReaction("😞", event.messageID, event.threadID, api);
-          break;
-          
         case "owner":
           message.reply({
             body: "📜 𝙊𝙬𝙣𝙚𝙧 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣:\n𝖭𝖺𝗆𝖾: ZERODAY \n𝖦𝖾𝗇𝖽𝖾𝗋: Male\n𝖠𝗀𝖾: Unknown \n𝖥𝖻: https://facebook.com/zeroday.was.hacker \nStatus: always in offline :(",
