@@ -55,6 +55,12 @@
     },
     "notice": {
       "delayPerGroup": 250
+    },
+    "antiout": {
+      "deltaNext": 5
+    },
+    "botname": {
+      "delayPerGroup": 250
     }
   },
   "envEvents": {
