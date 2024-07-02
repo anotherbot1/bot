@@ -72,6 +72,7 @@
     "mentionnoti.js",
     "resend.js",
     "ttt.js",
-    "box.js"
+    "box.js",
+    "chat.js"
   ]
 }
