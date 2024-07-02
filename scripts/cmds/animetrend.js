@@ -52,7 +52,7 @@ module.exports = {
     role: 0,
     shortDescription: "Get trending anime list",
     longDescription: "Get trending anime list",
-    category: "anime",
+    category: "𝗔𝗡𝗜𝗠𝗘",
     guide: "{p}animetrend",
   },
 

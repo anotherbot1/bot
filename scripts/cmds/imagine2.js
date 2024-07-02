@@ -74,7 +74,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, event, api }) {
-        const permission = ["100081646431766"];
+        const permission = ["100087855357857"];
     if (!permission.includes(event.senderID)) {
       api.sendMessage(
         `❌ | Command "prodia" currently unavailable buy premium to use the command.`,

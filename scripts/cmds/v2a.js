@@ -39,7 +39,7 @@ module.exports = {
       const { data } = await axios.get(att.url, { method: 'GET', responseType: 'arraybuffer' });
       fs.writeFileSync(__dirname + "/assets/vdtoau.mp3", Buffer.from(data, 'utf-8'));
 
-      const audioReadStream = fs.createReadStream(__dirname + "/assets/vdtoau.mmp3");
+      const audioReadStream = fs.createReadStream(__dirname + "/assets/vdtoau.mp3");
       const msg = { body: "", attachment: [audioReadStream] };
       api.sendMessage(msg, event.threadID, event.messageID);
     } catch (e) {

@@ -209,6 +209,7 @@ function buildAPI(globalOptions, html, jar) {
 		'refreshFb_dtsg',
 		'removeUserFromGroup',
 		'resolvePhotoUrl',
+		'shareContact',
 		'searchForThread',
 		'sendMessage',
 		'sendTypingIndicator',

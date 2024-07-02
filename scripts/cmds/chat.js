@@ -3,7 +3,7 @@ const axios = require('axios');
 module.exports = {
   config: {
     name: "chat",
-    version: "1.0",
+    version: "1.1",
     author: "Muhid",
     countDown: 5,
     role: 0,
@@ -25,7 +25,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, event, threadsData, getLang }) {
-    const { threadID, body } = event;
+    const { threadID } = event;
 
     if (args[0] === "on") {
       await threadsData.set(threadID, true, "settings.simsimi");
@@ -43,9 +43,12 @@ module.exports = {
   },
 
   onChat: async function ({ message, event, isUserCallCommand, threadsData, getLang }) {
-    const { threadID, body } = event;
+    const { threadID, body, attachments } = event;
+
+    if (attachments.length > 0) return; // Ignore messages with attachments
+
     if (!isUserCallCommand && await threadsData.get(threadID, "settings.simsimi")) {
-      await this.getSimResponse(message, body, getLang);
+      this.getSimResponse(message, body, getLang);
     }
   },
 
@@ -59,7 +62,7 @@ module.exports = {
       }
     } catch (error) {
       console.error("Error fetching Simsimi response:", error);
-      message.reply(getLang("simError")); 
+      message.reply(getLang("simError"));
     }
   },
 };
